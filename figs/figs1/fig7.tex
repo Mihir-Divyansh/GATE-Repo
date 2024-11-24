@@ -1,0 +1,19 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (2,16.5) to[D] (4.25,16.5);
+\draw (2,16.5) to[short] (4,16.5);
+\draw (2,16.5) to[short] (2,16);
+\draw  (2,15.75) circle (0.25cm);
+\node [font=\LARGE] at (2,15.75) {~};
+\node [font=\normalsize] at (1.5,15.75) {AC};
+\draw (2,15.5) to[short] (2,14.75);
+\draw (2,14.75) to[short] (4.25,14.75);
+\draw (4.25,16.5) to[L ] (4.25,14.75);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
