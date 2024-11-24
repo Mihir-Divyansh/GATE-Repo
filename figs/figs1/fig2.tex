@@ -1,0 +1,29 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [->, >=Stealth] (1.25,16) -- (1.25,17.25);
+\draw (1.25,16.5) to[short] (3.75,16.5);
+\draw (3.75,16.5) to[short] (3.75,16);
+\draw [short] (3.75,16) -- (3.75,15.75);
+\draw (1.25,16) to[european resistor] (1.25,15);
+\draw (1.25,15) to[european resistor] (1.25,12.75);
+\draw  (2.75,15.75) rectangle (4.75,12);
+\draw (2.75,14.75) to[short] (0.5,14.75);
+\draw (0.5,14.75) to[D] (0.5,12.75);
+\draw (0.5,12.75) to[short] (2.75,12.75);
+\draw (1.25,12.75) to[short] (1.25,12.25);
+\draw (1.25,12.25) to[C] (1.25,11.5);
+\draw (1.25,11.5) to (1.25,11.25) node[ground]{};
+\draw (3.5,12) to[short] (3.5,10);
+\draw (3.5,10) to[short] (1,10);
+\draw (1,10) to[short] (0.5,10);
+\node [font=\small] at (4,13.75) {IC 555};
+\node [font=\small] at (2.10,13.75) {10 K};
+\node [font=\small] at (2.10,15.5) {10 K};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

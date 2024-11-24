@@ -1,0 +1,18 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (1,18.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (1,15.5);
+\draw (1,18.75) to[R] (5.25,18.75);
+\draw (1,15.5) to[C] (5.25,15.5);
+\draw (5.25,18.75) to[L ] (5.25,15.5);
+\node [font=\small] at (3,18.25) {$R$};
+\node [font=\small] at (2,17.25) {$$w$$};
+\node [font=\small] at (3,14.75) {$C$};
+\node [font=\small] at (6,17.25) {$L$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

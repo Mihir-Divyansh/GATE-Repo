@@ -1,0 +1,37 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (0.25,15) to[short] (0.75,15);
+\draw (0.75,15) to[short] (0.75,16);
+\draw (0.75,16) to[short] (1.25,16);
+\draw [->, >=Stealth] (1,15.5) -- (1.5,15.5);
+\draw  (1.75,15.5) circle (0.25cm);
+\draw [->, >=Stealth] (2,15.5) -- (2.5,15.5);
+\draw  (2.5,15.75) rectangle (3.25,15.25);
+\draw [short] (2,15.5) -- (2,16.75);
+\draw [->, >=Stealth] (2,16.75) -- (3.75,16.75);
+\draw  (3.75,17) rectangle (4.25,16.25);
+\draw [->, >=Stealth] (3.25,15.5) -- (3.75,15.5);
+\draw [->, >=Stealth] (4,16.25) -- (4,15.75);
+\draw  (4.25,15.25) circle (0.5cm);
+\draw [->, >=Stealth] (4.75,15.25) -- (5.25,15.25);
+\draw  (5.25,16) rectangle (7,14.75);
+\draw [->, >=Stealth] (7,15.5) -- (8.5,15.5);
+\draw [short] (7.5,15.5) -- (7.5,13.75);
+\draw [short] (7.5,13.75) -- (1.75,13.75);
+\draw [->, >=Stealth] (1.75,13.75) -- (1.75,15.25);
+\node [font=\small] at (0.5,15.25) {0};
+\node [font=\small] at (1,16.25) {1};
+\node [font=\small] at (1.75,15.5) {$\epsilon$};
+\node [font=\small] at (4.25,15.25) {$\epsilon$};
+\node [font=\small] at (3,15.5) {$k_p$};
+\node [font=\small] at (4,16.5) {$\frac{k_1}{s}$};
+\node [font=\small] at (6,15.25) {$\frac{w^2}{s^2+2\epsilon w+w^2}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
