@@ -1,0 +1,34 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (5.25,12.75) -- (11.25,12.75) -- (12.75,14.75) -- (6.75,14.75) -- cycle;
+\draw  (5.25,12.25) rectangle (11.25,12.75);
+\draw [short] (12.75,14.75) -- (12.75,14.25);
+\draw [short] (11.25,12.25) -- (12.75,14.25);
+\draw [<->, >=Stealth] (5.25,12) -- (11,12);
+\node [font=\small] at (7.75,11.75) {l = 10 mm};
+\draw [<->, >=Stealth] (11.5,12.25) -- (12.75,14);
+\node [font=\small, rotate around={-307:(0,0)}] at (12.5,13) {w = 4 mm};
+\node [font=\LARGE] at (8,15.25) {B};
+\draw [->, >=Stealth] (8.5,15.5) -- (8.5,15);
+\node [font=\LARGE] at (7,13.75) {I};
+\draw [->, >=Stealth] (7.25,13.75) -- (7.75,13.75);
+\draw [->, >=Stealth] (10.75,16.5) -- (12,16.5);
+\draw [->, >=Stealth] (10.75,16.5) -- (10.75,15.5);
+\draw [->, >=Stealth] (10.75,16.5) -- (10,15.75);
+\node [font=\small] at (12.25,16.5) {x};
+\node [font=\small] at (9.75,15.75) {y};
+\node [font=\small] at (11,15.5) {z};
+\draw [<->, >=Stealth] (13,14.75) -- (13,14.25);
+\node [font=\small] at (13.75,14.5) {t = 1 mm};
+\draw [short] (5.25,12.75) .. controls (4.75,11.5) and (3.75,10.75) .. (6.75,10.25);
+\node [font=\large] at (7.25,10.25) {$V_x$};
+\draw  (7.25,10.25) circle (0.5cm);
+\draw [short] (7.75,10.25) .. controls (11.25,10) and (12,10.5) .. (11.25,12.75);
+\node [font=\large] at (4.75,14.25) {$V_y$};
+\draw  (4.75,14.25) circle (0.5cm);
+\draw [short] (5,14.75) .. controls (5.75,15.25) and (6,15) .. (6.75,14.75);
+\draw [short] (4.25,14) .. controls (3.75,13.5) and (4,12.75) .. (5.25,12.75);
+\end{circuitikz}
+
+
