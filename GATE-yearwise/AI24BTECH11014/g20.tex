@@ -1,0 +1,661 @@
+\iffalse
+\chapter{2020}
+\author{AI24BTECH11014}
+\section{ce}
+\fi
+
+%\begin{enumerate}
+\item A continuous function $f\brak{x}$ is defined. If the third derivative at $x_{i}$ is to be computed by using the fourth order central finite-divided-difference scheme (with step length = $h$), the correct formula is 
+\begin{enumerate}
+\item $f''' \brak{x_{i}} = \frac{-f\brak{x_{i+3}} + 8 f\brak{x_{i+ 2}} -13 f \brak{x_{i+ 1}} + 13f\brak{x_{i-1}} - 8 f\brak{x_{i-2}} + f\brak{x_{i - 3}}}{8 h ^{3}}$
+\item $f''' \brak{x_{i}} = \frac{f\brak{x_{i+3}} - 8 f\brak{x_{i+ 2}} -13 f \brak{x_{i+ 1}} + 13f\brak{x_{i-1}} + 8 f\brak{x_{i-2}} + f\brak{x_{i - 3}}}{8 h ^{3}}$
+\item $f''' \brak{x_{i}} = \frac{-f\brak{x_{i+3}} - 8 f\brak{x_{i+ 2}} -13 f \brak{x_{i+ 1}} + 13f\brak{x_{i-1}} + 8 f\brak{x_{i-2}} - f\brak{x_{i - 3}}}{8 h ^{3}}$
+\item $f''' \brak{x_{i}} = \frac{f\brak{x_{i+3}} - 8 f\brak{x_{i+ 2}} + 13 f \brak{x_{i+ 1}} + 13f\brak{x_{i-1}} - 8 f\brak{x_{i-2}} - f\brak{x_{i - 3}}}{8 h ^{3}}$
+\end{enumerate}
+
+\item Distributed load(s) 0f $ 50 k N/m $ may occupy any position(s) (either continuously or in patches) on the grider $\textbf{PQRST}$ as shown in the figure (not drawn to the scale)
+The maximum negative negative (hogging) bending moment (in $k N. m$) that occurs at point R, is 
+\begin{center}
+\begin{tikzpicture}
+
+    % Draw the line
+    \draw[thick] (0,0) -- (8,0);
+
+    % Define the points along the line
+    \node[below] at (0,0) {P};
+    \node[below] at (1.5,-0.55) {Q};
+    \node[below] at (4.5,0) {R};
+    \node[below] at (6.5,-0.55) {S};
+    \node[below] at (8,0) {T};
+
+    % Add hinges at Q and S
+    \draw[fill] (1.5,0) circle [radius=0.05];
+    \draw[fill] (6.5,0) circle [radius=0.05];
+
+    % Draw distances and labels
+    \draw[<->] (0,0.3) -- (1.5,0.3) node[midway, above] {1.5 m};
+    \draw[<->] (1.5,0.3) -- (4.5,0.3) node[midway, above] {3 m};
+    \draw[<->] (4.5,0.3) -- (6.5,0.3) node[midway, above] {2 m};
+    \draw[<->] (6.5,0.3) -- (8,0.3) node[midway, above] {1.5 m};
+
+    % Draw hinge at Q
+    \draw[fill=black] (1.5,0) -- (1.2,-0.3) -- (1.8,-0.3) -- cycle; % Triangle
+   
+    % Draw hinge at S
+    \draw[fill=black] (6.5,0) -- (6.2,-0.3) -- (6.8,-0.3) -- cycle; % Triangle
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $22.50$
+    \item $56.25$
+    \item $93.75$
+    \item $150.00$
+\end{multicols}
+\end{enumerate}
+\item A rigid weightless platform $\textbf{PQRS}$ shown in the figure (not drawn to the scale)  can slide freely in the vertical direction. The platform is held in position by the weightless member $\textbf{OJ}$ and four weightless, frictionless rollers. Points $\textbf{O}$ and $ \textbf{J} $ are pin connections. A block of $90 kN $ rests on the platform as shown in the figure
+The magnitude of horizontal componenet of the reaction (in $kN$) at pin $\textbf{O}$, is 
+
+
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\small]
+
+% Draw rectangles
+\draw (6.5,13.25) rectangle (7.25,9);
+\draw (5.5,12.5) rectangle (5.75,11);
+\draw (8,12.5) rectangle (8.25,11);
+\draw (8,12.75) rectangle (10,12.5);
+\draw (9,13.5) rectangle (9.5,12.75);
+\draw (6.25,12.75) rectangle (6.5,11);
+\draw (7.75,12.75) rectangle (8,11);
+\draw (8.75,11.75) rectangle (9,11.5);
+
+% Draw diagonal lines
+\foreach \x in {5.75, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 7.75, 8, 8.25} {
+    \draw (\x, 9) -- (\x - 0.25, 8.75);  % Diagonal lines going down left
+}
+
+% Draw additional diagonal lines connecting points at higher levels
+\draw (8, 12.5) -- (8.75, 11.75);  % Diagonal line
+\draw (8, 12.75) -- (9, 11.75);    % Diagonal line
+\draw (8.5, 12.75) -- (8.75, 11.75); % Diagonal line
+\draw (8.75, 12.75) -- (9, 11.75);  % Diagonal line
+
+
+% Draw dashed lines
+\draw [dashed] (8,12.75) -- (5.5,12.75);
+\draw [dashed] (5.75,12.5) -- (8,12.5);
+\draw [dashed] (5.5,12.75) -- (5.5,12.25);
+\draw [dashed] (5.75,11.25) -- (7.75,11.25);
+\draw [dashed] (5.75,11) -- (7.75,11);
+\draw [<->, >=Stealth] (4.75,12.5) -- (4.75,11.5);
+\draw [<->, >=Stealth] (4.75,11.5) -- (4.75,10);
+
+% Draw circles
+\foreach \y in {12.5, 11.5} {
+    \draw (6, \y) circle (0.25cm);
+    \draw (7.5, \y) circle (0.25cm);
+}
+
+% Draw lines for labels
+\draw [-] (8.75,11.75) -- (6.75,10);
+\draw [-] (8.75,11.5) -- (7,10);
+\draw [-] (6.75,10) -- (7,10);
+
+% Draw arrows
+\draw [->, >=Stealth] (9.25,13.75) -- (9.25,13);
+\draw [->, >=Stealth] (10.75,12.25) -- (10,12.5);
+\draw [->, >=Stealth] (5.5,13.5) -- (6,12.75);
+\draw [<->, >=Stealth] (6.5,14.75) -- (7.25,14.75);
+\draw [<->, >=Stealth] (7.25,14.75) -- (9.25,14.75);
+\draw [<->, >=Stealth] (9.5,11.75) -- (9.5,10);
+
+% Add nodes
+\node at (5.25,12.75) {P};
+\node at (5.25,11) {S};
+\node at (8.25,10.75) {R};
+\node at (9.25,11.75) {J};
+\node at (9.5,14) {W=90kN};
+\node at (7,15) {1m};
+\node at (8.5,15) {4m};
+\node at (5,13.75) {Roller(typical)};
+\node at (4.25,12.25) {1.5m};
+\node at (6.75,10.25) {O};
+\node at (8,9.5) {4m};
+\node at (10.25,13) {Q};
+\node at (11,12) {Rigid Platform};
+
+\node at (9.1,10.5) {3m};
+\node at (4.25,11.0) {2m};
+
+
+
+\end{tikzpicture}
+
+
+\begin{enumerate}
+\begin{multicols}{4}
+\item $90$
+\item $ 120$
+\item $ 150$
+\item $ 180 $
+\end{multicols}
+\end{enumerate}
+
+\item A cantilever beam $\textbf{PQ}$ of uniform flexural rigidity ($EI$) is subjected to a concentrated moment M at $\textbf{R}$ as shown in the figure
+
+\begin{tikzpicture}[scale=1]
+
+% Horizontal lines
+\draw (6.75,12.25) -- (13.25,12.25);
+\draw (9.5,13.5) -- (13.25,13.5);
+
+% Arrows indicating distances
+\draw [<->, >=Stealth] (6.75,11.75) -- (13.25,11.75);
+\draw [<->, >=Stealth] (9.5,13.5) -- (13.5,13.5);
+
+% Vertical lines
+\draw (6.75,13) -- (6.75,11.5);
+\draw (9.5,14.25) -- (9.5,13);
+\draw (13.5,14.5) -- (13.5,12.5);
+
+% Zigzag lines at P
+\draw (6.75,13) -- (6.5,12.75);
+\draw (6.75,12.75) -- (6.5,12.5);
+\draw (6.75,12.5) -- (6.5,12.25);
+\draw (6.75,12.25) -- (6.5,12);
+\draw (6.75,12) -- (6.5,11.75);
+\draw (6.75,11.75) -- (6.5,11.5);
+\draw (6.75,11.5) -- (6.5,11.25);
+
+% Labels
+\node at (9.75,11.25) {L};
+\node at (11.5,14.25) {L/2};
+\node at (6.25,13.5) {P};
+\node at (13.5,15) {Q};
+\node at (9.75,14.75) {R};
+
+
+% Moment at R
+\draw[->, thick] (10.25,12.1) arc [start angle=0, end angle=180, radius=0.5] node[midway, left] {M};
+
+\end{tikzpicture}
+
+
+The deflection at the free end $\textbf{Q}$ is
+\begin{enumerate}
+\begin{multicols}{4}
+\item $\frac{ML^{2}}{6 EI}$
+\item $\frac{ML^{2}}{4 EI}$
+\item $\frac{3 ML^{2}}{8 EI}$
+\item $\frac{3 ML^{2}}{4 EI}$
+\end{multicols}
+\end{enumerate}
+
+\item A dowel bar is placed at a contraction joint. When contraction occurs, the concrete slab cracks at predetermined location(s). Identify the arrangement, which shows the correct placement of dowel bar and the place of occurence of the contraction crack(s).
+\item[]
+\begin{tikzpicture}
+        % Outer Lines
+        \draw[thick] (0,0) -- (5,0);
+        \draw[thick] (0,2) -- (5,2);
+        
+        % Dowel Bar
+        \draw[thick] (1.5,1) -- (3.5,1) node[midway, above] {Dowel bar};
+        \draw[->, thick] (2.5,1) -- (2.5,2);
+        
+        % Dimension Lines
+        \draw[<->] (5.3,0) -- (5.3,2) node[midway, right] {$d$};
+        \draw[<->] (3.5,1.3) -- (3.5,2) node[midway, right] {$\frac{d}{3} \text{ to } \frac{d}{4}$};
+        
+        % Contraction Crack
+        \draw[thick, decorate, decoration={zigzag, segment length=4, amplitude=1.5}] (2.5,2) -- (2.5,0) node[below] {Contraction crack};
+\end{tikzpicture}
+
+
+\item[]
+\begin{tikzpicture}
+        % Outer Lines
+        \draw[thick] (0,0) -- (5,0);
+        \draw[thick] (0,2) -- (5,2);
+        
+        % Dowel Bar
+        \draw[thick] (1.5,0.5) -- (3.5,0.5) node[midway, above] {Dowel bar};
+        \draw[->, thick] (2.5,0.5) -- (2.5,2);
+        
+        % Dimension Lines
+        \draw[<->] (5.3,0) -- (5.3,2) node[midway, right] {$d$};
+        \draw[<->] (3.5,1.5) -- (3.5,2) node[midway, right] {$\frac{d}{3} \text{ to } \frac{d}{4}$};
+        \draw[<->] (3.5,0) -- (3.5,0.5) node[midway, right] {$\frac{d}{2}$};
+        
+        % Contraction Crack
+        \draw[thick, decorate, decoration={zigzag, segment length=4, amplitude=1.5}] (2.5,2) -- (2.5,0) node[below] {Contraction crack};
+\end{tikzpicture}
+
+
+\item[]
+\begin{tikzpicture}
+        % Outer Lines
+        \draw[thick] (0,0) -- (5,0);
+        \draw[thick] (0,2) -- (5,2);
+        
+        % Dowel Bar
+        \draw[thick] (1.5,1) -- (3.5,1) node[midway, above] {Dowel bar};
+        \draw[->, thick] (2.5,1) -- (2.5,2);
+        
+        % Dimension Lines
+        \draw[<->] (5.3,0) -- (5.3,2) node[midway, right] {$d$};
+        \draw[<->] (3.5,1.3) -- (3.5,2) node[midway, right] {$\frac{d}{3} \text{ to } \frac{d}{4}$};
+        
+        % Contraction Crack
+        \draw[thick, decorate, decoration={zigzag, segment length=4, amplitude=1.5}] (2.5,2) -- (2.5,0) node[below] {Contraction crack};
+\end{tikzpicture}
+
+    
+\item[]
+\begin{tikzpicture}
+        % Outer Lines
+        \draw[thick] (0,0) -- (5,0);
+        \draw[thick] (0,2) -- (5,2);
+        
+        % Dowel Bar
+        \draw[thick] (1.5,0.5) -- (3.5,0.5) node[midway, above] {Dowel bar};
+        \draw[->, thick] (2.5,0.5) -- (2.5,2);
+        
+        % Dimension Lines
+        \draw[<->] (5.3,0) -- (5.3,2) node[midway, right] {$d$};
+        \draw[<->] (3.5,1.3) -- (3.5,2) node[midway, right] {$\frac{d}{3} \text{ to } \frac{d}{4}$};
+        \draw[<->] (3.5,0) -- (3.5,0.5) node[midway, right] {$\frac{d}{2}$};
+        
+        % Contraction Crack
+        \draw[thick, decorate, decoration={zigzag, segment length=4, amplitude=1.5}] (2.5,2) -- (2.5,0) node[below] {Contraction crack};
+\end{tikzpicture}
+
+
+\item The relationship between traffic flow rate (q) and density (D) is shown in the figure
+\begin{center}
+\begin{tikzpicture}
+
+% Arrows for flow
+\draw [->, >=Stealth] (6,9.5) -- (11.75,9.5);
+\draw [->, >=Stealth] (6.25,9.5) -- (6.25,14.5);
+
+% Labels for density and flow rate
+\node [font=\small] at (9.5,9.25) {Density, D};
+\node [font=\small] at (5.25,13.75) {Flow Rate, q};
+
+% Short lines representing segments
+\draw [-] (6.75,12.49) -- (10.75,12.49);
+\draw [-] (6.75,11.25) -- (11,12.25);
+\draw [-] (6.75,12.25) -- (11,11.5);
+\draw [-] (6.5,10.5) -- (11.25,10.5);
+
+% Labels for points
+\node [font=\small] at (7.75,12.7) {1};
+\node [font=\small] at (6.5,12.25) {2};
+\node [font=\small] at (11.25,12.25) {7};
+\node [font=\small] at (6.5,11.25) {3};
+\node [font=\small] at (11.25,11.5) {6};
+\node [font=\small] at (11.38,10.5) {5};
+\node [font=\small] at (6.35,10.5) {4};
+
+% Downward-opening parabola that passes through (6.5, 9.5) and (11.5, 9.5)
+\draw[domain=6:12,smooth,variable=\x,black] plot (\x,{-(0.4*(\x - 9)^2) + 12.5}); 
+
+
+\end{tikzpicture}
+\end{center}
+
+The shock wave condition is depicted by 
+\begin{enumerate}
+\item flow with respect to point 1 $\brak{q_{1} = q_{max}}$
+\item flow changing from point 2 to point 6 $\brak{q_{2} > q_{6}}$
+\item flow changing from point 3 to point 7 $\brak{q_{3} < q_{7}}$
+\item flow with respect to point 4 and point 5 $\brak{q_{4} = q_{5}}$
+\end{enumerate}
+
+\item The appropriate design length of a clearway is calculated on the basis of 'Normal Take-off' condition. Which one of the following options correctly depicts the length of the clearway? (Note: None of the options are drawn to scale )
+
+\begin{center}
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+% Runway
+\draw  (6.5,11.5) rectangle (20.25,11.25);
+\node [font=\large] at (8,12) {Runway};
+
+% Horizontal distance labels
+\draw [<->, >=Stealth] (6.5,10.75) -- (14.75,10.75) node[pos=0.5, fill=white]{875 m};
+\draw [<->, >=Stealth] (6.75,9) -- (20.25,9);
+\node [font=\LARGE] at (14,9.25) {1625 m};
+
+% Clearway and Flight Path
+\draw [short] (20.25,11.5) -- (22.75,11.5);
+\draw [dashed] (14.75,11.5) -- (20.25,13.5);
+\draw [short] (18.75,13.5) -- (21.5,13.5);
+\draw [->, >=Stealth] (20.25,13.5) -- (22.25,14.5);
+
+% Vertical distance label for airplane altitude
+\draw [<->, >=Stealth] (20.25,13.5) -- (20.25,11.5);
+\node [font=\normalsize] at (20,12.5) {10.5 m};
+
+% Clearway label for Option A
+\draw [<->, >=Stealth] (20.5,10.75) -- (22.75,10.75) node[pos=0.5, fill=white]{$<432 m$};
+	\label{A}
+
+% Additional labels
+\node [font=\large] at (11.75,13) {Lift off};
+\node [font=\large] at (11.75,12) {Point};
+\node [font=\large] at (16,12.5) {Flight Path};
+\node [font=\large] at (22.5,15) {Airplane};
+\node [font=\large] at (21.75,11.75) {Clearway};
+
+\end{circuitikz}
+}
+
+% Option B
+
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+	\label{B}
+
+% Runway
+\draw  (6.5,11.5) rectangle (20.25,11.25);
+\node [font=\large] at (8,12) {Runway};
+
+% Horizontal distance labels
+\draw [<->, >=Stealth] (6.5,10.75) -- (14.75,10.75) node[pos=0.5, fill=white]{875 m};
+\draw [<->, >=Stealth] (6.75,9) -- (20.25,9);
+\node [font=\LARGE] at (14,9.25) {1625 m};
+
+% Clearway and Flight Path
+\draw [short] (20.25,11.5) -- (22.75,11.5);
+\draw [dashed] (14.75,11.5) -- (20.25,13.5);
+\draw [short] (18.75,13.5) -- (21.5,13.5);
+\draw [->, >=Stealth] (20.25,13.5) -- (22.25,14.5);
+
+% Vertical distance label for airplane altitude
+\draw [<->, >=Stealth] (20.25,13.5) -- (20.25,11.5);
+\node [font=\normalsize] at (20,12.5) {10.5 m};
+
+% Clearway label for Option B
+\draw [<->, >=Stealth] (20.5,10.75) -- (22.75,10.75) node[pos=0.5, fill=white]{$>432 m$};
+
+% Additional labels
+\node [font=\large] at (11.75,13) {Lift off};
+\node [font=\large] at (11.75,12) {Point};
+\node [font=\large] at (16,12.5) {Flight Path};
+\node [font=\large] at (22.5,15) {Airplane};
+\node [font=\large] at (21.75,11.75) {Clearway};
+
+\end{circuitikz}
+}
+% Option C
+
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+% Runway
+\draw  (6.5,11.5) rectangle (20.25,11.25);
+\node [font=\large] at (8,12) {Runway};
+
+% Horizontal distance labels
+\draw [<->, >=Stealth] (6.5,10.75) -- (14.75,10.75) node[pos=0.5, fill=white]{875 m};
+\draw [<->, >=Stealth] (6.75,9) -- (20.25,9);
+\node [font=\LARGE] at (14,9.25) {1625 m};
+
+% Clearway and Flight Path
+\draw [short] (20.25,11.5) -- (22.75,11.5);
+\draw [dashed] (14.75,11.5) -- (20.25,13.5);
+\draw [short] (18.75,13.5) -- (21.5,13.5);
+\draw [->, >=Stealth] (20.25,13.5) -- (22.25,14.5);
+
+% Vertical distance label for airplane altitude
+\draw [<->, >=Stealth] (20.25,13.5) -- (20.25,11.5);
+\node [font=\normalsize] at (20,12.5) {10.5 m};
+
+% Clearway label for Option C
+\draw [<->, >=Stealth] (20.5,10.75) -- (22.75,10.75) node[pos=0.5, fill=white]{$<244 m$};
+	\label{C}
+
+% Additional labels
+\node [font=\large] at (11.75,13) {Lift off};
+\node [font=\large] at (11.75,12) {Point};
+\node [font=\large] at (16,12.5) {Flight Path};
+\node [font=\large] at (22.5,15) {Airplane};
+\node [font=\large] at (21.75,11.75) {Clearway};
+
+\end{circuitikz}
+
+}
+% Option D
+
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+% Runway
+\draw  (6.5,11.5) rectangle (20.25,11.25);
+\node [font=\large] at (8,12) {Runway};
+
+% Horizontal distance labels
+\draw [<->, >=Stealth] (6.5,10.75) -- (14.75,10.75) node[pos=0.5, fill=white]{875 m};
+\draw [<->, >=Stealth] (6.75,9) -- (20.25,9);
+\node [font=\LARGE] at (14,9.25) {1625 m};
+
+% Clearway and Flight Path
+\draw [short] (20.25,11.5) -- (22.75,11.5);
+\draw [dashed] (14.75,11.5) -- (20.25,13.5);
+\draw [short] (18.75,13.5) -- (21.5,13.5);
+\draw [->, >=Stealth] (20.25,13.5) -- (22.25,14.5);
+
+% Vertical distance label for airplane altitude
+\draw [<->, >=Stealth] (20.25,13.5) -- (20.25,11.5);
+\node [font=\normalsize] at (20,12.5) {10.5 m};
+
+% Clearway label for Option D
+\draw [<->, >=Stealth] (20.5,10.75) -- (22.75,10.75) node[pos=0.5, fill=white]{$>244 m$};
+	\label{D}
+
+% Additional labels
+\node [font=\large] at (11.75,13) {Lift off};
+\node [font=\large] at (11.75,12) {Point};
+\node [font=\large] at (16,12.5) {Flight Path};
+\node [font=\large] at (22.5,15) {Airplane};
+\node [font=\large] at (21.75,11.75) {Clearway};
+
+\end{circuitikz}
+
+}
+\end{center}
+
+\item The total stress paths corresponding to different loading conditions, for a soil specimen under the isotropically consolidated stress state(O), are shown below 
+
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\small]
+
+% Draw double-headed arrow
+\draw [<->, >=Stealth] (7,14) -- (7,10.25);
+
+% Draw single-headed arrows
+\draw [->, >=Stealth] (7,11.75) -- (10.75,11.75);
+\draw [->, >=Stealth] (12.75,13.75) -- (12.75,13);
+\draw [->, >=Stealth] (12.75,11) -- (12.75,11.75);
+\draw [->, >=Stealth] (11.75,12.25) -- (12.5,12.25);
+\draw [->, >=Stealth] (13.5,12.25) -- (13,12.25);
+
+% Draw rectangle
+\draw (12.5,13) rectangle (13,11.75);
+
+% Draw double-headed arrow
+\draw [<->, >=Stealth] (8,13.25) -- (9.75,10.75);
+\draw [<->, >=Stealth] (9.75,13) -- (8.5,10.75);
+
+% Add labels
+\node [font=\small] at (12.75,14) {$\sigma_{1}$};
+\node [font=\small] at (12.75,10.75) {$\sigma_{1}$};
+\node [font=\small] at (11.5,12.25) {$\sigma_{3}$};
+\node [font=\small] at (13.75,12.25) {$\sigma_{3}$};
+\node [font=\small] at (10.75,11) {p = $\frac{\sigma_{1} + 2\sigma_{3}}{3}$};
+\node [font=\small] at (7,14.25) {q = $\sigma_{1} - \sigma_{3}$};
+\node [font=\small] at (8,13.5) {S};
+\node [font=\small] at (9.75,13.25) {R};
+\node [font=\small] at (9,12.25) {O};
+\node [font=\small] at (8.5,10.5) {Q};
+\node [font=\small] at (9.75,10.5) {P};
+
+\end{tikzpicture}
+
+\begin{table}[ht]
+    \centering
+ 
+    \begin{tabular}{c|c} 
+        Stress Path & Loading Condition \\
+        \hline
+        OP & I-Compression loading ($\sigma_{1}$ - increasing ; $\sigma_{3}$-constant) \\ 
+       OQ & II-Compression unloading ($\sigma_{1}$ - constant ; $\sigma_{3}$-decreasing) \\ 
+       OR & III-Extsion loading ($\sigma_{1}$ - decreasing ; $\sigma_{3}$-constant) \\ 
+       OS & IV-Extension loading ($\sigma_{1}$ - constant ; $\sigma_{3}$-increasing) \\ 
+       
+        \hline 
+    \end{tabular}
+\end{table}
+
+
+
+
+
+The correct match between the stress paths and the listed loading conditions, is 
+\begin{enumerate}
+
+\item OP-I, OQ-II, OR-1V, OS-III
+\item OP-IV, OQ-III, OR-I, OS-II
+\item OP-III, OQ-II, OR-I, OS-IV
+\item OP-I, OQ-III, OR-II, OS-IV
+
+\end{enumerate}
+
+\item The soil profile at a site up to a depth of $10m $ is shown in the figure (not drawn to the scale ). The soil is preloaded with a uniform subcharge (q) of $70 kN/m^{2}$ at the ground level. The water table is at a depth of $3m $, below ground level. The soil unit weight of the respective layers is shown in the figure. Consider unit weight of water as $9.81 k N/m^{3}$ and assume that the surcharge (q) is applied instantaneously. Immediately after preloading, the effective stresses (in $kPa$) at points $P $ an $Q$, respectively, are
+
+\begin{center}
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\small]
+
+% Draw horizontal lines
+\draw [-] (4.75,13.75) -- (9.75,13.75);
+\draw [-] (4.75,12.5) -- (9.75,12.5);
+\draw [-] (4.75,11.25) -- (9.75,11.25);
+\draw [-] (4.75,10) -- (9.75,10);
+
+% Draw double-headed arrows with labels
+\draw [<->, >=Stealth] (5.25,13.75) -- (5.25,12.5) node[pos=0.5, fill=white]{3m};
+\draw [<->, >=Stealth] (5.25,12.5) -- (5.25,11.25) node[pos=0.5, fill=white]{4m};
+\draw [<->, >=Stealth] (5.25,11.25) -- (5.25,10) node[pos=0.5, fill=white]{3m};
+
+% Draw arrows
+\foreach \x in {5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5} {
+    \draw [->, >=Stealth] (\x, 14.25) -- (\x, 13.75);
+}
+
+% Add labels
+\node [font=\small] at (5.5,14.75) {q = 70 kN/m$^{2}$};
+\node [font=\small] at (9,13) {Sand (Bulk unit weight = 18 kN/m$^{3}$)};
+\node [font=\small] at (11,13.75) {Ground level};
+\node [font=\small] at (11.25,12.5) {Ground water table};
+\node [font=\small] at (8.9,12) {Silty clay (Saturated unit weight = 20 kN/m$^{3}$)};
+\node [font=\small] at (9.25,10.75) {Clay (Saturated unit weight = 21 kN/m$^{3}$)};
+\node [font=\small] at (6.75,9.75) {Boulder Clay};
+\node [font=\small] at (9,12.25) {P};
+\node [font=\small] at (9,11) {Q};
+
+% Draw vertical lines for connections
+\foreach \x in {6, 9.25} {
+    \draw [-] (\x, 13.75) -- (\x-0.25, 13.5);
+    \draw [-] (\x, 13.75) -- (\x+0.25, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x+0.5, 13.5);
+}
+
+\foreach \x in {9.25} {
+    \draw [-] (\x, 13.75) -- (\x-0.25, 13.5);
+    \draw [-] (\x, 13.75) -- (\x+0.25, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x+0.5, 13.5);
+}
+
+\end{tikzpicture}
+
+	\end{center}
+
+\begin{enumerate}
+\begin{multicols}{4}
+\item $124$ and $204$
+\item $ 36 $ and $ 90 $
+\item $ 36 $ and $ 126 $
+\item $ 54 $ and $95 $
+\end{multicols}
+\end{enumerate}
+
+\item Water flow at the rate of $12 m^{3}/s $ in a $6m $ wide rectangular channel. A hydraulic jump is formed in the channel at a point where the upstream depth is  $ 30cm $ (just before the jump). Considering acceleration due to gravity as $9.81 m/s^{2}$ and density of water as $1000kg/m^{3}$, the energy loss in the jump is 
+\begin{enumerate}
+\begin{multicols}{4}
+\item $114.2 k W$
+\item $114.2 MW$
+\item $141.2 h.p.$
+\item $ 141.2 J/s $
+\end{multicols}
+\end{enumerate}
+
+\item A water supply scheme transports scheme transports $10MLD$ (Million Litres per Day) water through a $450mm $ diameter pipeline for a distance of $2.5 km $. A chlorine dosee of $3.50 mg/litre$ is applied at the starting point of the pipeline to attain a certain level of disinfection at the downstream end. It is decided to increase the flow rate from $10 MLD$ to $13 MLD$ in the pipeline. Assume exponent for concentration, $n = 0.86 $.  With this increased flow, in oreder to attain the same level of disinfection, the chlorine dose (in mg/litre) to be applied at the starting point should be
+\begin{enumerate}
+\begin{multicols}{4}
+\item $ 3.95 $
+\item $ 4.40 $
+\item $ 4.75 $
+\item $ 5.55 $
+\end{multicols}
+\end{enumerate}
+
+\item An open traverse $PQRST$ is surveyed using theodolite and the consecutive coordinates obtained are given in the table
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\hline
+\textbf{Line} & \textbf{Northing (m)} & \textbf{Southing (m)} & \textbf{Easting (m)} & \textbf{Westing (m)} \\
+\hline
+PQ & 110.2 & - & 45.5 & - \\
+\hline
+QR & 80.6 & - & - & 60.1 \\
+\hline
+RS & - & 90.7 & - & 70.8 \\
+\hline
+ST & - & 105.4 & 55.5 & - \\
+\hline
+\end{tabular}
+\caption{Consecutive Coordinates}
+\end{table}
+
+If the independent coordinates (Northing, Easting) of station $P$ are $\brak{400m, 200m}$,
+the independent coordinates (in m) of station $T$, are
+\begin{enumerate}
+\begin{multicols}{4}
+\item $ 194.7, 370.1 $
+\item $ 205.3, 429.9 $
+\item $ 394.7, 170.1 $
+\item $ 405.3, 229.9 $
+\end{multicols}
+\end{enumerate}
+
+\item If $C$ represents a line segment between $\brak{0, 0, 0}$ and $\brak{1, 1, 1}$ in Cartesian coordinate system, the value (expresssed as integer) of the line integral 
+\begin{align}
+\int_{C} \sbrak{\brak{y + z} dx + \brak{ x+ z} dy + \brak{x + y} dz} 
+\end{align}
+is \underline{\hspace{2cm}}.
+
+%\end{enumerate}
+%\end{document}
