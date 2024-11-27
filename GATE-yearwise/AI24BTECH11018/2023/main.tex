@@ -1,0 +1,651 @@
+\iffalse
+\chapter{2023}
+\author{AI24BTECH11018}
+\section{me}
+\fi
+\item Which of the plot\brak{s} shown is valid mohrs circle representation of a plane stress state in a material? The circle of each circle is indication by 0.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (4.75,8.75) circle (0.75cm);
+\draw [->, >=Stealth] (4.75,7.75) -- (4.75,11.25);
+\draw [->, >=Stealth] (3.75,8.75) -- (6.25,8.75);
+\node at (4.75,8.75) [circ] {};
+\node [font=\small] at (5,9) {O};
+\node [font=\small] at (6,8.5) {$\sigma$};
+\node [font=\small] at (5,11) {$\tau$};
+\node [font=\large] at (4.75,7.25) {M1};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw  (3,9.5) circle (0.75cm);
+\draw [->, >=Stealth] (1.75,8.5) -- (5,8.5);
+\draw [->, >=Stealth] (2,8) -- (2,10.75);
+\node at (3,9.5) [circ] {};
+\node [font=\footnotesize] at (3.25,9.5) {O};
+\node [font=\small] at (4.75,8.25) {$\sigma$};
+\node [font=\small] at (2.25,10.75) {$\tau$};
+\node [font=\normalsize] at (2,7.5) {M2};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.25\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw  (3,9.5) circle (0.75cm);
+\node at (3,9.5) [circ] {};
+\node [font=\footnotesize] at (3,9.75) {O};
+\node [font=\small] at (4,9.25) {$\sigma$};
+\node [font=\small] at (2.5,10.5) {$\tau$};
+\draw [->, >=Stealth] (2,9.5) -- (4.25,9.5);
+\draw [->, >=Stealth] (2.25,8.25) -- (2.25,10.75);
+\node [font=\small] at (2.25,8) {M3};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw  (3,9.5) circle (0.75cm);
+\node at (3,9.5) [circ] {};
+\node [font=\footnotesize] at (3.25,9.5) {O};
+\node [font=\small] at (4,8.5) {$\sigma$};
+\node [font=\small] at (3.25,10.5) {$\tau$};
+\draw [->, >=Stealth] (2,8.75) -- (4.25,8.75);
+\draw [->, >=Stealth] (3,8.25) -- (3,10.75);
+\node [font=\small] at (3,8) {M4};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item M1
+    \item M2
+    \item M3
+    \item M4
+\end{enumerate}
+\item Consider a lateral insulated rod of length L and constant thermal conductivity. A ssuming one-dimension heat conduction in the rod,which of the following steady-state profile can occur without internal heat generation?
+\begin{enumerate}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.25\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1.75,8.75) -- (4.5,8.75);
+\draw [->, >=Stealth] (2,8.5) -- (2,11);
+\draw [dashed] (2.25,9.5) -- (2.25,9);
+\draw [short] (2.25,9.5) -- (3.75,10.75);
+\draw [dashed] (3.75,10.75) -- (3.75,8.75);
+\node [font=\small] at (1.75,11) {T};
+\node [font=\small] at (3.75,8.5) {L};
+\node [font=\small] at (2.25,8.5) {O};
+\node [font=\small] at (4.5,8.5) {x};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.25\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1.75,8.75) -- (4.5,8.75);
+\draw [->, >=Stealth] (2,8.5) -- (2,11);
+\draw [dashed] (3.75,9.5) -- (3.75,9);
+\draw [dashed] (2.25,10.5) -- (2.25,8.5);
+\node [font=\small] at (1.75,11) {T};
+\node [font=\small] at (3.75,8.5) {L};
+\node [font=\small] at (2.25,8.5) {O};
+\node [font=\small] at (4.5,8.5) {x};
+\draw [short] (2.25,10.5) -- (3.75,9.5);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1.75,8.75) -- (4.5,8.75);
+\draw [->, >=Stealth] (2,8.5) -- (2,11);
+\node [font=\small] at (1.75,11) {T};
+\node [font=\small] at (3.75,8.5) {L};
+\node [font=\small] at (2.25,8.5) {O};
+\node [font=\small] at (4.5,8.5) {x};
+\draw [dashed] (2.25,9.75) -- (2.25,8.75);
+\draw [dashed] (3.75,9.75) -- (3.75,8.75);
+\draw [short] (2.25,9.75) .. controls (2.75,11) and (3.5,10.5) .. (3.75,9.75);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1.75,8.75) -- (4.5,8.75);
+\draw [->, >=Stealth] (2,8.5) -- (2,11);
+\node [font=\small] at (1.75,11) {T};
+\node [font=\small] at (3.75,8.5) {L};
+\node [font=\small] at (2.25,8.5) {O};
+\node [font=\small] at (4.5,8.5) {x};
+\draw [dashed] (2.25,9.75) -- (2.25,8.75);
+\draw [dashed] (3.75,9.75) -- (3.75,8.75);
+\draw [short] (2.25,9.75) .. controls (2.25,10.5) and (2.5,10.75) .. (2.75,10.75);
+\draw [short] (2.75,10.75) .. controls (3,10) and (3,10) .. (3,9.25);
+\draw [short] (3,9.25) .. controls (3.75,9.25) and (3.75,9.5) .. (3.75,9.75);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\end{enumerate}
+\item Two meshing spur gears $1$ and $2$ with diametre pitch of $8$ teeth per mm and and an angular velocty ratio $\frac{\abs {\omega_2}}{\abs {\omega_1}}=\frac{1}{4}$, have their centres $30$ mm apart.The number of teeth on the driver \brak{gear 1} \underline{\hspace{2cm}}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw  (5,9.5) circle (1cm);
+\draw  (5,11) circle (0.5cm);
+\draw [dashed] (4,10.5) -- (6.5,10.5);
+\draw (5,12.25) to[short] (5,7.75);
+\node at (5,9.5) [circ] {};
+\node at (5,11) [circ] {};
+\node [font=\small] at (4.75,11) {1};
+\node [font=\small] at (4.75,9.5) {2};
+\draw [->, >=Stealth] (4.75,9.75) .. controls (5.25,10) and (5.25,10) .. (5.5,9.5) ;
+\draw [->, >=Stealth] (4.75,10.75) .. controls (5,11) and (5,10.75) .. (5.25,11) ;
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\item The figure shows a block of mass $m=20kg$ atteched to a pair of identical linear springs, each having a spring constant $k=1000\frac{N}{m}$. The block oscillates on  a frictionless horizantal surface. Assuming free vibrations, the time taken by the block to complete ten oscillations is \underline{\hspace{2cm}} seconds.\brak{Roundes off to two decimal places}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.42\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw  (2.75,9.25) rectangle (8.25,9);
+\draw  (2.75,10.75) rectangle (3.25,9.25);
+\draw  (6.5,10.25) rectangle (8.25,9.25);
+\draw [<->, >=Stealth] (6.5,10.5) -- (8.25,10.5);
+\draw [short] (3.25,10) -- (3.5,10.25);
+\draw [short] (3.5,10.25) -- (3.75,10);
+\draw [short] (3.75,10) -- (4,10.25);
+\draw [short] (4,10.25) -- (4.25,10);
+\draw [short] (4.25,10) -- (4.5,10.25);
+\draw [short] (4.5,10.25) -- (4.75,10);
+\draw [short] (4.75,10) -- (5,10.25);
+\draw [short] (5,10.25) -- (5.25,10);
+\draw [short] (5.25,10) -- (5.5,10.25);
+\draw [short] (5.5,10.25) -- (5.75,10);
+\draw [short] (5.75,10) -- (6,10.25);
+\draw [short] (6,10.25) -- (6.25,10);
+\draw [short] (6.25,10) -- (6.5,10.25);
+\draw [short] (3.25,9.5) -- (3.5,9.75);
+\draw [short] (3.5,9.75) -- (3.75,9.5);
+\draw [short] (3.75,9.5) -- (4,9.75);
+\draw [short] (4,9.75) -- (4.25,9.5);
+\draw [short] (4.25,9.5) -- (4.5,9.75);
+\draw [short] (4.5,9.75) -- (4.75,9.5);
+\draw [short] (4.75,9.5) -- (5,9.75);
+\draw [short] (5,9.75) -- (5.25,9.5);
+\draw [short] (5.25,9.5) -- (5.5,9.75);
+\draw [short] (5.5,9.75) -- (5.75,9.5);
+\draw [short] (5.75,9.5) -- (6,9.75);
+\draw [short] (6,9.75) -- (6.25,9.5);
+\draw [short] (6.25,9.5) -- (6.5,9.75);
+\node [font=\small] at (4.75,10.5) {k};
+\node [font=\small] at (4.75,9.75) {k};
+\node [font=\small] at (7.25,9.75) {m};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\item A vector feild 
+\begin{equation}
+    B\brak{x,y,z}=x\hat{i}+y\hat{j}-2z\hat{k}
+\end{equation}
+is defined over a conical region having heigth $h=2$, base radius $r=3$ and axis along $z$ as shown in the figure. The base of the cone lies in the $x-y$ plane and is centered t the origin.\\
+If n denotes the unit outward normal to the curve surface $S$ of the cone,the value of the integral 
+\begin{equation}
+    \int_S B\cdot n dS
+\end{equation}
+equals \underline{\hspace{2cm}}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (4.25,10) circle (0cm);
+\draw [short] (5.25,11) -- (4.25,8.75);
+\draw [short] (5.25,11) -- (6.25,8.75);
+\draw  (5.25,8.75) ellipse (1cm and 0.5cm);
+\draw [->, >=Stealth] (5.25,8.75) -- (5.25,12);
+\draw [->, >=Stealth] (5.25,8.75) -- (8.25,8.75);
+\draw [->, >=Stealth] (5.25,8.75) -- (4.25,7.5);
+\draw [->, >=Stealth] (5.25,8.75) -- (5.75,8.25);
+\draw (5.5,11) to[short] (7.75,11);
+\draw [<->, >=Stealth] (6.5,11) -- (6.5,8.75);
+\draw [->, >=Stealth] (4.5,10.75) .. controls (4.25,10.25) and (5.25,10.75) .. (5,10) ;
+\node [font=\small] at (4.25,10.5) {S};
+\node [font=\small] at (5.5,12) {z};
+\node [font=\small] at (6.75,10) {h};
+\node [font=\small] at (5.75,8.5) {r};
+\node [font=\small] at (4.75,7.75) {x};
+\node [font=\small] at (5,8.75) {o};
+\node [font=\large] at (8,9) {y};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\item A linear transformation maps a point \brak{x,y} int the plane to the point \brak{\hat{x},\hat{y}} according to the rule
+\begin{equation}
+    \hat{x}=3y,   \hat{y}=2x
+\end{equation}
+Then,the disc $x^2+y^2\leq 1$ gets transformed to a region with an area equals to \underline{\hspace{2cm}}.use $\pi=3.14$
+\item The value of $k$ makes the complex-valued function 
+\begin{equation}
+    f\brak{z}=e^{-kz}\brak{\cos 2y-i\sin 2y}
+\end{equation}
+analytic,where $z=x+iy$, is \underline{\hspace{2cm}}
+\item THe braeking system shown in the figure uses a belt to slow down a pulley rotating in the clockwise direction by the application of a force $P$. the belt wraps around the pulley over an angle $\alpha= 270$ degrees. The coefficient of friction between the belt and the pulley is $0.3$. The influence of centrifugal on the belt is negligible.During breaking, the ratio the tension $T_1$ to $T_2$ in the belt is equal to \underline{\hspace{2cm}}. Take $\pi=3.14$
+\begin{figure}[!ht]
+\centering
+\resizebox{0.21\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+% Pulley circle
+\draw (4.5,10) circle (1cm);
+% Tension forces
+\draw [dashed] (4.5,10) -- (3.5,9.5);
+\draw [dashed] (4.5,10) -- (5.5,9.5);
+\draw [short] (4.5,10) -- (4.25,9.75);
+\draw [short] (4.5,10) -- (4.75,9.75);
+\draw [short] (4.25,9.75) -- (4.75,9.75);
+\draw [short] (4,9.75) -- (4,10.25);
+\draw [short] (5,10.25) -- (5,9.75);
+\draw [short] (4,10.25) .. controls (4.25,10.75) and (5,10.5) .. (5,10.25);
+% Direction of forces
+\draw [->, >=Stealth] (4.75,9.5) .. controls (4.75,9.25) and (4.5,9) .. (4,9.5);
+\draw [->, >=Stealth] (5,10.5) .. controls (5.75,10.75) and (5.25,11) .. (5.75,11);
+% Tension labels
+\node at (4.5,8.25) [circle, draw] {}; % Pulley
+\node [font=\normalsize] at (4.5,10.75) {$\alpha$}; % Force alpha
+\node [font=\normalsize] at (3.5,8.75) {T$_1$}; % Tension 1
+\node [font=\normalsize] at (5.5,8.75) {T$_2$}; % Tension 2
+\node [font=\small] at (5.75,11) {pulley}; % Pulley label
+% Belt path
+\draw [->, >=Stealth] (5.5,9.5) .. controls (6.25,9.25) and (6,10.25) .. (6.25,9.75) node[pos=0.5, fill=white]{belt}; % Belt
+% Boundary box and additional connections
+\draw (3,8.25) rectangle (6.75,8.25); % Box around the system
+\draw [->, >=Stealth] (6.75,8.25) -- (6.75,9.25); % Arrow on box
+\draw [short] (3.5,9.5) -- (4,8.25); % Connections to box
+\draw [short] (5.5,9.5) -- (5,8.25); % Connections to box
+\draw [short] (4.5,8.25) -- (4.25,8); % Pulley connection
+\draw [short] (4.5,8.25) -- (4.75,8); % Pulley connection
+\draw [short] (4.25,8) -- (4.75,8); % Pulley connection
+\end{circuitikz}
+}%
+\end{figure}
+\item Consider a counter-flow exchange with the inlet exchanger with the inlet temperature of two fluids \brak{1 and 2} being $T_{1,in}=300k$ and $T_{2,in}=350k$ THe heat capacity rates of the two fluids are $c_1=1000\frac{W}{k}$ and $c_2=400\frac{W}{k}$, and the effectives of the heat exchange is 0.5. THe heat transfer rate is \underline{\hspace{2cm}}$KW$. 
+\item Which one of the options is the inverse Laplace transform of $\frac{1}{S^3-S}$ ? $u\brak{t}$ denotes the unit-step function.
+\begin{enumerate}
+    \item $\brak{-1+\frac{1}{2}e^{-t}+\frac{1}{2}}u\brak{t}$
+    \item $\brak{\frac{1}{3}e^{-t}-e^{t}}u\brak{t}$
+    \item $ \left( -1 + \frac{1}{2} e^{-(t-1)} + \frac{1}{2} e^{(t-1)} \right) u(t-1) $
+    \item $ \left( -1 - \frac{1}{2} e^{-(t-1)} - \frac{1}{2} e^{(t-1)} \right) u(t-1) $
+\end{enumerate}
+\item A spherical ball weighing $2kg$ is dropped from a heigth of $4.9m$ onto an immovable rigid as shown in the figure. if the collision is perfectly elastic, \\\\
+Take the accerlation due to gravity to be $g=9.8\frac{m}{s^2}$. Options have been rounded off to one decimal place.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.25,8) to[short] (8.75,8);
+\draw (3.25,9.75) to[short] (3.25,8);
+\draw (3.25,9.75) to[short] (3.25,10.25);
+\draw [short] (3.25,10.25) -- (8.75,8);
+\draw [short] (3.25,8) -- (3.5,7.75);
+\draw [short] (3.5,8) -- (3.75,7.75);
+\draw [short] (3.75,8) -- (4,7.75);
+\draw [short] (4,8) -- (4.25,7.75);
+\draw [short] (4.25,8) -- (4.5,7.75);
+\draw [short] (4.5,8) -- (4.75,7.75);
+\draw [short] (4.75,8) -- (5,7.75);
+\draw [short] (5,8) -- (5.25,7.75);
+\draw [short] (5.25,8) -- (5.5,7.75);
+\draw [short] (5.5,8) -- (5.75,7.75);
+\draw [short] (5.75,8) -- (6,7.75);
+\draw [short] (6,8) -- (6.25,7.75);
+\draw [short] (6.25,8) -- (6.5,7.75);
+\draw [short] (6.5,8) -- (6.75,7.75);
+\draw [short] (6.75,8) -- (7,7.75);
+\draw [short] (7,8) -- (7.25,7.75);
+\draw [short] (7.25,8) -- (7.5,7.75);
+\draw [short] (7.5,8) -- (7.75,7.75);
+\draw [short] (7.75,8) -- (8,7.75);
+\draw [short] (8,8) -- (8.25,7.75);
+\draw [short] (8.25,8) -- (8.5,7.75);
+\draw [short] (8.5,8) -- (8.75,7.75);
+\draw [short] (3.25,8.25) -- (3,8.5);
+\draw [short] (3.25,8.5) -- (3,8.75);
+\draw [short] (3.25,8.75) -- (3,9);
+\draw [short] (3.25,9) -- (3,9.25);
+\draw [short] (3.25,9.25) -- (3,9.5);
+\draw [short] (3.25,9.5) -- (3,9.75);
+\draw [short] (3.25,9.75) -- (3,10);
+\draw [short] (3.25,10) -- (3,10.25);
+\draw [short] (3.25,8) -- (3,8.25);
+\draw [->, >=Stealth, dashed] (4.75,12.25) -- (4.75,9.75);
+\node at (4.75,12.25) [circ] {};
+\draw (5,12.25) to[short] (5.5,12.25);
+\draw (5,10) to[short] (5.5,10);
+\draw [<->, >=Stealth] (5.25,12.25) -- (5.25,10);
+\draw [->, >=Stealth] (2.25,5.75) -- (2.25,7.5);
+\draw [->, >=Stealth] (2,6) -- (4.25,6);
+\node [font=\small] at (2.25,7.75) {$\hat{j}$};
+\node [font=\small] at (4.75,6) {$\hat{i}$};
+\node [font=\small] at (5.75,11.25) {4.9m};
+\draw [->, >=Stealth] (8.5,10.75) -- (8.5,9.5);
+\node [font=\small] at (8.25,10.25) {g};
+\node [font=\normalsize] at (3.75,9) {rigid};
+\node [font=\normalsize] at (3.75,8.5) {block};
+\node [font=\small] at (4.25,12.25) {2 Kg};
+\draw [short] (7.75,8.5) .. controls (7.25,8.5) and (7,8.75) .. (7.25,8);
+\node [font=\normalsize] at (6.75,8.5) {30$\circ$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $19.6 \hat{i}$
+    \item $19.6 \hat{j}$
+    \item $17.0 \hat{i}+9.8\hat{j}$
+    \item $9.8 \hat{i}+17.0\hat{j}$
+\end{enumerate}
+\item The figure shows a wheel roling without slpiing on a horizantal plane with angular velocity $\omega_1$. A rigid bar $PQ$ is pinned to the wheeel at $P$ while the end $Q$ slides on the floor.\\
+What the angular velocity $\omega_2$ of the bar $PQ$?
+\begin{figure}[!ht]
+\centering
+\resizebox{0.35\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,9.75) circle (1cm);
+\draw [dashed] (4.25,10.75) -- (4.25,8.75);
+\draw [dashed] (3.25,9.75) -- (5.25,9.75);
+\node at (4.25,8.75) [circ] {};
+\node at (5,9.75) [circ] {};
+\draw (2,8.75) to[short] (9.5,8.75);
+\draw [short] (5,9.75) -- (9.25,8.75);
+\draw [short] (5,10) -- (9.25,9);
+\draw [short] (9.25,9) -- (9.25,8.75);
+\draw [short] (5,10) -- (5,9.75);
+\draw [short] (4.75,10.25) .. controls (5.25,10) and (5.25,9.75) .. (5,9.25);
+\draw [->, >=Stealth] (4.25,9.75) -- (3.5,9);
+\draw [->, >=Stealth] (4.25,9.75) -- (4.75,10.25);
+\draw [->, >=Stealth] (4,11) .. controls (3.75,11.25) and (3.5,11) .. (3.25,10.5) ;
+\draw [dashed] (5,9.75) -- (5,8.75);
+\draw [dashed] (5,9.75) -- (5.75,9.75);
+\draw [->, >=Stealth] (6.75,9) .. controls (7,9.5) and (6.75,9.75) .. (7.5,9.75) ;
+\draw [<->, >=Stealth] (5,8.5) -- (9.25,8.5);
+\node [font=\normalsize] at (4.25,8.5) {R};
+\node [font=\normalsize] at (6.75,8.25) {8m};
+\node [font=\normalsize] at (9.25,9.25) {Q};
+\node [font=\normalsize] at (7.75,10) {$\omega_2$};
+\node [font=\normalsize] at (4,11.25) {$\omega_1$};
+\node [font=\normalsize] at (4,10) {O};
+\node [font=\small] at (4.25,10.25) {2m};
+\node [font=\small] at (3.5,9.75) {3m};
+\node [font=\small] at (5,10.25) {P};
+\draw [->, >=Stealth] (9.75,11) -- (11,11);
+\draw [->, >=Stealth] (9.75,11) -- (9.75,12);
+\draw [->, >=Stealth] (9.75,11) -- (9.25,10.25);
+\node [font=\small] at (11,10.75) {$\hat{i}$};
+\node [font=\small] at (9.75,12.25) {$\hat{j}$};
+\node [font=\small] at (9.5,10) {$\hat{k}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $\omega_2=2\omega$
+    \item $\omega_2=\omega$
+    \item $\omega_2=0.5\omega$
+    \item $\omega_2=0.25\omega$
+\end{enumerate}
+\item A beam of length $L$ loaded in the $xy$-plane by a uniformly distributed load, and by a concentraded tip load parallel to the $z-axis$, as shown in the figure.The resulting bending distributions about the $y$ and the $z$ axes are denoted by $M_y$ and $M_z$ respectively.\\
+Which one of the options given depicts qualitatevely CORRECT variations of $M_y$ and $M_z$ along the length of the beam?
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (4.25,10) circle (0cm);
+\draw  (3.25,10) ellipse (0.5cm and 1cm);
+\draw  (3.25,10.25) rectangle (7.25,9.5);
+\draw [short] (3.25,10.25) -- (3.5,10.5);
+\draw [short] (3.5,10.5) -- (7.5,10.5);
+\draw [short] (7.5,10.5) -- (7.25,10.25);
+\draw [short] (7.5,10.5) -- (7.5,9.75);
+\draw [short] (7.5,9.75) -- (7.25,9.5);
+\draw [->, >=Stealth] (3.25,10.25) -- (3.25,12);
+\draw [short] (3.5,10.5) -- (7.25,10.5);
+\draw [short] (3.5,10.5) -- (5.25,10.5);
+\draw [short] (3.25,11) -- (7.25,11);
+\draw [->, >=Stealth] (3.75,11) -- (3.75,10.5);
+\draw [->, >=Stealth] (4.25,11) -- (4.25,10.25);
+\draw [->, >=Stealth] (4.75,11) -- (4.75,10.25);
+\draw [->, >=Stealth] (5.25,11) -- (5.25,10.25);
+\draw [->, >=Stealth] (5.75,11) -- (5.75,10.25);
+\draw [->, >=Stealth] (6.25,11) -- (6.25,10.25);
+\draw [->, >=Stealth] (6.75,11) -- (6.75,10.25);
+\draw [->, >=Stealth] (7.25,11) -- (7.25,10.25);
+\draw [dashed] (3.25,10) -- (7.25,10);
+\draw [->, >=Stealth] (3.25,10) -- (2,9);
+\draw [->, >=Stealth] (5.75,9) -- (7.25,10);
+\draw [->, >=Stealth] (7.5,10) -- (8.75,10);
+\node [font=\small] at (3.25,12.25) {y};
+\node [font=\small] at (5.25,11.25) {q};
+\node [font=\small] at (5.75,8.75) {P};
+\node [font=\small] at (9,9.75) {x};
+\node [font=\small] at (2,8.75) {z};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,9) .. controls (1.5,9.75) and (1.75,10) .. (3,10);
+\node [font=\small] at (3.5,9.5) {L};
+\node [font=\small] at (4,10.25) {x};
+\node [font=\small] at (0.75,11) {y};
+\node [font=\normalsize] at (0,11.5) {M};
+\node [font=\normalsize] at (0.75,10) {o};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,11) -- (3.25,10);
+\node [font=\normalsize] at (0.25,11.25) {M};
+\node [font=\normalsize] at (3.25,9.75) {L};
+\node [font=\normalsize] at (4.25,10) {x};
+\node [font=\normalsize] at (0.75,10) {o};
+\node [font=\normalsize] at (0.75,11) {z};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,11) -- (3.25,10);
+\node [font=\normalsize] at (0.25,11.25) {M};
+\node [font=\normalsize] at (3.25,9.75) {L};
+\node [font=\normalsize] at (4.25,10) {x};
+\node [font=\normalsize] at (0.75,10) {o};
+\node [font=\normalsize] at (0.75,11) {y};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure} 
+    \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,9) .. controls (1.5,9.75) and (1.75,10) .. (3,10);
+\node [font=\small] at (3.5,9.5) {L};
+\node [font=\small] at (4,10.25) {x};
+\node [font=\normalsize] at (0,11.5) {M};
+\node [font=\normalsize] at (0.75,10) {o};
+\node [font=\normalsize] at (0.75,11) {z};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,11) -- (3.25,10);
+\node [font=\normalsize] at (0.25,11.25) {M};
+\node [font=\normalsize] at (0.75,11) {y};
+\node [font=\normalsize] at (3.25,9.75) {L};
+\node [font=\normalsize] at (4.25,10) {x};
+\node [font=\normalsize] at (0.75,10) {o};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,11) .. controls (2,10.25) and (2.25,10.25) .. (3.25,10);
+\node [font=\normalsize] at (3,9.75) {L};
+\node [font=\normalsize] at (0.75,10) {O};
+\node [font=\normalsize] at (0.5,11) {M};
+\node [font=\normalsize] at (1,11) {z};
+\node [font=\normalsize] at (4.25,10) {x};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (1,9) .. controls (1.5,9.75) and (1.75,10) .. (3,10);
+\node [font=\small] at (3.5,9.5) {L};
+\node [font=\small] at (4,10.25) {x};
+\node [font=\small] at (0.75,11) {y};
+\node [font=\normalsize] at (0,11.5) {M};
+\node [font=\normalsize] at (0.75,10) {o};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (4.25,10) circle (0cm);
+\draw [->, >=Stealth] (1,8.5) -- (1,11.5);
+\draw [->, >=Stealth] (1,10) -- (4,10);
+\draw [short] (3.25,10) -- (3.25,11.25);
+\draw [short] (3.25,11.25) .. controls (3,11) and (2.75,10.25) .. (1,10);
+\node [font=\normalsize] at (3.25,9.75) {L};
+\node [font=\normalsize] at (4.25,10) {x};
+\node [font=\normalsize] at (0,11.25) {M};
+\node [font=\normalsize] at (0.75,11.25) {z};
+\node [font=\normalsize] at (0.75,10) {0};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
