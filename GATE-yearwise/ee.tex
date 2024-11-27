@@ -1,0 +1,203 @@
+\iffalse
+\author{EE24BTECH11062}
+\section{ee}
+\chapter{2013}
+\fi
+
+\item
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (-1.75,16.75) to[american voltage source,l={ \small $V_{dc}$}] (-1.75,12.25);
+\draw (0,14.75) to[Tnmos, transistors/scale=1.02] (0,16.75);
+\draw (0,12.25) to[Tnmos, transistors/scale=1.02] (0,14.75);
+\draw (1,15.25) to[D,l={ \small $Q_1      D_1$}] (1,16.5);
+\draw (1,12.75) to[D,l={ \small $Q_4      D_4$}] (1,14.25);
+\draw (0,14.75) to[short] (3.5,14.75);
+\draw (0,14.25) to[short] (1,14.25);
+\draw (0,12.5) to[short] (1,12.5);
+\draw (1,13) to[short] (1,12.5);
+\draw (0,15.25) to[short] (1,15.25);
+\draw (0,16.5) to[short] (1,16.5);
+\draw (2.5,14.75) to[Tnmos, transistors/scale=1.02] (2.5,16.75);
+\node at (0,14.75) [circ] {};
+\draw (2.5,12.25) to[Tnmos, transistors/scale=1.02] (2.5,14.75);
+\draw (3.25,15) to[D,l={ \small $Q_3  D_3$}] (3.25,16.5);
+\draw (3.25,12.75) to[D,l={ \small $Q_2   D_2$}] (3.25,14.25);
+\draw (2.5,16.5) to[short] (3.25,16.5);
+\draw (2.5,15) to[short] (3.25,15);
+\draw (2.5,14.25) to[short] (3.25,14.25);
+\draw (2.5,12.75) to[short] (3.25,12.75);
+\draw (2.5,14.25) to[short] (3,14.25);
+\draw (2.5,14.5) to[short] (3.75,14.5);
+\draw (3.5,14.75) to[short] (4,14.75);
+\draw (2.5,14.5) to[short] (4,14.5);
+\draw (4,14.75) to[short] (4,15.5);
+\draw (4,15.5) to[short] (4.5,15.5);
+\draw (4,14.5) to[short] (4,13.5);
+\draw (4,13.5) to[short] (4.5,13.5);
+\draw (4.5,15.5) to[L,l={ \small $L$} ] (7,15.5);
+\draw (7,15.5) to[R,l={ \small R}] (7,13.5);
+\draw (4.25,13.5) to[short] (7,13.5);
+\draw (-1.75,12.25) to[short] (2.5,12.25);
+\draw (-1.75,16.75) to[short] (2.5,16.75);
+\node at (2.5,14.5) [circ] {};
+\draw [->, >=Stealth] (5,15) -- (6.5,15)node[above] {$i_0$};
+\end{circuitikz}
+}
+If the base impedance and the line to line base voltage are $100\ohm$ and $100kV$, respectively, then the real power in MW delivered by the generator connected at the slack bus is \hfill{[2013]}
+\begin{multicols}{4}
+    a) -10\\
+    b) 0\\
+    c) 10\\
+    d)  20
+\end{multicols}
+Statement for Linked Answer Question 54 and 55:\\
+The Voltage Source Inverter \brak{VSI} shown in the figure below is switched to provide a 50 Hz, square-wave ac output voltage \brak{v_o} across an R-L load. Reference polarity of $v_o$ and reference direction of the output current $i_o$ are indicated i the figure. It is given that $R=3\ohm$, $L=9.55 mH$.\\
+\begin{center}
+   
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (-1.75,16.75) to[american voltage source,l={ \small $V_{dc}$}] (-1.75,12.25);
+\draw (0,14.75) to[Tnmos, transistors/scale=1.02] (0,16.75);
+\draw (0,12.25) to[Tnmos, transistors/scale=1.02] (0,14.75);
+\draw (1,15.25) to[D,l={ \small $Q_1      D_1$}] (1,16.5);
+\draw (1,12.75) to[D,l={ \small $Q_4      D_4$}] (1,14.25);
+\draw (0,14.75) to[short] (3.5,14.75);
+\draw (0,14.25) to[short] (1,14.25);
+\draw (0,12.5) to[short] (1,12.5);
+\draw (1,13) to[short] (1,12.5);
+\draw (0,15.25) to[short] (1,15.25);
+\draw (0,16.5) to[short] (1,16.5);
+\draw (2.5,14.75) to[Tnmos, transistors/scale=1.02] (2.5,16.75);
+\node at (0,14.75) [circ] {};
+\draw (2.5,12.25) to[Tnmos, transistors/scale=1.02] (2.5,14.75);
+\draw (3.25,15) to[D,l={ \small $Q_3  D_3$}] (3.25,16.5);
+\draw (3.25,12.75) to[D,l={ \small $Q_2   D_2$}] (3.25,14.25);
+\draw (2.5,16.5) to[short] (3.25,16.5);
+\draw (2.5,15) to[short] (3.25,15);
+\draw (2.5,14.25) to[short] (3.25,14.25);
+\draw (2.5,12.75) to[short] (3.25,12.75);
+\draw (2.5,14.25) to[short] (3,14.25);
+\draw (2.5,14.5) to[short] (3.75,14.5);
+\draw (3.5,14.75) to[short] (4,14.75);
+\draw (2.5,14.5) to[short] (4,14.5);
+\draw (4,14.75) to[short] (4,15.5);
+\draw (4,15.5) to[short] (4.5,15.5);
+\draw (4,14.5) to[short] (4,13.5);
+\draw (4,13.5) to[short] (4.5,13.5);
+\draw (4.5,15.5) to[L,l={ \small $L$} ] (7,15.5);
+\draw (7,15.5) to[R,l={ \small R}] (7,13.5);
+\draw (4.25,13.5) to[short] (7,13.5);
+\draw (-1.75,12.25) to[short] (2.5,12.25);
+\draw (-1.75,16.75) to[short] (2.5,16.75);
+\node at (2.5,14.5) [circ] {};
+\draw [->, >=Stealth] (5,15) -- (6.5,15)node[above] {$i_0$};
+\end{circuitikz}
+}
+\end{center}
+
+ \item In the interval when $v_o<0$ and $i_o>0$ the pair of devices which conducts the load current is \hfill{[2013]}
+
+ \begin{multicols}{4}
+     a) Q1, Q2\\
+     b) Q3, Q4\\
+     c) D1, D2\\
+     d) D3, D4
+ \end{multicols}
+ 
+ \item Appropriate transition i.e, Zero Voltage Switching \brak{ZVS}/Zero Current Switching \brak{ZCS} of the IGBTs during turn-on/turn-off is \hfill{[2013]}
+ \begin{enumerate}
+     \item ZVS during turn-off\\
+     \item ZVS during turn-on\\
+     \item ZCS during turn-off\\
+     \item ZCS during turn-on
+ \end{enumerate}
+ General Aptitude \brak{GA} Questions
+\item They were requested not to quarrel with others.\\
+Which of the following options is the closest in meaning to the world quarrel? 
+\hfill{[2013]}
+\begin{multicols}{4}
+    a) make out\\
+    b) call out\\
+    c) dig out\\
+    d) fall out
+\end{multicols}
+
+\item In the summer of 2012, in New Delhi, the mean temperature of Monday to Wednesday was $41\degree C$. If the temperature on Thursday was 15\% higher than that of Monday, then the temperature in $\degree C$ on Thursday was  \hfill{[2013]}
+\begin{multicols}{4}
+    a) 40\\
+    b) 43\\
+    c) 46\\
+    d) 49
+\end{multicols}
+\item Complete the sentence:\\
+Dare \rule{1in}{0.4pt} mistakes.
+\hfill{[2013]}
+\begin{multicols}{4}
+    a) commit\\
+    b) to commit\\
+    c) committed\\
+    d) committing
+\end{multicols}
+
+\item Choose the grammatically CORRECT sentence:\hfill{[2013]}
+\begin{enumerate}
+    \item Two and two add four
+    \item Two and two become four
+    \item Two and two are four
+    \item Two and two make four
+\end{enumerate}
+\item Statement: You can always give me a ring whenever you need.\\
+Which one of the following is the best inference from the above statement?\hfill{[2013]}
+\begin{enumerate}
+    \item Because I have a nice caller tune.
+    \item Because I have a better telephone facility.
+    \item Because a friend in need is a friend indeed.
+    \item Because you need not pay towards the telephone bills when you give me a ring.
+\end{enumerate}
+
+\item What is the chance that a leap year, selected at random, will contain 53 Saturdays?\hfill{[2013]}
+\begin{multicols}{4}
+     a) $\frac{2}{7}$\\
+     b) $\frac{3}{7}$\\
+     c) $\frac{1}{7}$\\
+     d) $\frac{5}{7}$
+ \end{multicols}
+
+\item There were different streams of freedom movements in colonial India carried out by the moderates, liberals, radicals, socialists, and so on.\\
+Which one of the following is the best inference from the above statement?\hfill{[2013]}
+\begin{enumerate}
+    \item The emergence of nationalism in colonial India led to our Independence.
+    \item Nationalism in India emerged in the context of colonialism.
+    \item Nationalism in India is homogeneous.
+    \item Nationalism in India is heterogeneous.
+\end{enumerate}
+\item The set of values of $p$ for which the roots of the equation $3x^2+2x+p\brak{p-1}=0$ are of opposite sign is\hfill{[2013]}
+\begin{multicols}{4}
+     a) \brak{-\infty,0}\\
+     b) \brak{0,1}\\
+     c) \brak{1,\infty}\\
+     d) \brak{0,\infty}
+ \end{multicols}
+
+\item A car travels 8 km in the first quarter of an hour, 6 km in the second quarter and 16 km in the third quarter. The average speed of the car in km per hour over the entire journey is\hfill{[2013]}
+\begin{multicols}{4}
+    a) 30\\
+    b) 36\\
+    c) 40\\
+    d) 24
+\end{multicols}
+\item Find the sum to $n$ terms of the series $10+84+734+\dots$\hfill{[2013]}
+\begin{multicols}{4}
+     a) $\frac{9\brak{9^n+1}}{10}+1$\\
+     b) $\frac{9\brak{9^n-1}}{8}+1$\\
+     c) $\frac{9\brak{9^n-1}}{8}+n$\\
+     d) $\frac{9\brak{9^n-1}}{8}+n^2$
+ \end{multicols}
+
+
+
