@@ -1,0 +1,186 @@
+
+\iffalse
+\chapter{2010}
+\author{AI24BTECH11008}
+\section{ph}
+\fi
+
+    \item To detect trace amounts of a gaseous species in a mixture of gases, the preferred probing tool is\hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item Ionization spectroscopy with X-rays
+        \item NMR spectroscopy
+        \item ESR spectroscopy
+        \item Laser spectroscopy
+    \end{enumerate}
+    \item A collection of N atoms is exposed to a strong resonant elctromagnetic radiation with $N_g$ atoms in the ground state and $N_e$ atoms in the excited state, such that $N_g+N_e = N$. This collection of two-level atoms will have the following population distribution: \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $N_g<<N_e$
+        \item $N_g>>N_e$
+        \item $N_g\approx N_e\approx \frac{N}{2}$
+        \item $N_g-N_e\approx \frac{N}{2}$
+    \end{enumerate}
+    \item Two states of an atom ave definite parities. An electric dipole transition between these states is \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item Allowed if both the states have even parity
+        \item Allowed if both the states have odd parity
+        \item Allowed if both the states have oppsite parity
+        \item Not allowed unless a static electric field is applied
+    \end{enumerate}
+    \item The spectrum of radiation emitted by a black body at a temperature 1000K peaks in the \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item Visible range of frequencies 
+        \item Infrared range of frquencies 
+        \item Ultraviolet range of frequencies
+        \item Microwave range of frequencies
+    \end{enumerate}
+    \item An insulating sphere of radius a carries a charge density $\rho \brak{\bar{r}}=\rho_0\brak{a^2-r^2}\cos\theta; r<a$. The leading order term for the electric field at a distance d, far away from the charge distribution is propotional to\hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $d^{-1}$
+        \item $d^{-2}$
+        \item $d^{-3}$
+        \item $d^{-4}$
+    \end{enumerate}
+    \item The voltage resolution of 12-bit digital to analog converter(DAC), whose output varis from -10V to +10V is approximately  \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item 1mV
+        \item 5mV
+        \item 20mV
+        \item 100mV
+    \end{enumerate}
+    \item In one of the following circuits, negative feedback does not operate for a negative input. Which one is it? The opamps are running from $\pm$15V supplies. \hfill (2010)
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{0.3\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw (-6,13.5) to[R] (-6,13.5);
+    \draw (-5.5,13.25) to[R] (-3.5,13.25);
+    \draw (-2,13.75) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+    \draw (opamp2.+) to[short] (-3.5,14.25);
+    \draw  (opamp2.-) to[short] (-3.5,13.25);
+    \draw (-0.8,13.75) to[short](-0.5,13.75);
+    \draw (-3.5,14.25) to (-4,14.25) node[ground]{};
+    \draw (-3,12.25) to[R] (-1,12.25);
+    \draw [short] (-3,13.25) -- (-3,12.25);
+    \draw [short] (-1,13.75) -- (-1,12.25);
+    \end{circuitikz}
+    }%
+      % Specify the path to your TikZ file
+        \caption{option1}
+        %\label{fig2}
+    \end{figure}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{0.3\textwidth}{!}{%
+        \begin{circuitikz}
+        \tikzstyle{every node}=[font=\normalsize]
+        
+        \draw (-5.5,13.25) to[R] (-3.5,13.25);
+        \draw (-2,13.75) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+        \draw (opamp2.+) to[short] (-3.5,14.25);
+        \draw  (opamp2.-) to[short] (-3.5,13.25);
+        \draw (-0.8,13.75) to[short](-0.5,13.75);
+        \draw (-3.5,14.25) to (-4,14.25) node[ground]{};
+        \draw [short] (-3,13.25) -- (-3,12.25);
+        \draw [short] (-1,13.75) -- (-1,12.25);
+        \draw (-3,12.25) to[empty Schottky diode] (-1,12.25);
+        \node [font=\normalsize] at (-2,11.75) {5.1V};
+        \end{circuitikz}
+        }% % Specify the path to your TikZ file
+        \caption{option2}
+        %\label{fig3}
+    \end{figure}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{0.3\textwidth}{!}{%
+        \begin{circuitikz}
+        \tikzstyle{every node}=[font=\normalsize]
+        
+        \draw (-5.5,13.25) to[R] (-3.5,13.25);
+        \draw (-2,13.75) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+        \draw (opamp2.+) to[short] (-3.5,14.25);
+        \draw  (opamp2.-) to[short] (-3.5,13.25);
+        \draw (-0.8,13.75) to[short](-0.5,13.75);
+        \draw (-3.5,14.25) to (-4,14.25) node[ground]{};
+        \draw [short] (-3,13.25) -- (-3,12.25);
+        \draw [short] (-1,13.75) -- (-1,12.25);
+        \draw (-3,12.25) to[D] (-1,12.25);
+        \end{circuitikz}
+        }% % Specify the path to your TikZ file
+        \caption{option3}
+       % \label{fig4}
+    \end{figure}
+    \begin{figure}[!ht]
+        \centering
+        \resizebox{0.3\textwidth}{!}{%
+        \begin{circuitikz}
+        \tikzstyle{every node}=[font=\normalsize]
+       
+        \draw (-5.5,13.25) to[R] (-3.5,13.25);
+        \draw (-2,13.75) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+        \draw (opamp2.+) to[short] (-3.5,14.25);
+        \draw  (opamp2.-) to[short] (-3.5,13.25);
+        \draw (-0.8,13.75) to[short](-0.5,13.75);
+        \draw (-3.5,14.25) to (-4,14.25) node[ground]{};
+        \draw [short] (-3,13.25) -- (-3,12.25);
+        \draw [short] (-1,13.75) -- (-1,12.25);
+        \draw [short] (-3,12.25) -- (-3,11.75);
+        \draw [short] (-1,12.25) -- (-1,11.75);
+        \draw (-2.5,12) to[D] (-1.5,12);
+        \draw (-1.5,11.25) to[D] (-2.5,11.25);
+        \draw [short] (-3,11.75) -- (-2.5,11.25);
+        \draw [short] (-1.5,11.25) -- (-1,11.75);
+        \draw [short] (-1.5,12) -- (-1,11.75);
+        \draw [short] (-2.5,12) -- (-3,11.75);
+        \end{circuitikz}
+        }%% Specify the path to your TikZ file
+        \caption{option4}
+       % \label{fig5}
+    \end{figure}
+    \item A system of N non-interacting classical point particles is constrained to move on the two-dimensional surface of a sphere. The internal energy of system is \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $\frac{3}{2}Nk_BT$
+        \item $\frac{1}{2}Nk_BT$
+        \item $Nk_BT$
+        \item $\frac{5}{2}Nk_BT$
+    \end{enumerate} 
+    \item Which of the following atoms can't exhibit Bose-Einstein condensation, even in principle? \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $^1H_1$
+        \item $^4He_2$
+        \item $^{23}Na_{11}$
+        \item $^{40}K_{19}$
+    \end{enumerate}
+    \item For the set of all Lorentz transformations with velocities along the x-axis, consider the two statements given below:\\
+     P: If L is a Lorentz transformation then $L^{-1}$ is also called Lorentz transformation
+     \\Q: If $L_1 \text{and} L_2$ is a Lorentz transformations then $L_1L_2$ is also called Lorentz transformation.
+     \\Choose the correct otpion.\hfill (2010)
+     \begin{enumerate}[label=(\Alph*)]
+        \item P is true and Q is false
+        \item Both P and Q are true 
+        \item Both P and Q are false
+        \item Q is true and P is false
+     \end{enumerate}
+    \item Which of the follwing is an allowed wavefunction for a particle in a bound state? N is a sonstant and $\alpha,\beta>0$ \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $\psi=N\frac{e^{-\alpha r}}{r^3}$
+        \item $\psi=N\brak{1-e^{-\alpha r}}$
+        \item $\psi=Ne^{-\alpha x}e^{\beta\brak{x^2+y^2+z^2}}$
+        \item $\psi=\begin{cases}\text{non-zero constant} & if r<R\\0 & if r>R\end{cases}$
+    \end{enumerate}
+    \item A particle is confined within a spherical region of radius one femtometer $\brak{10^{-15}}$. Its momentum can be expected to be about \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $20\frac{keV}{c}$
+        \item $200\frac{keV}{c}$
+        \item $200\frac{MeV}{c}$
+        \item $2\frac{GeV}{c}$
+    \end{enumerate}
+    \textbf{Q.26-Q.55 carry two marks each.}
+    \item For the complex function, $f\brak{z}=\frac{e^{\sqrt{z}}-e^{-\sqrt{z}}}{\sin \sqrt{z}}$, which of the following statements is correct? \hfill (2010)
+    \begin{enumerate}[label=(\Alph*)]
+        \item $z=0$ is a branch point
+        \item $z=0$ is a pole of order one
+        \item $z=0$ is a removable singularity
+        \item $z=0$ is an essential singularity
+    \end{enumerate} 
+
