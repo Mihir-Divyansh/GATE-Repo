@@ -1,0 +1,324 @@
+\iffalse
+\title{2021-AE}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\section{ae}
+\chapter{2021}
+\fi
+  \item The figure shows schematics of wave patterns at the exit of nozzles A and B operating at different pressure ratios.
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.45\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\draw [short] (4,10.75) .. controls (6.25,11) and (6,9.5) .. (7.5,10.5);
+\draw [dashed] (8.25,10.75) .. controls (8.75,11.25) and (10.5,10.25) .. (11.25,10);
+
+\draw (3.25,10.75) to[short] (3.25,11.25);
+\draw (2.75,11.25) to[short] (3.25,11.25);
+
+\draw (2.75,8.5) to[short] (3.25,8.5);
+\draw (3.25,9) to[short] (3.25,8.5);
+\draw [short] (4,9) .. controls (6,8.5) and (6.25,10) .. (7.5,9.25);
+\draw (3.25,10.75) to[short] (4,10.75);
+\draw (3.25,9) to[short] (4,9);
+\draw [short] (7.5,10.5) -- (8.25,10.75);
+\draw [short] (7.5,9.25) -- (8.25,9);
+\draw [dashed] (8.25,9) .. controls (9,8.25) and (9.75,9.25) .. (11,9.5);
+\draw[dashed] (8.25,10.75) -- (9,10);
+\draw[dashed] (8.3,10.77) -- (9.2,9.9);
+
+\draw[dashed] (8.25,9) -- (9,10);
+\draw[dashed] (8.3,8.97) -- (9.12,10);
+
+\draw[dashed] (9,10) -- (10.25,10.3);
+\draw[dashed] (9.2,10) -- (10.457,10.3);
+\draw[dashed] (9,10) -- (10.32,9.25);
+\draw[dashed] (9.1,10) -- (10.42,9.26);
+
+\node [font=\normalsize] at (3,10) {$P_o$};
+\node [font=\normalsize] at (3,9.5) {$T_o$};
+\node [font=\normalsize] at (4.25,10) {FLOW};
+\draw [->, >=Stealth] (3.5,9.75) -- (5.25,9.75);
+\node [font=\normalsize] at (6.75,8.75) {NOZZLE-A};
+\draw [->, >=Stealth] (8.5,8) -- (8.5,9);
+\draw [->, >=Stealth] (9.75,11.75) -- (8.75,10.75);
+\draw [->, >=Stealth] (11.3,11.3) -- (10.5,10.25);
+\node [font=\normalsize] at (10,12) {OBLIQUE SHOCK};
+\node [font=\normalsize] at (11.75,11.5) {EXPANSION FAN};
+\node [font=\normalsize] at (8.5,7.5) {NOZZLE EXIT};
+\end{circuitikz}
+}%
+
+\end{figure}
+\begin{center}
+    \resizebox{0.45\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\draw [short] (3.9,10.75) .. controls (6.25,11) and (6,9.5) .. (7.4,10.5);
+\draw (3.15,10.75) to[short] (3.15,11.25);
+\draw (2.65,11.25) to[short] (3.15,11.25);
+\draw (2.65,8.5) to[short] (3.15,8.5);
+\draw (3.15,9) to[short] (3.15,8.5);
+\draw [short] (3.9,9) .. controls (6,8.5) and (6.25,10) .. (7.4,9.25);
+\draw (3.15,10.75) to[short] (3.9,10.75);
+\draw (3.15,9) to[short] (3.9,9);
+\draw [short] (7.4,10.5) -- (8.15,10.75);
+\draw [short] (7.4,9.25) -- (8.15,9);
+\node [font=\normalsize] at (2.9,10) {$P_o$};
+\node [font=\normalsize] at (2.9,9.5) {$T_o$};
+\node [font=\normalsize] at (4.15,10) {FLOW};
+\draw [->, >=Stealth] (3.4,9.75) -- (5.15,9.75);
+\node [font=\normalsize] at (6.65,8.75) {NOZZLE-B};
+\draw [dashed] (8.15,10.75) -- (11.25,11);
+\draw [dashed] (8.15,9) -- (11.25,8.75);
+
+\draw (8.15,9) to[short] (9.15,9.87) to[short](11.25,11);
+
+\draw (8.15,9) to[short] (9.2,9.77);
+\draw(9.2,9.77) to[short](11.29,10.89);
+\draw (8.15,9) to[short] (9.3,9.67);
+\draw(9.3,9.67) to[short](11.9,10.95);
+
+\draw (8.15,10.75) to[short] (9.15,9.87) to[short](11.25,8.75);
+
+\draw (8.15,10.75) to[short] (9.15,10);
+\draw(9.15,10) to[short](11.4,9);
+\draw (8.15,10.75) to[short] (9.25,10.12);
+\draw(9.25,10.12) to[short](11.65,9.25);
+\draw [->, >=Stealth] (8.5,8) -- (8.5,9);
+\draw [->, >=Stealth] (9.75,11.75) -- (8.75,10.5);
+\node [font=\normalsize] at (9.9,12) {EXPANSION FAN};
+
+\node [font=\normalsize] at (8.4,7.5) {NOZZLE EXIT};
+\end{circuitikz}
+}%
+\end{center}
+
+
+Nozzles A and B, respectively, are said to be operating in: 
+ \hfill{[GATE 2021]}\begin{enumerate}
+    
+        \item over-expanded mode and under-expanded mode
+        \item under-expanded mode and perfectly expanded mode
+        \item perfectly expanded mode and under-expanded mode
+        \item under-expanded mode and over-expanded mode\\
+   
+\end{enumerate}
+\item The combustion process in a turbo-shaft engine during ideal operation is: \hfill{[GATE 2021]}\begin{enumerate} 
+    
+     \begin{multicols}{4}
+        \item isentropic
+        \item isobaric
+        \item isochoric
+        \item isothermal
+    \end{multicols}
+\end{enumerate} 
+\item How does the specific thrust of a turbojet engine change for a given flight speed with an increase in flight altitude?
+
+\hfill{[GATE 2021]}\begin{enumerate}\begin{multicols}{2}
+        \item Increases monotonically
+        \item Decreases monotonically
+        \item Remains constant
+        \item First increases and then decreases
+    \end{multicols}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item How does the propulsion efficiency of a turbofan engine, operating at a given Mach number and a given altitude, change with an increase in compressor pressure ratio?
+\hfill{[GATE 2021]}\begin{enumerate} 
+     \begin{multicols}{2}
+        \item Remains constant
+        \item Increases monotonically
+        \item Decreases monotonically
+        \item First decreases and then increases
+    \end{multicols}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item A solid propellant rocket producing 25 $MN$ thrust is fired for 150 seconds. The specific impulse of the rocket is 2980 $Ns$/ $Kg$. How much propellant is burned during the rocket operation?
+\hfill{[GATE 2021]}
+ \begin{multicols}{4}
+\begin{enumerate} 
+    
+        \item 8390  $Kg$
+        \item 82300  $Kg$
+        \item $1.26 \times 10^6$  $Kg$
+        \item $11.2 \times 10^6$  $Kg$
+    \end{enumerate}
+    \end{multicols}
+
+\item The shape of a supersonic diffuser that slows down a supersonic flow to subsonic flow is
+
+ \hfill{[GATE 2021]}\begin{multicols}{2}\begin{enumerate}
+ \item converging
+    \item diverging
+ \item diverging - converging
+   
+   
+    \item converging -  diverging
+\end{enumerate}
+\end{multicols}
+
+\item Uniaxial tension test (see the figure) is conducted on two different samples prepared with homogeneous, isotropic materials. One of the materials is brittle, whereas the other is ductile.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\fill[gray!20] (5,10.5) rectangle (10,9.25); 
+
+\draw  (5,10.5) rectangle (10,9.25);
+\draw [dashed] (7.5,8) -- (7.5,11.75);
+\draw [dashed] (6.25,8) -- (8.75,11.75);
+\draw [->, >=Stealth] (10,9.75) -- (11,9.75);
+\draw [->, >=Stealth] (5,9.75) -- (4,9.75);
+\node [font=\normalsize] at (7.5,12) {$x$};
+\node [font=\normalsize] at (7.5,7.75) {$x$};
+\node [font=\normalsize] at (9,12) {$y$};
+\node [font=\normalsize] at (6,7.75) {$y$};
+\draw [short] (7.5,10.8) .. controls (7.5,10.75) and (8,11) .. (8,10.5);
+\node [font=\small] at (7.8,11) {$45\degree$};
+\end{circuitikz}
+}%
+\end{figure}
+
+
+
+
+Assuming that there is no stress concentration at loading points, the failure would initiate:
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item along x-x in both materials
+    \item along x-x in brittle material and along y-y in ductile material
+    \item along y-y in brittle material and along x-x in ductile material
+    \item along y-y in both materials
+\end{enumerate}
+
+\item For the state of stress as shown in the figure, what is the orientation of the plane with maximum shear stress with respect to the $x$-axis?
+
+
+
+\begin{centering}
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=1pt ] (3.75,11.75) rectangle (7.5,8);
+\draw [line width=1.6pt, ->, >=Stealth] (5.5,9.75) -- (7,9.75);
+\draw [line width=1.6pt, ->, >=Stealth] (5.5,9.75) -- (5.5,11.25);
+\draw [line width=1.6pt, ->, >=Stealth] (4,7.5) -- (7.25,7.5);
+\draw [line width=1.6pt, ->, >=Stealth] (8,11.5) -- (8,8.5);
+\draw [line width=1.6pt, ->, >=Stealth] (3.25,8.25) -- (3.25,11.25);
+\draw [line width=1.6pt, ->, >=Stealth] (7.25,12.25) -- (4.25,12.25);
+\node [font=\normalsize] at (5,11) {$Y$};
+\node [font=\normalsize] at (6.5,9.5) {$X$};
+\draw [line width=1.1pt, ->, >=Stealth] (5.75,6.5) -- (5.75,7.5);
+\draw [line width=1.1pt, ->, >=Stealth] (9,10) -- (8,10);
+\draw [line width=1.1pt, ->, >=Stealth] (5.5,13.5) -- (5.5,12.25);
+\draw [line width=1.1pt, ->, >=Stealth] (2,10) -- (3.25,10) ;
+\node [font=\normalsize] at (2.75,12) {$30 MPa$};
+\node [font=\normalsize] at (10,10) {$80 MPa$};
+\node [font=\normalsize] at (5.5,13.75) {$20 MPa$};
+\end{circuitikz}
+}%
+
+\end{centering}
+ \hfill{[GATE 2021]}\begin{multicols}{4}\begin{enumerate}
+    \item $45^\circ$
+    \item $-45^\circ$
+    \item $22.5^\circ$
+    \item $-22.5^\circ$
+\end{enumerate}
+\end{multicols}
+\bigskip
+
+\item Let $V_{\text{TAS}}$ be the true airspeed of an aircraft flying at a certain altitude where the density of air is $\rho$, and $V_{\text{EAS}}$ be the equivalent airspeed. If $\rho_0$ is the density of air at sea level, what is the ratio $ \dfrac{V_{\text{TAS}}}{V_{\text{EAS}}}$ equal to?
+ \hfill{[GATE 2021]}\begin{multicols}{4}\begin{enumerate}
+    \item $ \dfrac{\rho}{\rho_0}$
+    \item $ \dfrac{\rho_0}{\rho}$
+    \item $\sqrt{ \dfrac{\rho_0}{\rho}}$
+    \item $\sqrt{ \dfrac{\rho}{\rho_0}}$
+\end{enumerate}
+\end{multicols}
+\item $C_{m}$ - $\alpha$ variation for a certain aircraft is shown in the figure. Which one of the following statments is true for this aircraft?
+ \hfill{[GATE 2021]}
+\begin{centering}
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [->, >=Stealth] (3.75,5) -- (3.75,11);
+\draw [->, >=Stealth] (2.25,6.75) -- (8,6.75);
+\draw[short] (3,5) .. controls (4.5,6.5) and (6,9.8) .. (7.75,9.5);
+\node [font=\normalsize] at (2.75,10.75) {$C_m$};
+\node [font=\normalsize] at (7.5,6.25) {$\alpha$};
+\end{circuitikz}
+}%
+
+\end{centering}
+ \begin{enumerate}
+\item The aircraft can trim at a positive $\alpha$ and it is stable. 
+\item The aircraft can trim at a positive $\alpha$, but it is unstable.
+
+\item The aircraft can trim at a negative $\alpha$ and it is stable.
+
+\item The aircraft can trim at a negative $\alpha$, but it is unstable.
+\end{enumerate}
+\item Which of the following statement(s) is/are true across an oblique shock (in adiabatic conditions) over a wedge as shown below?
+
+\begin{center}
+
+\resizebox{0.35\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (3.75,8) to[short] (7.5,11.75);
+\draw (4,8) to[short] (7.5,11.5);
+\draw (3.75,8) to[short] (7.5,4.25);
+\draw (4,8) to[short] (7.5,4.5);
+\draw (4,8) to[short] (7.5,4.5);
+  
+
+   
+    \draw (8.75, 9.5) to[short] (8.75, 6.5);
+    \draw (3.75, 8) to[short] (8.75, 9.5);
+    \draw (3.75, 8) to[short] (8.75, 6.5);
+    
+    \fill[gray] (8.75, 9.5) -- (3.75, 8) -- (8.75, 6.5) -- cycle;
+    
+\draw [->, >=Stealth] (1.25,8) -- (2.5,8);
+\node [font=\LARGE] at (1.75,7.32) {$M>1$};
+\node [font=\normalsize, text =white]  at (7.8,8) {WEDGE  };
+\node [font=\normalsize, rotate around={47:(0,0)}] at (6.5,11.25) {OBLIQUE};
+\node [font=\normalsize, rotate around={47:(0,0)}] at (7.5,10.85) {SHOCK};
+\end{circuitikz}
+}%
+
+
+\end{center}
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item Total pressure decreases
+    \item Mach number based on velocity tangential to the shock decreases
+    \item Total temperature remains constant
+    \item Mach number based on velocity tangential to the shock remains the same and that based on velocity normal to the shock decreases
+\end{enumerate}
+
+\bigskip
+
+\item Which of the following statement(s) is/are true with regards to Kutta condition for flow past airfoils?
+
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item It is utilized to determine the circulation on an airfoil.
+    \item It is applicable only to airfoils with sharp trailing edges.
+    \item The trailing edge of an airfoil is a stagnation point.
+    \item The flow leaves the trailing edge smoothly.
+\end{enumerate}
+\item According to the airfoil theory, which of the following statment(s) is are true for a cambered airfoil?\hfill{[GATE 2021]}\begin{enumerate}
+\item The lift coefficient for an airfoil is directly proportional to the absolute angle of attack. 
+\item The aerodynamic centre lies at quarter chord point.
+\item The centre of pressure lies at quarter chord point.
+\item Drag coefficient is proportional to the square of lift coefficient.
+\end{enumerate}
+
