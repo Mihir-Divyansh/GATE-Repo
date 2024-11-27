@@ -1,0 +1,229 @@
+\iffalse
+\chapter{2016}
+\author{EE24BTECH11011}
+\section{ee}
+\fi
+   \item A function $y\brak{t}$ , such that $y\brak{0}=1$ and $y\brak{1} = 3e^{-1}$, is a solution of the differential equation $\frac{d^2 y}{dx^2} + 2\frac{dy}{dx}+y =0$. Then $y\brak{2}$ is
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $5e^{-1}$
+           \item $5e^{-2}$
+           \item $7e^{-1}$
+           \item $7e^{-2}$
+       \end{enumerate}
+   \end{multicols}
+   \item The value of the integral
+   \begin{align}
+       \oint_c \frac{2z+c}{\brak{z - \frac{1}{z}}+\brak{z^2 - 4z + 5}} dz
+   \end{align}
+   over the contour $\abs{z} = 1$, taken in anticlockwise direction,would be
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $\frac{24 \pi i}{13}$
+           \item $\frac{48 \pi i}{13}$
+           \item $\frac{24 }{13}$
+           \item $\frac{12}{13}$
+       \end{enumerate}
+   \end{multicols}
+   \item The transfer function of a system is $\frac{Y\brak{s}}{R\brak{s}} = \frac{s}{s+2}$. Then the steady state output $y\brak{t}$ is $A\cos{\brak{2t + \varphi}}$ for the input $\cos{\brak{2t}}$.Then the values of $A$ and $\varphi$ ,respectively are
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $\frac{1}{\sqrt{2}},-45\degree$
+           \item $\frac{1}{\sqrt{2}},+45\degree$
+           \item ${\sqrt{2}},+45\degree$
+           \item ${\sqrt{2}},-45\degree$
+       \end{enumerate}
+   \end{multicols}
+   \item The phase cross-over frequency of the transfer function $G\brak{s} = \frac{100}{\brak{s+1}^3}$ in rad/s is
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $\sqrt{3}$
+           \item $\frac{1}{\sqrt{3}}$
+           \item $3$
+           \item $3\sqrt{3}$
+       \end{enumerate}
+   \end{multicols}
+   \item Consider a continous-time system with input $x\brak{t}$ and output $y\brak{t}$ given by 
+   \begin{align}
+       y\brak{t} = x\brak{t}\cos{t}
+   \end{align}
+   This system is
+   \begin{enumerate}
+       \item linear and time-invariant
+       \item non-linear and time-invariant
+       \item linear and time-varying
+       \item non-linear and time-varying\\
+   \end{enumerate}
+   \item The value of $\int_{-\infty}^{+\infty} e^{-t} \delta\brak{2t-2}dt$, where $\delta \brak{t}$ is the Dirac delta function,is
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $\frac{1}{2e}$
+           \item $\frac{2}{e}$
+           \item $\frac{1}{e^2}$
+           \item $\frac{1}{2e^2}$
+       \end{enumerate}
+   \end{multicols}
+   \item A temperature in the range of $-40\degree\text{C}$ to $55\degree\text{C}$ is to
+   be measured with a resistance of $0.1\degree\text{C}$.The minimum number of ADC bits required to get a matching dynamic range of the temperature sensor is
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $8$
+           \item $10$
+           \item $12$
+           \item $14$
+       \end{enumerate}
+   \end{multicols}
+   \item Consider the following unit which uses $2-\text{to}-1$ multiplier as shown in the figure.The boolean expression for output $F$ in terms of $A$ and $B$ is
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (8.5,10.5) node[ieeestd not port, anchor=in, rotate=-270](port){} (port.out) to[short] (8.5,13);
+\draw (port.in) to[short] (8.5,9.5);
+\draw [line width=0.5pt] (8.5,13) to[short] (10,13);
+\node at (8.5,10) [circ] {};
+\draw [line width=0.5pt] (8.5,10) to[short] (10,10);
+\draw [line width=0.5pt] (10,13.5) to[short] (10,9.25);
+\draw [line width=0.5pt] (10,9.25) to[short] (11.25,10.5);
+\draw [line width=0.5pt] (10,13.5) to[short] (11.25,12.25);
+\draw [line width=0.5pt] (11.25,12.25) to[short] (11.25,10.5);
+\draw [line width=0.5pt] (11,10.25) to[short] (11,8.5);
+\draw [line width=0.5pt] (11.25,12) to[short] (12.75,12);
+\node [font=\large] at (10.25,12.75) {0};
+\node [font=\large] at (10.25,10) {1};
+\node [font=\large] at (11,12) {Y};
+\node [font=\large] at (11,10.5) {S};
+\node [font=\large] at (12.75,12.5) {F};
+\node [font=\large] at (11.5,8.5) {B};
+\node [font=\large] at (8.75,9.25) {A};
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+ 
+	   
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $A \oplus B$ \item $\overline{A+B}$ \item $A+B$ \item $\overline{A \oplus B}$
+       \end{enumerate}
+   \end{multicols}
+   \item A transistor circuit is given below. The Zener diode breakdown volatge is $5.3$ V as shown. Take base to emitter volatge drop to be $0.6$V. The value of the current gain $\beta$ is \rule{3cm}{0.15mm}
+ 
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=0.5pt] (12.25,10.75) to[Tnpn, transistors/scale=1.19] (12.25,13.25);
+\draw [line width=0.5pt] (12.25,13.25) to[R] (12.25,15.25);
+\draw [line width=0.5pt, ->, >=Stealth] (12.25,15.25) -- (12.25,16.5);
+\node at (12.25,15.25) [circ] {};
+\draw [line width=0.5pt] (12.25,15.25) to[short] (10.25,15.25);
+\draw [line width=0.5pt] (10.25,15.25) to[R] (10.25,12);
+\node at (10.25,12) [circ] {};
+\draw [line width=0.5pt] (10.25,12) to[short] (11.25,12);
+\draw [line width=0.5pt] (10.25,10.5) to[empty Schottky diode] (10.25,12);
+\draw [line width=0.5pt] (10.25,10.5) to[short] (10.25,9.25);
+\node at (10.25,9.25) [circ] {};
+\draw [line width=0.5pt] (12.25,10.75) to[R] (12.25,9.25);
+\draw [line width=0.5pt] (10.25,9.25) to[short] (12.25,9.25);
+\draw [line width=0.5pt] (12.25,9.25) to (12.25,9) node[ground]{};
+\node [font=\large] at (9.25,13.75) {4.7k$\Omega$};
+\node [font=\large] at (13.25,14.25) {220 $\Omega$};
+\node [font=\large] at (12.75,17) {10V};
+\node [font=\large] at (13,10) {470 $\Omega$};
+\node [font=\large] at (9.5,10.5) {5.3V};
+\node [font=\large] at (9,12) {0.5mA};
+\draw [line width=0.5pt, ->, >=Stealth] (9.75,12) -- (9.75,11.25);
+\end{circuitikz}
+
+
+
+}%
+\end{figure}   
+   \item In cylindrical coordinate system , the potential produced by a uniform ring charge is given by $\varphi = f\brak{r,z}$ where $f$ is a continous fraction of $r$ and $z$. Let $\vec{E}$ be the resulting electric field. Then the magnitude of $\nabla \times \vec{E}$
+   \begin{enumerate}
+       \item increases with $r$
+       \item is $0$
+       \item is $3$
+       \item decreases with $z$
+   \end{enumerate}
+   \item A soft-iron toroid is concentric with a long straight conductor carrying a direct current $I$. If the relative permeability $\mu_r$ of soft-iron is $100$, the ratio of the magnetic flux densities at two adjacent points located just inside and just outside the toroid, is \rule{3cm}{0.15mm}\\
+   \item $R_A$ and $R_B$ are the input resistances of circuits as shown below.The circuits extend infinitely in the direction shown. Which one of the following statements is TRUE?
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\node at (6,14.75) [circ] {};
+\draw [line width=0.5pt] (6,14.75) to[R] (8,14.75);
+\draw [line width=0.5pt] (8,14.75) to[R] (8,13);
+\draw [line width=0.5pt] (8,14.75) to[R] (10,14.75);
+\draw [line width=0.5pt] (10,14.75) to[R] (10,13);
+\draw [line width=0.5pt] (10,14.75) to[R] (11.75,14.75);
+\draw [line width=0.5pt] (11.75,14.75) to[R] (11.75,13);
+\node at (6,13) [circ] {};
+\draw [line width=0.5pt] (6,13) to[short] (11.75,13);
+\draw [line width=0.5pt, dashed] (11.75,14.75) -- (13.25,14.75);
+\draw [line width=0.5pt, dashed] (11.75,13) -- (13.25,13);
+\draw [line width=0.5pt, ->, >=Stealth, dashed] (12.75,14) -- (14.5,14);
+\draw [line width=0.5pt, ->, >=Stealth] (4.25,13.75) -- (5.75,13.75);
+\node [font=\large] at (4.5,14.25) {$R_A$};
+\node [font=\large] at (7,15.25) {2$\Omega$};
+\node [font=\large] at (9,15.25) {2$\Omega$};
+\node [font=\large] at (11,15.25) {2$\Omega$};
+\node [font=\large] at (7.5,14) {1$\Omega$};
+\node [font=\large] at (9.5,14) {1$\Omega$};
+\node [font=\large] at (11.25,14) {1$\Omega$};
+\node at (6,10.75) [circ] {};
+\draw [line width=0.5pt] (6,10.75) to[R] (8.25,10.75);
+\draw [line width=0.5pt] (8,10.75) to[R] (8,9);
+\draw [line width=0.5pt] (6.25,10.75) to[R] (6.25,9);
+\draw [line width=0.5pt] (8.25,10.75) to[R] (9.75,10.75);
+\draw [line width=0.5pt] (9.75,10.75) to[R] (9.75,9);
+\draw [line width=0.5pt] (9.75,10.75) to[R] (11.25,10.75);
+\draw [line width=0.5pt] (11.25,10.75) to[R] (11.25,9);
+\draw [line width=0.5pt, dashed] (11.25,10.75) -- (13,10.75);
+\draw [line width=0.5pt, dashed] (11.25,9) -- (13,9);
+\draw [line width=0.5pt, ->, >=Stealth, dashed] (12,10) -- (13.5,10);
+\node at (6,9) [circ] {};
+\draw [line width=0.5pt] (6,9) to[short] (11.25,9);
+\draw [line width=0.5pt, ->, >=Stealth] (4.5,9.75) -- (5.75,9.75);
+\node [font=\large] at (4.25,10) {$R_B$};
+\node [font=\large] at (7,11.25) {2$\Omega$};
+\node [font=\large] at (9,11.25) {2$\Omega$};
+\node [font=\large] at (10.5,11.25) {2$\Omega$};
+\node [font=\large] at (5.5,10.25) {1$\Omega$};
+\node [font=\large] at (7.5,10) {1$\Omega$};
+\node [font=\large] at (9,9.75) {1$\Omega$};
+\node [font=\large] at (10.75,10) {1$\Omega$};
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+	   
+   \begin{multicols}{4}
+       \begin{enumerate}
+           \item $R_A = R_B$
+           \item $R_A = R_B = 0$
+           \item $R_A < R_B$
+           \item $R_B = \frac{R_A}{1+R_A}$
+       \end{enumerate}
+       \end{multicols}
+       \item In a constant $\frac{V}{f}$ induction motor drive , the slip at maximum torque
+       \begin{enumerate}
+           \item is directly proportional to the synchronous speed
+           \item remains constant with respect to the synchronous speed
+\item  has an inverse relation with the synchronous speed
+\item has no relation with the synchronous speed
+       \end{enumerate}
+
+      
