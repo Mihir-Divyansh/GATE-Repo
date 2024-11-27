@@ -1,0 +1,654 @@
+\iffalse
+\chapter{2007}
+\author{EE24BTECH11011}
+\section{ee}
+\fi
+    \item The common emmiter forward current gain of the transistor shown is $\beta_F = 100$
+	   \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (12.5,15.75) to[short, -o] (12.5,15.75);
+\draw (12.5,15.75) to[short, -o] (12.5,17.5);
+\draw (12.5,12.25) to[Tpnp] (12.5,14.25); % Remove scale if not recognized
+\draw (12.5,15.75) to[R] (12.5,14.25);
+\draw (12.5,12.25) to[R] (12.5,10.75);
+\draw (11.5,13.25) to[short] (10.5,13.25);
+\draw (10.5,13.25) to[R] (10.5,11.25);
+\draw (10.5,11.25) to (10.5,10.75) node[ground]{};
+\draw (12.5,11) to (12.5,10.5) node[ground]{};
+\node [font=\LARGE] at (12.5,18) {+10v};
+\node [font=\large] at (13.5,15) {1k$\Omega$};
+\node [font=\large] at (13.5,11.5) {1k$\Omega$};
+\node [font=\large] at (9.5,12.25) {270k$\Omega$};
+\end{circuitikz}
+
+
+}%
+\end{figure}
+The transistor is operating in
+ 
+
+\begin{enumerate}
+    \item saturation region
+    \item cutoff region
+    \item reverse active region
+    \item forward active region\\
+\end{enumerate}
+    \item The three terminal linear voltage regulator is connected to a $10 \ohm$ load resistor as shown in the figure.If $V_{\text{in}}$ is $10 V$ , what is the power dissipated in the transistor?
+	   
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (12.5,15.75) to[short, -o] (12.5,15.75);
+\draw (6.5,15.75) to[Tnpn] (3.5,15.75); % Removed transistors/scale=1.19
+\draw (3.5,15.75) to[short, -o] (3.25,15.75);
+\node at (6.5,15.75) [circ] {};
+\draw (5,14.75) to[short] (5,14.25);
+\node at (5,14.25) [circ] {};
+\draw (5,14.25) to[R] (6.5,14.25);
+\draw (6.5,15.75) to[short] (6.5,14.25);
+\draw (6.5,15.75) to[short] (8.25,15.75);
+\draw (8.25,15.75) to[R] (8.25,13.25);
+\draw (5,13.25) to[short] (8.25,13.25);
+\node at (5,13.25) [circ] {};
+\draw (5,13.25) to[empty Zener diode] (5,14.25);
+\draw (5,13.25) to (5,12.75) node[ground]{};
+\draw (5,13.25) to[short, -o] (3.25,13.25);
+\node [font=\normalsize] at (4.5,13) {0};
+\node [font=\normalsize] at (3,14.5) {$V_{in}$};
+\node [font=\small] at (5.5,13.75) {6.6V};
+\node [font=\small] at (6,13.5) {zener diode};
+\node [font=\small] at (5.75,14.75) {1k$\Omega$};
+\node [font=\large] at (8.75,14.5) {R};
+\node [font=\normalsize] at (2.75,15.75) {+10V};
+\end{circuitikz}
+
+}%
+\end{figure}
+    \begin{enumerate}
+        \item $0.6 W$
+        \item $2.4 W$
+        \item $4.2 W$
+        \item $5.4 W$\\
+    \end{enumerate}
+    \item Consider the transformer connections is a part of a power system shown in the figure.The nature of the transformer connections and phase shifts are indicated for all but one transformer.
+    Which of the following connections,and the corresponding phase shift $\theta$ , should be used for the transformer between $\mathbf{A}$ and $\mathbf{B}$?
+		\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+
+% Sinusoidal Voltage Source and connections
+\draw (6.25,16.25) to[sinusoidal voltage source] (6.25,15.5);
+\draw (6.25,15.5) to[short] (6.25,14);
+
+% Transformer symbol and its components
+\draw (6.25,13.75) circle (0.25cm); % Upper circle
+\draw (6.25,13.5) circle (0.25cm);  % Lower circle
+\draw (6.75,13.75) to[short] (7,14);
+
+% Current Arrow - loop
+\draw [->, >=Stealth] (6,14) .. controls (5,14) and (5,13.25) .. (6,13);
+
+% More connections
+\draw (6.25,13.25) to[short] (6.25,12);
+\draw (4.75,12) to[short] (7.75,12);
+\draw (5.5,12) to[short] (5.5,11.25);
+\draw (7,12) to[short] (7,11.5);
+
+% Further connections and circular nodes
+\draw (7,11.5) to[short] (8.75,11.5);
+\draw (9,11.5) circle (0.25cm);
+\draw [->, >=Stealth] (8.5,11.75) .. controls (8.5,12.5) and (9.75,12.25) .. (9.5,11.75);
+\draw (9.25,11.5) to[short] (10.25,11.5);
+
+% Voltage and ground connections
+\draw (10.25,11.5) to[short] (10.25,12.25);
+\draw (10,12.25) to[short] (11.75,12.25);
+\draw (11,12.25) to[short] (11,11.5);
+
+% Additional paths for 15kV and triangle connection
+\draw (5.5,14.75) to[short] (7.5,14.75);
+\draw (6.5,13.75) to[short] (6.75,14);
+\node [font=\normalsize] at (6.75,14) {$\triangle$};
+
+% Transformer secondary and primary windings
+\draw (6.5,13.5) -- (6.75,13.25);
+\draw (6.75,13.25) -- (7,13.5);
+\draw (6.75,13.25) -- (6.75,13);
+
+% Rest of the circuit
+\draw (7.25,14.75) to[short] (7.25,14);
+\draw (7.25,14) to[short] (9,14);
+\draw (9,14) to[short] (9,15.25);
+\draw (9,15.5) circle (0.25cm);
+\draw (9,15.75) circle (0.25cm);
+
+% Stealth arrows
+\draw [short] (9.25,16) -- (9.5,15.75);
+\draw [short] (9.5,15.75) -- (9.75,16);
+\draw [short] (9.5,15.75) -- (9.5,15.5);
+\node [font=\normalsize] at (9.25,15.25) {$\triangle$};
+
+% Ground connection and long horizontal wire
+\draw (9,16) to[short] (9,16.5);
+\draw (8.5,16.5) to[short] (12.5,16.5);
+\draw (11.5,16.5) to[short] (11.5,15);
+\draw (11.5,14.75) circle (0.25cm);
+\draw (11.5,14.5) circle (0.25cm);
+\draw (11.5,14.25) to[short] (11.5,12.25);
+
+% Arrows
+\draw [->, >=Stealth] (8.75,16.25) .. controls (8.25,16) and (8.25,15.25) .. (8.75,15);
+\draw [->, >=Stealth] (11.25,15.25) .. controls (11,15.5) and (10.5,14) .. (11.25,14);
+
+% Final triangle and connection to ground
+\draw [short] (9.25,10.75) -- (9.5,10.5);
+\draw [short] (9.5,10.5) -- (9.75,10.75);
+\draw [short] (9.5,10.5) -- (9.5,10.25);
+
+% Labels for voltages and angles
+\node [font=\normalsize] at (5,14.75) {15kV};
+\node [font=\small] at (8,15.5) {-30$\circ$};
+\node [font=\small] at (11.75,15.25) {\textbf{A}};
+\node [font=\small] at (11.75,14.25) {\textbf{B}};
+\node [font=\small] at (10.75,13.75) {\textbf{$\theta$}};
+\node [font=\small] at (9.25,12.5) {\textbf{0$\circ$}};
+\node [font=\small] at (11.5,11.25) {\textbf{220kV}};
+\node [font=\small] at (5.25,10.75) {\textbf{400kV}};
+\node [font=\small] at (4.75,13.25) {\textbf{30$\circ$}};
+
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+    \begin{enumerate}
+        \item Star - Star $\brak{\theta = 0\degree}$
+        \item Star - Delta $\brak{\theta = -30\degree}$
+        \item Delta - Star $\brak{\theta = 30\degree}$
+        \item Star - Zigzag $\brak{\theta = 0\degree}$\\
+    \end{enumerate}
+    \item The incremental cost curves in Rs/M Whr for two generators supplying a common load of $700$MW are shown in the figures.The maximum and minimum generation limits are also indicated.The optimum generation schedule is $\colon$
+	    \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+
+\draw [->, >=Stealth] (5,10.25) -- (5,14.25);
+\draw [->, >=Stealth] (5,10.25) -- (9.25,10.25);
+\draw [dashed] (5,11.75) -- (6.25,11.75);
+\draw [dashed] (6.25,11.75) -- (6.25,10.5);
+\draw [dashed] (6.25,10.5) -- (6.25,10.25);
+\draw [dashed] (5,12.5) -- (8.5,12.5);
+\draw [dashed] (8.5,12.5) -- (8.5,10.25);
+\draw [short] (6.25,11.75) -- (8.5,12.5);
+\draw [->, >=Stealth] (12.75,10.25) -- (12.75,14.25);
+\draw [->, >=Stealth] (12.75,10.25) -- (17.25,10.25);
+\draw [dashed] (12.75,13) -- (13.25,13);
+\draw [dashed] (13.25,13) -- (13.5,13);
+\draw [dashed] (13.5,13) -- (13.5,10.25);
+\draw [dashed] (12.75,13.5) -- (15.75,13.5);
+\draw [dashed] (15.75,13.5) -- (15.75,10.25);
+\draw [short] (13.5,13) -- (15.75,13.5);
+
+% Adding labels
+\node [font=\small] at (4.5,12.5) {\textbf{600}};
+\node [font=\small] at (4.5,11.75) {\textbf{450}};
+\node [font=\small] at (12.25,13) {\textbf{650}};
+\node [font=\small] at (12.25,13.5) {\textbf{800}};
+\node [font=\small] at (6.25,10) {\textbf{200 MW}};
+\node [font=\small] at (8.5,10) {\textbf{450 MW}};
+\node [font=\small] at (9.5,10.25) {\textbf{P}};
+\node [font=\small] at (6.25,15.25) {Incremental cost Rs/M Whr};
+\node [font=\normalsize] at (6.25,8.5) {GENERATOR A};
+\node [font=\normalsize] at (14.5,8.5) {GENERATOR B};
+\node [font=\small] at (14,15.25) {Incremental cost Rs/M Whr};
+\node [font=\small] at (13.5,10) {\textbf{150 MW}};
+\node [font=\small] at (15.75,10) {\textbf{400 MW}};
+\node [font=\small] at (17.75,10.25) {\textbf{P}};
+
+\end{circuitikz}
+
+
+
+}%
+\end{figure}\\
+    \begin{enumerate}
+        \item Generator $\mathbf{A} \colon 400$MW, Generator $\mathbf{B} \colon 300$MW
+         \item Generator $\mathbf{A} \colon 350$MW, Generator $\mathbf{B} \colon 350$MW
+          \item Generator $\mathbf{A} \colon 450$MW, Generator $\mathbf{B} \colon 250$MW
+           \item Generator $\mathbf{A} \colon 425$MW, Generator $\mathbf{B} \colon 275$MW\\
+    \end{enumerate}
+    \item Two regional systems, each having several synchronous generators and loads are interconnected by an ac line and a HVDC link as shown in the figure. Which of the following statements is true in the steady state:
+	    \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+
+\draw  (6,13) ellipse (1.5cm and 2.5cm);
+\draw  (13.75,13) ellipse (1.5cm and 2.5cm);
+\draw (5.5,18.25) to[short] (7.5,18.25);
+\draw (6.75,11.75) to[short] (13,11.75);
+\draw (6.75,14) to[short] (8.25,14);
+\draw  (8.25,14.25) rectangle (9.25,13.5);
+\draw [short] (9.25,14) -- (10,14);
+\draw  (10,14.25) rectangle (11,13.5);
+\draw [short] (11,14) -- (12.75,14);
+
+\draw (8.75,13.5) to[D] (8.75,14);
+\draw [short] (8.75,14) -- (8.75,14.25);
+\draw [short] (8.75,14) -- (9,14.25);
+\draw (10.5,14.25) to[D] (10.5,13.75);
+\draw [short] (10.5,13.75) -- (10.5,13.5);
+\draw [short] (10.5,13.75) -- (10.75,13.5);
+\draw [->, >=Stealth] (8.25,15.5) -- (10.75,15.5);
+\draw [->, >=Stealth] (8.5,9.75) -- (11,9.75);
+
+% Adding labels
+\node [font=\normalsize] at (9.25,16) {$P_{dc}$};
+\node [font=\small] at (9.5,13) {\text{HVDC Link}};
+\node [font=\small] at (9.75,11.5) {\text{AC line}};
+\node [font=\small] at (9.25,9.25) {$P_{ac}$};
+\node [font=\small] at (5.75,13) {\textbf{Region 1}};
+\node [font=\small] at (13.5,13) {\textbf{Region 2}};
+
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+\begin{enumerate}
+    \item  Both regions need not have the same frequency 
+\item The total power flow between the regions $P_{ac} + P_{dc}$ can be changed by controlling the HVDC converters alone 
+\item The power sharing between the ac line and the HVDC link can be changed by controlling the HVDC converters alone 
+\item The direction of power flow in the HVDC link $P_{dc}$ cannot be reversed.\\
+\end{enumerate}
+\item Consider a bundled conductor of an overhead line, consisting of three identical sub-conductors placed at the corners of an equilateral triangle as shown in the figure. If we neglect the charges on the other phase conductors and ground, and assume that spacing between sub-conductors is much larger than their radius, the maximum electric field intensity is experienced at
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (11.25,14) circle (0.25cm);
+\draw  (9.5,10.5) circle (0.25cm);
+\draw  (12.75,10.5) circle (0.25cm);
+\node at (11.25,13.75) [circ] {};
+\node at (11.25,14.25) [circ] {};
+\node at (11.25,12) [circ] {};
+\node at (10.25,12.5) [circ] {};
+\node [font=\small] at (11.5,12) {\textbf{W}};
+\node [font=\small] at (11.25,13.5) {\textbf{X}};
+\node [font=\small] at (11.25,14.5) {\textbf{Y}};
+\node [font=\small] at (10,12.75) {\textbf{Z}};
+\end{circuitikz}
+
+
+}%
+\end{figure}
+
+\begin{enumerate}
+    \item Point $X$
+     \item Point $Y$
+      \item Point $Z$
+       \item Point $W$\\
+\end{enumerate}
+\item The circuit shown in the figure is
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Battery
+\draw (9.5,10.5) to[battery1] (9.5,9.75);
+\draw (9.5,10.5) to[short] (9.5,11.5);
+\draw (9.5,11.5) to[short] (10.75,11.5);
+
+% Resistor R1
+\draw (10.75,11.5) to[european resistor] (10.75,9.75);
+
+% Operational Amplifier
+\draw (12.75,9.25) node[op amp, scale=1, yscale=-1] (opamp2) {};
+\draw (opamp2.+) to[short] (11.25,9.75);
+\draw (opamp2.-) to[short] (11.25,8.75);
+
+% Short connections and resistors
+\draw (13.95,9.25) to[short](14.25,9.25);
+\draw (11.25,7.75) to[short] (14.25,7.75);
+\draw (14.25,9.25) to[european resistor] (14.25,7.75);
+\draw (14.25,7.75) to[european resistor] (14.25,6);
+\draw (10.75,7.75) to[short] (10.75,6);
+\draw (11.25,6) to[short] (14.25,6);
+\draw (11.25,8.75) to[short] (11.25,7.75);
+\draw (11,6) to[short] (11.5,6);
+\draw (11,9.75) to[short] (11.5,9.75);
+\draw (10.75,9.75) to[european resistor] (10.75,7.75);
+\draw (10.75,6) to[short] (12.75,6);
+\draw (9.5,9.75) to[short] (9.5,6);
+\draw (10.75,6) to[short] (9.5,6);
+
+% Labels
+\node [font=\small] at (9.25,10.5) {+};
+\node [font=\normalsize] at (9,9.75) {\textbf{V}};
+\node [font=\normalsize] at (10.25,10.75) {\textbf{R\textsubscript{1}}}; % Use \textsubscript for subscripts
+\node [font=\normalsize] at (10.25,8.75) {\textbf{R\textsubscript{2}}}; % Use \textsubscript for subscripts
+\node [font=\normalsize] at (15,8.75) {\textbf{LOAD}};
+\node [font=\normalsize] at (14.75,7) {\textbf{r}};
+
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+\begin{enumerate}
+    \item a voltage source with voltage $\frac{rV}{R_1 // R_2}$\\
+    \item a voltage source with voltage $\frac{r//R_2}{R_1}V$\\
+    \item a current source with current $\frac{r//R_2}{R_1 + R_2}\frac{V}{r}$\\
+    \item a current source with current $\frac{R_2}{R_1 + R_2}\frac{V}{r}$
+\end{enumerate}
+\item The system shown in the figure is
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=0.8pt, ->, >=Stealth] (-2,12.75) -- (0,12.75);
+\draw [line width=0.8pt] (0.75,12.75) circle (0.75cm);
+\draw [line width=0.8pt, ->, >=Stealth] (1.5,12.75) -- (3.75,12.75);
+\draw [line width=0.8pt] (3.75,13.5) rectangle (6.5,11.75);
+\draw [line width=0.8pt, short] (6.5,13) -- (9.5,13);
+\draw [line width=0.8pt, ->, >=Stealth] (9.5,13) -- (9.5,9.25);
+\draw [line width=0.8pt] (9.5,8.5) circle (0.75cm);
+\draw [line width=0.8pt, ->, >=Stealth] (12.25,8.5) -- (10.25,8.5);
+\draw [line width=0.8pt, ->, >=Stealth] (8.75,8.5) -- (5.5,8.5);
+\draw [line width=0.8pt] (2,9.75) rectangle (5.5,7.5);
+\draw [line width=0.8pt, short] (2,8.75) -- (0.5,8.75);
+\draw [line width=0.8pt, ->, >=Stealth] (0.5,8.75) -- (0.5,12);
+\node [font=\normalsize] at (-0.25,13.25) {+};
+\node [font=\normalsize] at (-0.75,14.25) {u\textsubscript{1}};
+\node [font=\normalsize] at (0.75,12.75) {$\sum$};
+\node [font=\normalsize] at (5,12.75) {$\frac{s-1}{s+2}$};
+\node [font=\normalsize] at (3.75,8.5) {$\frac{1}{s-1}$};
+\node [font=\normalsize] at (9.5,8.75) {$\sum$};
+\node [font=\normalsize] at (10.25,9.5) {+};
+\node [font=\normalsize] at (10.5,8) {+};
+\node [font=\normalsize] at (13,7.75) {u\textsubscript{2}};
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+\begin{enumerate}
+    \item stable
+    \item unstable
+    \item conditionally stable
+    \item stable for output $u_1$ but unstable for input $u_2$\\
+\end{enumerate}
+\item Let a signal $a_1 \sin\brak{\omega_1 t + \phi_1}$ be applied to a stable linear time-invariant system. Let the corresponding steady state output be represented as $a_2 F\brak{\omega_2 t + \phi_2}$. Then which of the following statements is true?
+
+\begin{enumerate}
+    \item$F$ is not necessarily a "sine" or "cosine" function but must be periodic with $\omega_1 = \omega_2$.
+    \item $F$ must be a "sine" or "cosine" function with $a_1 = a_2$.
+    \item $F$ must be a "sine" function with $\omega_1 = \omega_2$ and $\phi_1 = \phi_2$.
+    \item $F$ must be a "sine" or "cosine" function with $\omega_1 = \omega_2$.\\
+\end{enumerate}
+\item The frequency spectrum of a signal is shown in the figure.If this signal is ideally sampled at intervals of $1$ ms,then the frequency of the sampled signal will be
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize] % Set font size for all nodes
+\draw (7.25,9.75) to[short] (16,9.75);
+\draw (11.5,9.75) to[short] (11.5,13.75);
+\draw (9,9.75) to[short] (11.5,12.25);
+\draw (11.5,12.25) to[short] (14,9.75);
+\node at (12.75,13.25) {$| U(j\omega) |$};  % Absolute value representation
+\node at (16,9.25) {$\omega$}; % Omega in math mode
+\node at (13.5,9.25) {1 kHz}; % Text node for frequency
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+\begin{enumerate}
+    \item	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10,9) to[short] (10,12.75);
+
+\draw (4.75,9.75) to[short] (5.5,9);
+\draw (8.5,9) to[short] (10,10.5);
+\draw (10,10.5) to[short] (11.5,9);
+\draw (5.5,9) to[short] (7,10.5);
+\draw (7,10.5) to[short] (8.5,9);
+\draw (11.5,9) to[short] (13,10.5);
+\draw (13,10.5) to[short] (14.5,9);
+\draw (14.5,9) to[short] (15.25,9.75);
+\node [font=\normalsize] at (10.75,12.5) {$| U(j\omega) |$};
+\node [font=\normalsize] at (17,8.5) {$\omega$};
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+ 
+    \item
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10.25,9) to[short] (10.25,12.5);
+\draw (3.75,12) to[short] (17,12);
+\node [font=\normalsize] at (17.25,8.5) {$\omega$};
+\end{circuitikz}
+
+
+}%
+\end{figure}
+
+    \item\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10.25,9) to[short] (10.25,12.5);
+\node [font=\normalsize] at (17.25,8.5) {$\omega$};
+\draw (7.75,9) to[short] (10.25,11.5);
+\draw (10.25,11.5) to[short] (12.75,9);
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+    \item \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,9) to[short] (17.25,9);
+\draw (10.25,9) to[short] (10.25,12.5);
+\foreach \x in {0,...,4}{
+  \draw  (7.75+\x*1,11.25) -- ++(0.5,0.9) -- ++ (0.5, -0.9);
+}
+\node [font=\normalsize] at (17.25,8.5) {$\omega$};
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+
+\end{enumerate}
+\item Divergence of the vector field 
+\begin{align}
+    \vec{A}\brak{x,y,z} = -\brak{x \cos{xy}+y}\vec{i} + \brak{y \cos{xy}}\vec{j} + \brak{\sin{z^2}+x^2+y^2}\vec{k}
+\end{align}
+is
+\begin{enumerate}
+    \item $2z \cos{z^2}$
+    \item $\sin{xy}+2z\cos{z^2}$
+    \item $x\sin{xy}-\cos{z}$
+    \item none of these\\
+\end{enumerate}
+\item $\vec{x} = \sbrak{x_1 x_2 \dots x_n}^\top$ is a $n - $ multiple non-zero vector.Then $n\times n$ matrix $\vec{V} = \vec{x}\vec{x}^\top$
+\begin{enumerate}
+    \item has rank zero
+    \item has rank $1$
+    \item is orthogonal
+    \item has rank $n$
+\end{enumerate}
+\item A single-phase fully controlled thyristor bridge ac-dc converter is operating at a firing angle of $25\degree$ and an overlap of angle $10\degree$ with a cnstant dc output of $20\text{A}$.The fundamental power factor(displacement current) at input ac mains is
+\begin{enumerate}
+    \item $0.78$
+    \item $0.827$
+    \item $0.866$
+    \item $0.9$
+\end{enumerate}
+\item  A three-phase, fully-controlled thyristor bridge converter is used as line commutated
+inverter to feed $50$ kW power at $420$ V dc to a three-phase, $415$ V (line), $50$ Hz ac
+mains. Consider dc link current to be constant. The rms current of the thyristor is 
+\begin{enumerate}
+\item $119.05$ A  \item $79.37$ A \item $68.73$ A 
+\item $39.68 A$
+\end{enumerate}
+    \item In a transformer, zero voltage regulation at full load is 
+    \begin{enumerate}
+\item not possible 
+\item possible at unity power factor load 
+\item possible at leading power factor load 
+\item possible at lagging power factor load\\
+\end{enumerate}
+\item The dc motor, which can provide zero speed regulation at full load without any
+controller, is 
+\begin{enumerate} \item series \item shunt \item cumulative compound \item differential compound\\
+\end{enumerate}
+\item  The probes of a non-isolated, two-channel oscilloscope are clipped to points A, B, and C in the circuit of the adjacent figure. $V_{\text{in}}$ is a square wave of a suitable low frequency. The display on $\text{Ch}_1 $ and $\text{Ch}_2$ are as shown on the right. Then the Signal and Ground probes $ S_1, G_1 $ and $ S_2, G_2 $ of $ \text{Ch}_1 $ and $ \text{Ch}_2 $respectively are connected to points: 
+		\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Draw components
+\draw (3.5,11.75) circle (0.5cm); % Main circle
+\draw (3.5,12.25) to[short] (3.5,14); % Connection to the top
+\draw (3.5,14) to[short] (4.75,14); % Connection to resistor
+\draw (4.75,14) to[R] (6.75,14); % Resistor
+\draw (6.75,14) to[L] (6.75,10.5); % Inductor
+\draw (3.5,11.25) to[short] (3.5,10.5); % Connection to the bottom
+\draw (3.5,10.5) to[short] (6.75,10.5); % Bottom connection
+
+% Nodes
+\node at (4.75,14) [circ] {}; % Node A
+\node at (6.25,14) [circ] {}; % Node B
+\node at (6.75,10.5) [circ] {}; % Node C
+
+% Labels
+\node [font=\normalsize] at (2.5,11.25) {\textbf{V\textsubscript{in}}}; % Voltage input
+\node [font=\normalsize] at (4.5,14.5) {\textbf{A}}; % Node A label
+\node [font=\normalsize] at (6.25,14.5) {\textbf{B}}; % Node B label
+\node [font=\normalsize] at (7,10.25) {\textbf{C}}; % Node C label
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+	\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small] % Changed to \small for better fit
+\draw [line width=1.1pt](1.25,18.5) to[short] (1.25,4.75);
+\draw [line width=1.1pt](1.25,4.75) to[short] (12,4.75);
+\draw [line width=1.1pt](12,4.75) to[short] (13.75,4.75);
+\draw [line width=1.1pt](1.25,18.5) to[short] (8,18.5);
+\draw [line width=1.1pt](8,18.5) to[short] (13.75,18.5);
+\draw [line width=1.1pt](13.75,18.5) to[short] (13.75,4.75);
+\draw [line width=1.1pt](1.25,11) to[short] (13.5,11);
+\draw [line width=1.1pt](13.75,11) to[short] (13.25,11);
+\draw [line width=1.7pt, short] (1.25,11) .. controls (5.75,17.5) and (7.5,16) .. (13.75,16.5);
+\draw [line width=2pt, short] (1.25,6) .. controls (5,12) and (7.75,9.75) .. (13.75,11);
+\node [font=\small] at (8,15.5) {\textbf{CH\_1}}; % Changed \normalsize to \small
+\node [font=\small] at (7.75,9.5) {\textbf{CH\_2}}; % Changed \normalsize to \small
+\draw [line width=1.1pt, ->, >=Stealth] (14,11) -- (13.75,11);
+\draw [line width=1.1pt, ->, >=Stealth] (14.25,11) -- (13.75,11);
+\draw [line width=1.1pt, ->, >=Stealth] (14.25,11) -- (14,11);
+\node [font=\small] at (15,11) {$GND_{12}$}; % Changed \normalsize to \small
+\draw [line width=0.2pt, short] (2.5,18.5) -- (2.5,4.75);
+\draw [line width=0.2pt, short] (3.75,18.5) -- (3.75,9.5);
+\draw [line width=0.2pt, short] (3.75,9.5) -- (3.75,5);
+\draw [line width=0.2pt, short] (3.75,5) -- (3.75,4.75);
+\draw [line width=0.2pt, short] (5,18.5) -- (5,6.75);
+\draw [line width=0.2pt, short] (5,7) -- (5,4.75);
+\draw [line width=0.2pt, short] (6.25,18.5) -- (6.25,7);
+\draw [line width=0.2pt, short] (6.25,7) -- (6.25,4.75);
+\draw [line width=0.2pt, short] (7.5,18.5) -- (7.5,5.25);
+\draw [line width=0.2pt, short] (7.5,5.5) -- (7.5,4.75);
+\draw [line width=0.2pt, short] (8.75,18.5) -- (8.75,6);
+\draw [line width=0.2pt, short] (8.75,6) -- (10.75,6);
+\draw [line width=0.2pt, short] (8.75,6) -- (8.75,4.75);
+\draw [line width=0.2pt, short] (1.25,17.25) -- (13.75,17.25);
+\draw [line width=0.2pt, short] (10,18.5) -- (10,4.75);
+\draw [line width=0.2pt, short] (11.25,18.5) -- (11.25,8.25);
+\draw [line width=0.2pt, short] (11.25,8.25) -- (11.25,4.75);
+\draw [line width=0.2pt, short] (12.5,18.5) -- (12.5,5.5);
+\draw [line width=0.2pt, short] (12.5,5.75) -- (12.5,4.75);
+\draw [line width=0.2pt, short] (1.25,17.25) -- (13.75,17.25);
+\draw [line width=0.2pt, short] (1.25,16) -- (13.75,16);
+\draw [line width=0.2pt, short] (1.25,14.75) -- (13.75,14.75);
+\draw [line width=0.2pt, short] (1.25,13.5) -- (13.75,13.5);
+\draw [line width=0.2pt, short] (1.25,12.25) -- (13.75,12.25);
+\draw [line width=0.2pt, short] (1.25,9.75) -- (13.75,9.75);
+\draw [line width=0.2pt, short] (1.25,8.5) -- (13.75,8.5);
+\draw [line width=0.2pt, short] (1.25,7.25) -- (13.75,7.25);
+\draw [line width=0.2pt, short] (1.25,6) -- (13.75,6);
+\end{circuitikz}
+
+
+
+}%
+\end{figure}
+
+\begin{enumerate}
+    \item A, B, C, A
+    \item A, B, C, B
+    \item C, B, A, B
+    \item B, A, B, C
+\end{enumerate}
+
