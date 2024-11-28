@@ -1,0 +1,344 @@
+\iffalse
+    \title{Assignment}
+    \author{EE24BTECH11066}
+    \section{ph}
+    \chapter{2020}
+  \fi
+\item Consider a 4-bit counter constructed out of four flip-flops. It is formed by connecting the J and K inputs to logic high and feeding the $Q$ output to the clock input of the following flip-flop $\brak{\text{see the figure}}$. The input signal to the counter is a series of square pluses and the change of state is triggered by the falling edge. At time $t=t_0$ the outputs are in logic low state $\brak{Q_0=Q_1=Q_2=Q_3=0}$. Then at $t=t_1$, the logic state of the outputs is \hfill{[2020-PH]}\\
+\scalebox{0.5}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+\draw [ line width=1.1pt ] (5.25,15.5) rectangle (7.5,12.75);
+\draw [ line width=1pt ] (9.5,15.5) rectangle (11.75,12.75);
+\draw [ line width=1pt ] (13.75,15.5) rectangle (16,12.75);
+\draw [ line width=1pt ] (18,15.5) rectangle (20.25,12.75);
+\draw [line width=1pt, short] (1.5,11.5) -- (20.25,11.5);
+\draw [line width=1pt, short] (4.5,14.75) -- (4.5,11.5);
+\draw [line width=1pt, short] (4.5,15) -- (4.5,14.5);
+\draw [line width=1pt, short] (4.5,15) -- (5.25,15);
+\draw [line width=1pt, short] (8.75,15) -- (8.75,11.5);
+\draw [line width=1pt, short] (8.75,15) -- (9.5,15);
+\draw [line width=1pt, short] (7.5,15) -- (8,15);
+\draw [line width=1pt, short] (8,15) -- (8,14);
+\draw [line width=1pt, short] (8,14) -- (9.5,14);
+\draw [line width=1pt, short] (8.75,13) -- (9.5,13);
+\draw [line width=1pt, short] (4.5,13) -- (5.25,13);
+\draw [line width=1pt, short] (3.5,14) -- (5.25,14);
+\draw [line width=1pt, short] (11.75,15) -- (12.25,15);
+\draw [line width=1pt, short] (12.25,15) -- (12.25,14);
+\draw [line width=1pt, short] (12.25,14) -- (13.75,14);
+\draw [line width=1pt, short] (13.75,15) -- (13,15);
+\draw [line width=1pt, short] (13,15) -- (13,11.5);
+\draw [line width=1pt, short] (13,13) -- (13.75,13);
+\draw [line width=1pt, short] (16,15) -- (16.5,15);
+\draw [line width=1pt, short] (16.5,15) -- (16.5,14);
+\draw [line width=1pt, short] (16.5,14) -- (18,14);
+\draw [line width=1pt, short] (18,15) -- (17.25,15);
+\draw [line width=1pt, short] (17.25,15) -- (17.25,11.5);
+\draw [line width=1pt, short] (17.25,13) -- (18,13);
+\draw [line width=1pt, short] (7.75,15) -- (7.75,16.75);
+\draw [line width=1pt, short] (12,15) -- (12,16.75);
+\draw [line width=1pt, short] (16.25,15) -- (16.25,16.75);
+\draw [line width=1pt, short] (20.25,15) -- (20.75,15);
+\draw [line width=1pt, short] (20.75,15) -- (20.75,17);
+\node at (3.5,14) [circ] {};
+\node at (4.5,13) [circ] {};
+\node at (4.5,11.5) [circ] {};
+\node at (1.5,11.5) [circ] {};
+\node at (8.75,11.5) [circ] {};
+\node at (13,11.5) [circ] {};
+\node at (17.25,11.5) [circ] {};
+\node at (17.25,13) [circ] {};
+\node at (13,13) [circ] {};
+\node at (8.75,13) [circ] {};
+\node at (7.75,15) [circ] {};
+\node at (12,15) [circ] {};
+\node at (16.25,15) [circ] {};
+\draw [line width=1.2pt, short] (13.75,10.75) -- (13.75,10.75);
+\draw [line width=1.2pt, short] (11.25,10) -- (11.25,10);
+\draw [line width=1.2pt, short] (11.5,10.25) -- (11.5,10.25)node[pos=0.5,draw, fill=white]{4-bit ripple counter};
+\draw [line width=1.2pt, short] (1.75,11) -- (1.75,11)node[pos=0.5,draw, fill=white]{(logic high)};
+\draw [line width=1.2pt, short] (0.75,10.75) -- (0.75,10.75);
+\draw [line width=1.2pt, short] (1,11.5) -- (1,11.5)node[pos=0.5,draw, fill=white]{1};
+\draw [line width=1.2pt, short] (2.25,14) -- (2.25,14)node[pos=0.5,draw, fill=white]{Input};
+\draw [line width=1.2pt, short] (5.5,15) -- (5.5,15)node[pos=0.5,draw, fill=white]{J};
+\draw [line width=1.2pt, short] (5.5,13) -- (5.5,13)node[pos=0.5,draw, fill=white]{K};
+\draw [line width=1.2pt, short] (7,15) -- (7,15)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (9.75,15) -- (9.75,15)node[pos=0.5,draw, fill=white]{J};
+\draw [line width=1.2pt, short] (11.25,15) -- (11.25,15)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (9.75,13) -- (9.75,13)node[pos=0.5,draw, fill=white]{K};
+\draw [line width=1.2pt, short] (14,15) -- (14,15)node[pos=0.5,draw, fill=white]{J};
+\draw [line width=1.2pt, short] (14,13) -- (14,13)node[pos=0.5,draw, fill=white]{K};
+\draw [line width=1.2pt, short] (15.5,15) -- (15.5,15)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (18.25,15) -- (18.25,15)node[pos=0.5,draw, fill=white]{J};
+\draw [line width=1.2pt, short] (18.25,13) -- (18.25,13)node[pos=0.5,draw, fill=white]{K};
+\draw [line width=1.2pt, short] (20,15) -- (20,15);
+\draw [line width=1.2pt, short] (19.75,15) -- (19.75,15)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (5.75,14) -- (5.75,14);
+\draw [line width=1.2pt, short] (9.75,14) -- (9.75,14)node[pos=0.5,draw, fill=white]{ck};
+\draw [line width=1.2pt, short] (14,14) -- (14,14)node[pos=0.5,draw, fill=white]{ck};
+\draw [line width=1.2pt, short] (18.25,14) -- (18.25,14)node[pos=0.5,draw, fill=white]{ck};
+\draw [line width=1.2pt, short] (5.5,14) -- (5.5,14)node[pos=0.5,draw, fill=white]{ck};
+\draw [line width=1.2pt, short] (7,13.25) -- (7,13.25)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (11.25,13.25) -- (11.25,13.25)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (15.5,13.25) -- (15.5,13.25)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (19.75,13.25) -- (19.75,13.25)node[pos=0.5,draw, fill=white]{Q};
+\draw [line width=1.2pt, short] (15.5,13.75) -- (15.75,13.75);
+\draw [line width=1.2pt, short] (11.25,13.75) -- (11.5,13.75);
+\draw [line width=1.2pt, short] (7,13.75) -- (7.25,13.75);
+\draw [line width=1.2pt, short] (19.75,13.75) -- (20,13.75);
+\draw [ line width=0.7pt , rotate around={-19:(7.75,17)}] (7.75,17) ellipse (0.25cm and 0.25cm);
+\draw [ line width=0.7pt , rotate around={-19:(12,17)}] (12,17) ellipse (0.25cm and 0.25cm);
+\draw [ line width=0.7pt , rotate around={-19:(16.25,17)}] (16.25,17) ellipse (0.25cm and 0.25cm);
+\draw [ line width=0.7pt , rotate around={-19:(20.75,17.25)}] (20.75,17.25) ellipse (0.25cm and 0.25cm);
+\draw [line width=0.7pt, short] (8.5,17.75) -- (8.5,17.75)node[pos=0.5,draw, fill=white]{$Q_0$};
+\draw [line width=0.7pt, short] (12.75,17.75) -- (12.75,17.75)node[pos=0.5,draw, fill=white]{$Q_1$};
+\draw [line width=0.7pt, short] (17,17.75) -- (17,17.75)node[pos=0.5,draw, fill=white]{$Q_2$};
+\draw [line width=0.7pt, short] (21.25,18) -- (21.25,18)node[pos=0.5,draw, fill=white]{$Q_3$};
+\end{circuitikz}
+}
+
+\begin{circuitikz}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (1.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (2.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (3.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (4.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,-1}{
+  \draw [ line width=1.3pt] (5.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,-1}{
+  \draw [ line width=1.3pt] (5.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (5.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,-1}{
+  \draw [ line width=1.3pt] (6.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (6.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (7.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\foreach \x in {0,...,0}{
+  \draw [ line width=1.3pt] (8.25+\x*1,12.75) -- ++(0,1) -- ++ (0.5, 0) -- ++(0, -1) -- ++(0.5,0);
+}
+\draw [line width=1.3pt, short] (0.75,12.75) -- (1.25,12.75);
+\draw [line width=0.5pt, dashed] (1,13.5) -- (1,12)node[pos=1,right, fill=white]{$t_0$};
+\draw [line width=0.5pt, dashed] (9,13.5) -- (9,12)node[pos=1,right, fill=white]{$t_1$};
+\draw [line width=1pt, ->, >=Stealth] (3.25,12.25) -- (4.5,12.25)node[pos=1,right, fill=white]{t};
+\draw [line width=1.1pt, short] (6,10.75) -- (6,10.75);
+\draw [line width=1pt] (4.75,10.75) -- (4.75,10.75) node[below, fill=white] {Input signal};
+
+
+\end{circuitikz}
+
+\begin{enumerate}
+    \item $Q_0=1, Q_1=0, Q_2=0, Q_3=0$
+    \item $Q_0=0, Q_1=0, Q_2=0, Q_3=1$
+    \item $Q_0=1, Q_1=0, Q_2=1, Q_3=0$
+    \item $Q_0=0, Q_1=1, Q_2=1, Q_3=1$
+\end{enumerate}
+%41
+\item Consider the Lagrangian $L=a \brak{\frac{dx}{dt}}^2 + b \brak{\frac{dy}{dt}}^2 + cxy$, where $a, b$ and $c$ are constants. If $p_x$ and $p_y$ are the momenta conjugate to the coordinates $x$ and $y$ respectively, then the Hamiltonian is \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $\frac{p_x ^2}{4a} + \frac{p_y ^2}{4b} - cxy$\\
+    \item $\frac{p_x ^2}{2a} + \frac{p_y ^2}{2b} - cxy$\\
+    \item $\frac{p_x ^2}{2a} + \frac{p_y ^2}{2b} + cxy$\\
+    \item $\frac{p_x ^2}{a} + \frac{p_y ^2}{b} + cxy$\\
+\end{enumerate}
+%42
+\item Which one of the following matrices does NOT represent a proper rotation in a plane? \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $\myvec{-\sin \theta && \cos \theta\\ -\cos \theta && -\sin \theta}$\\
+    \item $\myvec{\cos \theta && \sin \theta\\ -\sin \theta && \cos \theta}$\\
+    \item $\myvec{\sin \theta && \cos \theta\\ -\cos \theta && \sin \theta}$\\
+    \item $\myvec{-\sin \theta && \cos \theta\\ -\cos \theta && \sin \theta}$\\
+\end{enumerate}
+%43
+\item A uniform magnetic field $\overrightarrow{B}=B_0 \hat{y}$ exists in an inertial frame $K$. A perfect conducting sphere moves with a constant velocity $\overrightarrow{v}=v_0 \hat{x}$ with respect to this inertial frame. The rest frame of the sphere is $K' \brak{\text{see figure}}$. The electric and magnetic fields in $K$ and $K'$ are related as \\
+
+$\overrightarrow{E'}_{\parallel} = \overrightarrow{E}_{\parallel} \hspace{1cm} \overrightarrow{E'}_{\perp} = \gamma \brak{\overrightarrow{E}_{\perp} + \overrightarrow{v} \times \overrightarrow{B}} \\
+\overrightarrow{B'}_{\parallel} = \overrightarrow{B}_{\parallel} \hspace{1cm} \overrightarrow{B'}_{\perp} = \gamma \brak{\overrightarrow{B}_{\perp} - \frac{\overrightarrow{v}}{c^2} \times \overrightarrow{E}} $
+\begin{align*}
+    \gamma = \frac{1}{\sqrt{1 - \brak{\frac{v}{c} }^2}}.
+\end{align*}
+
+
+The induced surface charge density on the sphere $\brak{\text{to the lowest order in }\frac{v}{c}}$ in the frame $K'$ is \hfill{[2020-PH]}\\
+%diagram
+%\begin{figure}[!ht]
+%\centering
+%\resizebox{1\textwidth}{!}{%
+
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (4,13.75) -- (7,13.75)node[pos=0.9,above, fill=white]{x};
+\draw [->, >=Stealth] (4,13.75) -- (4,17)node[pos=0.95,left, fill=white]{y};
+\draw [->, >=Stealth] (7.25,13.75) -- (7.25,17)node[pos=0.95,left, fill=white]{y'};
+\draw [->, >=Stealth] (7.25,13.75) -- (10.5,13.75)node[pos=0.95,above, fill=white]{x'};
+\draw [->, >=Stealth] (7.5,15) -- (8.5,15)node[pos=0.5,above, fill=white]{K'};
+\draw [short] (4.5,15.75) -- (4.5,15.75)node[pos=0.5,above, fill=white]{K};
+\draw [->, >=Stealth] (4,13.75) -- (2.25,11.75)node[pos=0.95,below, fill=white]{z};
+\draw [->, >=Stealth] (7.25,13.75) -- (5.75,11.5)node[pos=0.95,below, fill=white]{z'};
+\end{circuitikz}
+
+
+%}%
+
+%\label{fig:my_label}
+%\end{figure}
+\begin{enumerate}
+    \item maximum along $z'$
+    \item maximum along $y'$
+    \item maximum along $x'$
+    \item uniform over the sphere
+\end{enumerate}
+
+%44
+\item A charge $q$ moving with uniform speed enters a cylindrical region in free space at $t=0$ and exits the region at $t=\tau \brak{\text{see figure}}$. Which one of the following options best describes the time dependence of the total electric flux $\phi \brak{t}$, through the entire surface of the cylinder? \hfill{[2020-PH]}\\
+%diagram
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (5.75,14.75) ellipse (1cm and 2cm);
+\draw [short] (5.75,16.75) -- (11,16.75);
+\draw [short] (5.75,12.75) -- (11.5,12.75);
+\draw [short] (11,16.75) -- (11.5,16.75);
+\draw [short] (11.5,16.75) .. controls (12.75,15) and (12.5,14.25) .. (11.5,12.75);
+\draw [->, >=Stealth] (2.75,16.25) -- (5.5,15.25)node[pos=0,below, fill=white]{q};
+\draw [short] (5.5,15.25) -- (6,15);
+\draw [dashed] (6,15) -- (12.5,12.75);
+\node at (2.75,16.25) [circ] {};
+\node at (2.75,16.25) [circ] {};
+\end{circuitikz}
+\begin{enumerate}
+    \item 
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (4,16)node[pos=1,left, fill=white]{$\phi \brak{t}$};
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (10.5,11.75)node[pos=1,below, fill=white]{t};
+\draw [line width=0.7pt, short] (4,11.75) -- (6,13.75);
+\draw [line width=0.7pt, dashed] (6,15.25) -- (6,11.75);
+\draw [line width=0.7pt, short] (6,13.75) .. controls (6.5,12.5) and (7,12.25) .. (8.25,11.75);
+    % Define markers with labels at t=0 and t=τ
+\draw [line width=0.7pt] (3.75,11.25) -- (3.75,11.25);
+\draw [line width=0.7pt] (4.5,11.25) -- (4.5,11.25) node[below, fill=white] {$t=0$};
+\draw [line width=0.7pt] (6.5,11.25) -- (6.5,11.25) node[below, fill=white] {$t=\tau$};
+\end{circuitikz}
+    \item 
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (4,16)node[pos=1,left, fill=white]{$\phi \brak{t}$};
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (10.5,11.75)node[pos=1,below, fill=white]{t};
+\draw [line width=0.7pt, short] (4,11.75) -- (6,13.75);
+\draw [line width=0.7pt, dashed] (6,15.25) -- (6,11.75);
+\draw [line width=0.7pt, short] (3.75,11.25) -- (3.75,11.25);
+\draw [line width=0.7pt] (4.5,11.25) -- (4.5,11.25) node[below, fill=white] {$t=0$};
+\draw [line width=0.7pt] (6.5,11.25) -- (6.5,11.25) node[below, fill=white] {$t=\tau$};
+\draw [line width=0.7pt, short] (6,13.75) -- (6,11.75);
+\end{circuitikz}
+    \item 
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (4,16)node[pos=1,left, fill=white]{$\phi \brak{t}$};
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (10.5,11.75)node[pos=1,below, fill=white]{t};
+\draw [line width=0.7pt, dashed] (6,15.25) -- (6,11.75);
+\draw [line width=0.7pt, short] (3.75,11.25) -- (3.75,11.25);
+\draw [line width=0.7pt] (4.5,11.25) -- (4.5,11.25) node[below, fill=white] {$t=0$};
+\draw [line width=0.7pt] (6.5,11.25) -- (6.5,11.25) node[below, fill=white] {$t=\tau$};
+\draw [line width=0.7pt, short] (6,13.75) -- (4,13.75);
+\draw [line width=0.7pt, short] (6,13.75) .. controls (6.25,12.25) and (6.75,12.25) .. (8,11.75);
+\end{circuitikz}
+  \item 
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (4,16)node[pos=1,left, fill=white]{$\phi \brak{t}$};
+\draw [line width=1pt, ->, >=Stealth] (4,11.75) -- (10.5,11.75)node[pos=1,below, fill=white]{t};
+\draw [line width=0.7pt, dashed] (6,15.25) -- (6,11.75);
+\draw [line width=0.7pt, short] (3.75,11.25) -- (3.75,11.25);
+\draw [line width=0.7pt] (4.5,11.25) -- (4.5,11.25) node[below, fill=white] {$t=0$};
+\draw [line width=0.7pt] (6.5,11.25) -- (6.5,11.25) node[below, fill=white] {$t=\tau$};
+\draw [line width=0.7pt, short] (6,13.75) -- (6,11.75);
+\draw [line width=0.7pt, short] (6,13.75) -- (4,13.75);
+\end{circuitikz}
+\end{enumerate}
+%45
+\item Consider a one-dimensional non-magnetic crystal with one atom per unit cell. Assume that the valence electrons $\brak{\text{i}}$ do not interact with each other and $\brak{\text{ii}}$ interact weakly with the ions. If $n$ is the number of valence electrons per unit cell, then at $0$ K, \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item the crystal is metallic for any value of $n$
+    \item the crystal is non-metallic for any value of $n$
+    \item the crystal is metallic for even values of $n$
+    \item the crystal is metallic for odd values of $n$
+\end{enumerate}
+%46
+\item According to the Fermi gas model of the nucleus, the nucleons move in a spherical volume of radius $R = R_{0}A^\frac{1}{3}$, where $A$ is the mass number and $R_0$ is an empirical constant with the dimensions of length. The Fermi energy of the nucleus $E_{F}$ is proportional to \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $R_{0}^2$\\
+    \item $\frac{1}{R_0}$\\
+    \item $\frac{1}{R_0 ^2}$\\
+    \item $\frac{1}{R_0 ^3}$\\
+\end{enumerate}
+%47
+\item Consider a two dimensional crystal with 3 atoms in the basis. The number of allowed optical branches $\brak{n}$ and acoustic branches $\brak{m}$ due to the lattice vibrations are \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $\brak{n, m}=\brak{2, 4}$
+    \item $\brak{n, m}=\brak{3, 3}$
+    \item $\brak{n, m}=\brak{4, 2}$
+    \item $\brak{n, m}=\brak{1, 5}$
+\end{enumerate}
+%48
+\item The internal energy $U$ of a system is given by $U\brak{S,V}=\lambda V^ \frac{-2}{3} S^2$, where $\lambda$ is a constant of appropriate dimensions; $V$ and $S$ denote the volume and entropy, respectively. Which one of the following gives the correct equation of state of the system? \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $\frac{PV^ \frac{1}{3}}{T^2}=constant$\\
+    \item $\frac{PV}{T^ \frac{1}{3}}=constant$\\
+    \item $\frac{P}{V^ \frac{1}{3}T}=constant$\\
+    \item $\frac{PV^ \frac{2}{3}}{T}=constant$\\
+\end{enumerate}
+%49
+\item The potential energy of a particle of mass $m$ is given by \\
+$U \brak{x}=a\sin \brak{k^2 x-\frac{\pi}{2}}, a>0, k^2>0$.\\
+
+The angular frequency of small oscillations of the particle about $x=0$ is \hfill{[2020-PH]}\\
+\begin{enumerate}
+    \item $k^2 \sqrt{\frac{2a}{m}}$\\
+    \item $k^2 \sqrt{\frac{a}{m}}$\\
+    \item $k^2 \sqrt{\frac{a}{2m}}$\\
+    \item $2k^2 \sqrt{\frac{a}{m}}$\\
+\end{enumerate}
+%50
+\item The radial wave function of a particle in a central potential is given by $R\brak{r}=A\frac{r}{a}\text{exp}\brak{-\frac{r}{2a}}$, where $A$ is the normalization constant and $a$ is positive constant of suitable dimensions. If $\gamma a$ is the most probable distance of the particle from the force center, the value of $\gamma$ is \underline{\hspace{1cm}} \hfill{[2020-PH]}\\
+%51
+\item A free particle of mass $M$ is located in a three-dimensional cubic potential well with impenetrable walls. The degeneracy of the fifth excited state of the particle is \underline{\hspace{1cm}} \hfill{[2020-PH]}\\
+%52
+\item Consider the circuit given in the figure. Let the forward voltage drop across each diode be $0.7$ V. The current I $\brak{\text{in mA}}$ through the resistor is \underline{\hspace{1cm}} \hfill{[2020-PH]}\\
+%diagram
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+% Resistor
+\draw [ line width=1.5pt] (5,15) to[R,l={ \LARGE 1 K$\Omega$}] (5,21);
+% Diodes
+\draw [ line width=1.1pt] (5,15) to[D] (9.5,15);
+\draw [ line width=1.1pt] (9.25,15) to[D] (12,15);
+\draw [ line width=1.1pt] (12,15) to[D] (15.75,15);
+% Ground connection
+\draw [line width=1.1pt](15.75,15) -- (15.75,13) node[ground]{};
+% Connection from the resistor to a point
+\draw [line width=1.1pt, short] (4.5,21) -- (5.5,21);
+% Arrow for current direction
+\draw [line width=1.1pt, ->, >=Stealth] (5,17) -- (5,15.75);
+% Label for current I without a line
+\node[fill=white] at (4.5, 15.5) {I};
+% Label for voltage +10.1V without a line
+\node[fill=white] at (6.75, 21) {+10.1V};
+\end{circuitikz}
