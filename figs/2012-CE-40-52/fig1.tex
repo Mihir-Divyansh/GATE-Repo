@@ -1,0 +1,15 @@
+\begin{center}
+\resizebox{0.5\textwidth}{!}{%
+	\begin{circuitikz}
+    \tikzstyle{every node}=[font=\small]
+    \draw (1.75,16.75) to[battery] (1.75,15);
+    \draw (1.75,15) to[short] (3.25,15);
+    \draw (3.25,16.75) to[european resistor] (3.25,15);
+    \draw (1.75,16.75) to[short] (3.25,16.75);
+    \draw [->, >=Stealth] (2.25,17) -- (3,17);
+    \node [font=\small] at (1,16) {300V};
+    \node [font=\small] at (2.75,17.25) {I};
+    \node [font=\small] at (3.75,16) {R};
+\end{circuitikz}
+}%
+\end{center}
