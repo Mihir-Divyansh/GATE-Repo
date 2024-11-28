@@ -1,0 +1,364 @@
+\iffalse
+\chapter{2024}
+\author{AI24BTECH11027}
+\section{ee}
+\fi
+
+\item The circuit shown in the figure with the switch $S$ open, is in steady state. After the 
+switch $S$ is closed, the time constant of the circuit in seconds is
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+
+\draw (-2.5,21.25) to[normal open switch] (1.25,21.25);
+\begin{scope}[rotate around={26.5:(1.25,21.25)}]
+\foreach \x in {0,...,-1}{
+ 
+}
+\end{scope}
+\draw (1.25,21.25) to[R] (3.75,21.25);
+\draw (3.75,21.25) to[L ] (6.25,21.25);
+\draw (6.25,21.25) to[L ] (6.25,17.5);
+\draw (-1.25,17.5) to[L ] (-1.25,19.25);
+\draw (-1.25,19.25) to[R] (-1.25,21.25);
+\draw (-2.5,17.5) to[american current source] (-2.5,21.25);
+\draw (5.75,21.25) to[L ] (5.75,20);
+\draw (5.75,20) to[short] (5.75,17.5);
+\draw (-2.5,17.5) to[short] (6.25,17.5);
+\node [font=\LARGE] at (-3.5,19.5) {1A};
+\node [font=\LARGE] at (-0.5,20.25) {1$\Omega$};
+\node [font=\LARGE] at (-0.5,18.5) {1H};
+\node [font=\LARGE] at (2.5,22) {1$\Omega$};
+\node [font=\LARGE] at (-0.5,22) {S};
+\node [font=\LARGE] at (4.75,22) {1H};
+\node [font=\LARGE] at (5,20.5) {1H};
+\node [font=\LARGE] at (7.25,19.5) {1H};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $1.25$
+    \item $0$
+    \item $1$
+    \item $1.5$\\
+\end{enumerate}
+
+\item Suppose signal $y(t)$ is obtained by the time-reversal of signal $x(t)$, i.e., $y(t)=x(-t),-\infty<t<\infty.$ Which one of the following options is always true for the convolution of $x(t)$ and $y(t)$?
+\begin{enumerate}
+    \item It is an even signal.
+    \item It is an odd signal. 
+    \item It is a causal signal.
+    \item It is an anti-causal signal. \\
+\end{enumerate}
+
+\item If $u(t)$ is the unit step function, then the region of convergence (ROC) of the 
+Laplace transform of the signal $x(t)=e^{t^2}[u(t-1)-u(t-10)]$ is
+\begin{enumerate}
+    \item $-\infty < Re(s) <\infty$
+    \item $Re(s)\geq 10$
+    \item $Re(s)\leq1$
+    \item $1\leq Re(s) \leq10$ \\
+\end{enumerate}
+\item A three phase, $50 Hz$, $6$ pole induction motor runs at $960 rpm$. The stator copper 
+loss, core loss, and the rotational loss of the motor can be neglected. The percentage 
+efficiency of the motor is
+\begin{enumerate}
+    \item $92$
+    \item $94$
+    \item $96$
+    \item $98$\\
+\end{enumerate}
+
+\item Which of the following complex functions is/are analytic on the complex plane? 
+\begin{enumerate}
+    \item $f(z)=jRe(z)$
+    \item $Im(z)$
+    \item $f(z)=e^{|z|}$
+    \item $f(z)=z^2-z$ \\
+\end{enumerate}
+
+
+\item The figure shows the single line diagram of a $4$-bus power network. Branches $b_1, b_2, b_3,$ and $b_4$ have impedances $4_z$,$z$ ,$2_z$, and $4_z$ per-unit (pu), respectively, where  
+$z=r+jx$, with $r>0$ and $x>0$. The current drawn from each load bus (marked 
+as arrows) is equal to $I$ pu, where $I\neq 0$. If the network is to operate with minimum 
+loss, the branch that should be opened is
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw (0,23.75) to[short] (1.25,23.75);
+\draw (5,20) to[short] (5,18.75);
+\draw (0,15) to[short] (1.25,15);
+\draw (-3.75,20) to[short] (-3.75,18.75);
+\draw (-3.75,19.75) to[short] (-3,19.75);
+\draw (-3.75,19) to[short] (-3,19);
+\draw (0.25,23.75) to[short] (0.25,23);
+\draw (1,23.75) to[short] (1,23);
+\draw (5,19.75) to[short] (4.25,19.75);
+\draw (5,19) to[short] (4.25,19);
+\draw (1,15) to[short] (1,15.75);
+\draw (0.25,15) to[short] (0.25,15.75);
+\draw (-3,19) to[short] (0.25,15.75);
+\draw (1,15.75) to[short] (4.25,19);
+\draw (4.25,19.75) to[short] (1,23);
+\draw (-3,19.75) to[short] (0.25,23);
+\draw (5,19.5) to[short] (5.5,19.5);
+\draw (-3.75,19.5) to[short] (-4.25,19.5);
+\draw [->, >=Stealth] (-4.25,19.5) -- (-4.25,18.75);
+\draw [->, >=Stealth] (5.5,19.5) -- (5.5,18.75);
+\draw [->, >=Stealth] (0.5,15) -- (0.5,14.25);
+\draw (0.5,23.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (0.5,25.25);
+\node [font=\LARGE] at (-4.25,18.25) {$I$};
+\node [font=\LARGE] at (-2,21.5) {$b_1$};
+\node [font=\LARGE] at (3,21.5) {$b_2$};
+\node [font=\LARGE] at (-1.75,17.25) {$b_3$};
+\node [font=\LARGE] at (3.25,17) {$b_4$};
+\node [font=\LARGE] at (5.5,18.25) {$I$};
+\node [font=\LARGE] at (0.5,13.75) {$I$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $b_1$
+    \item $b_2$
+    \item $b_3$
+    \item $b_4$ \\
+\end{enumerate}
+
+\item For  the block-diagram shown in the figure, the transfer function $\frac{C(s)}{R(s)}$ is
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw [->, >=Stealth] (-3.75,18.75) -- (-1.25,18.75);
+\draw  (-0.75,18.75) circle (0.5cm);
+\draw [->, >=Stealth] (-0.25,18.75) -- (1.25,18.75);
+\draw  (1.75,18.75) circle (0.5cm);
+\draw [->, >=Stealth] (2.25,18.75) -- (3.75,18.75);
+\draw  (3.75,19.25) rectangle (5.5,18.25);
+\draw [->, >=Stealth] (5.5,18.75) -- (7.5,18.75);
+\draw [->, >=Stealth] (-0.75,21.25) -- (-0.75,19.25);
+\draw [->, >=Stealth] (1.75,16.25) -- (1.75,18.25);
+\draw (-0.75,21.25) to[short] (6.25,21.25);
+\draw (6.25,21.25) to[short] (6.25,16.25);
+\draw (1.75,16.25) to[short] (6.25,16.25);
+\node at (6.25,18.75) [circ] {};
+\node [font=\LARGE] at (-3.25,19.25) {$R(s)$};
+\node [font=\LARGE] at (-1.5,19.5) {$+$};
+\node [font=\LARGE] at (2.25,18) {$+$};
+\node [font=\LARGE] at (1,19.25) {$-$};
+\node [font=\LARGE] at (-0.25,19.5) {$-$};
+\node [font=\LARGE] at (4.75,18.75) {$G(s)$};
+\node [font=\LARGE] at (7.5,19.5) {$C(s)$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $\frac{G(s)}{1+2G(s)}$
+    \item $-\frac{G(s)}{1+2G(s)}$
+    \item $\frac{G(s)}{1-2G(s)}$
+    \item $-\frac{G(s)}{1-2G(s)}$ \\
+\end{enumerate}
+\item Consider the standard second-order system of the form $\frac{\omega_n^2}{s^2+2\zeta\omega_n s+\omega_n^2}$ with the 
+poles $p$ and $p*$ having negative real parts. The pole locations are also shown in the 
+figure. Now consider two such second-order systems as defined below: \\
+System $1$: $\omega_n=3 rad/sec and \theta=60\degree$\\
+System $2$: $\omega_n=1 rad/sec and \theta=70\degree$\\
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw [->, >=Stealth] (1.25,12.5) -- (1.25,21.5);
+\draw [dashed] (1.25,21) .. controls (-4,20.25) and (-4.25,14) .. (1.25,13);
+\draw [->, >=Stealth] (-3.75,17) -- (2,17);
+\draw [dashed] (1.25,17) -- (-3,20);
+\draw [->, >=Stealth] (0.5,17) -- (0.5,17.5);
+\draw (-1.5,14.5) to[short] (-2,14);
+\node [font=\LARGE] at (-3.25,19.75) {$P$};
+\node [font=\LARGE] at (1.75,21.25) {j$\omega$};
+\node [font=\LARGE] at (-3.5,16.75) {-$\omega_n$};
+\node [font=\LARGE] at (1.5,16.5) {$0$};
+\node [font=\LARGE] at (-0.75,17.5) {$\theta$};
+\node [font=\LARGE] at (2.75,17) {$\sigma$};
+\node [font=\LARGE] at (-2.25,13.5) {$P*$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+Which one of the following statements is correct?
+\begin{enumerate}
+    \item Settling time of System $1$ is more than that of System $2$.
+    \item Settling time of System $2$ is more than that of System $1$.
+    \item Settling times of both the systems are the same. 
+    \item Settling time cannot be computed from the given information. \\
+\end{enumerate}
+\item Consider the cascaded system as shown in the figure. Neglecting the faster 
+component of the transient response, which one of the following options is a first
+order pole-only approximation such that the steady-state values of the unit step 
+responses of the original and the approximated systems are same?  
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw [->, >=Stealth] (-6.25,18.75) -- (-4.5,18.75);
+\draw  (-4.5,19.5) rectangle (-2.5,18);
+\draw [->, >=Stealth] (-2.5,18.75) -- (-0.75,18.75);
+\draw  (-0.75,19.5) rectangle (1.5,18);
+\draw [->, >=Stealth] (1.5,18.75) -- (3.25,18.75);
+\node [font=\LARGE] at (-6.5,19.25) {$Input$};
+\node [font=\LARGE] at (-3.75,19) {$\frac{1}{s+1}$};
+\node [font=\LARGE] at (0.025,19) {$\frac{s+40}{s+20}$};
+\node [font=\LARGE] at (3.25,19.25) {$Output$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $\frac{1}{s+1}$
+    \item $\frac{2}{s+1}$
+    \item $\frac{1}{s+20}$
+    \item $\frac{2}{s+20}$\\
+\end{enumerate}
+\item The table lists two instrument transformers and their features: 
+\begin{table}[h!]
+\renewcommand{\thetable}{1}
+    \centering
+   \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Instrument Transformers} & \textbf{Features } \\
+        
+        \hline
+          &  P) Primary is connected in parallel to the grid  \\
+          \hline
+          X) Current Transformer (CT) & Q) Open circuited secondary is not desirable  \\
+          \hline
+          Y) Potential Transformer (PT)  & R) Primary current is the line current  \\
+          \hline
+            & S) Secondary burden affects the primary current \\
+        \hline
+\end{tabular}
+\end{table}
+\begin{enumerate}
+    \item $X$ matches with $P$ and $Q$; $Y$ matches with $R$ and $S$.
+    \item $X$ matches with $P$ and $R$; $Y$ matches with $Q$ and $S$.
+    \item $X$ matches with $Q$ and $R$; $Y$ matches with $P$ and $S$.
+    \item $X$ matches with $Q$ and $S$; $Y$ matches with $P$ and $R$. \\
+\end{enumerate}
+\item Simplified form of the Boolean function \\ $F(P,Q,R,S)=\Bar{P}\Bar{Q}+\Bar{P}QS+P\Bar{Q}\Bar{R}\Bar{S}+P\Bar{Q}R\Bar{S}$ \\is 
+\begin{enumerate}
+    \item $\Bar{P}S+\Bar{Q}\Bar{S}$
+    \item $\Bar{P}\Bar{Q}+\Bar{Q}\Bar{S}$
+    \item $\Bar{P}Q+R\Bar{S}$
+    \item $p\Bar{S}+Q\Bar{R}$\\
+\end{enumerate}
+\item In the circuit, the present value of $Z$ is $1$. Neglecting the delay in the combinatorial 
+circuit, the values of $S$ and $Z$, respectively, after the application of the clock will be 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw  (-6.25,21.25) rectangle (-2.5,17.5);
+\draw  (0,21.25) rectangle (2.5,17.5);
+\draw (-2.5,18.75) to[short] (-1.25,18.75);
+\draw (-1.25,18.75) to[short] (-1.25,20);
+\draw (-1.25,20) to[short] (0,20);
+\draw (-6.25,20.5) to[short] (-7.25,20.5);
+\draw (-7.25,20.5) to[short] (-7.25,22);
+\draw (-7.25,22) to[short] (3.75,22);
+\draw (3.75,22) to[short] (3.75,20.75);
+\draw (2.5,20.75) to[short] (5.5,20.75);
+\draw (2.5,18) to[short] (5.5,18);
+\draw (-6.25,19.5) to[short] (-7.25,19.5);
+\draw (-6.25,18.25) to[short] (-7.25,18.25);
+
+
+
+\draw [short] (-0.75,18.5) -- (0,18.5);
+\draw [short] (-0.75,18.5) -- (-1.25,18.5);
+\draw [short] (0,19.25) -- (1,18.5);
+\draw [short] (0,17.75) -- (1,18.5);
+\node [font=\LARGE] at (-7.75,19.5) {$X=1$};
+\node [font=\LARGE] at (-7.75,18.25) {$Y=0$};
+\node [font=\LARGE] at (-4.5,19.25) {$S=X \oplus Y \oplus Z$};
+\node [font=\LARGE] at (-1.25,18) {$Clock$};
+\node [font=\LARGE] at (-2.25,19) {S};
+\node [font=\LARGE] at (-7.5,20.5) {$Z$};
+\node [font=\LARGE] at (-4.5,17) {$Combinatorial Circuit$};
+\node [font=\LARGE] at (1.25,16.75) {$D Flip-flop$};
+\node [font=\LARGE] at (0.5,21) {$D$};
+\node [font=\LARGE] at (3,20.25) {$Q$};
+\node [font=\LARGE] at (3,18.25) {$\Bar{Q}$};
+\node [font=\LARGE] at (5,21) {Z};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $S=0,Z=0$
+    \item $S=0,Z=1$
+    \item $S=1,Z=0$
+    \item $S=1,Z=1$
+\end{enumerate}
+\item To obtain the Boolean function $F()X,Y=X\Bar{Y}+\Bar{X}$ the inputs $PQRS$ in the figure 
+should be
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+
+\draw  (-6.25,22.5) rectangle (0,12.5);
+\draw (-4.5,12.5) to[short] (-4.5,10.5);
+\draw (-2,12.5) to[short] (-2,10.5);
+\draw (-6.25,14.5) to[short] (-7.5,14.5);
+\draw (-6.25,16.25) to[short] (-7.5,16.25);
+\draw (-6.25,18.25) to[short] (-7.5,18.25);
+\draw (-6.25,19.75) to[short] (-7.5,19.75);
+\draw (0,17.5) to[short] (1.25,17.5);
+\node [font=\Large] at (-3.25,23) {$4:1 Multiplexer$};
+\node [font=\Large] at (-8,19.75) {$P$};
+\node [font=\Large] at (-8,18.25) {$Q$};
+\node [font=\Large] at (-8,16.25) {$R$};
+\node [font=\Large] at (-8,14.5) {$S$};
+\node [font=\Large] at (-5.75,19.75) {$0$};
+\node [font=\Large] at (-5.75,18.25) {$1$};
+\node [font=\Large] at (-5.75,16.25) {$2$};
+\node [font=\Large] at (-5.75,14.5) {$3$};
+\node [font=\Large] at (-4.5,13.5) {$MSB$};
+\node [font=\Large] at (-2,13.5) {$LSB$};
+\node [font=\Large] at (-4.5,13) {$S_1$};
+\node [font=\Large] at (-2,13) {$S_0$};
+\node [font=\Large] at (2,17.75) {$F(X,Y)$};
+\node [font=\Large] at (2.75,11.5) {$S_1 and S_0 are the select lines.$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+    \item $1010$
+    \item $1110$
+    \item $0110$
+    \item $0001$
+\end{enumerate}
