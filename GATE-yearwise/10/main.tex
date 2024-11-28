@@ -1,0 +1,231 @@
+\iffalse
+\chapter{2016}
+\author{EE24BTECH11003}
+\section{ee}
+\fi
+\item A single-phase thyristor-bridge rectifier is fed from a $230 V, 50$ Hz, single-phase AC mains. If it is delivering a constant DC current of $10$ A, at firing angle of $30^\circ$, then value of the power factor at AC mains is
+\hfill{\brak{2016}}
+\begin{enumerate}
+\item $0.87$
+\item $0.9$
+\item $0.78$
+\item $0.45$
+\end{enumerate}
+
+\item The switches $T1$ and $T2$ in Figure $\brak{a}$ are switched in a complementary fashion with sinusoidal pulse width modulation technique. The modulating voltage $v_m(t) = 0.8 \sin\brak{200\pi t}$ V and the triangular carrier voltage $\brak{v_c}$ are as shown in Figure $\brak{b}$. The carrier frequency is $5$ kHz. The peak value of the $100$ Hz component of the load current $\brak{i_L}$, in ampere, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (6.5,16.25) to[battery2] (6.5,12);
+\draw (6.5,12) to[battery2] (6.5,8.75);
+\draw (6.5,16.25) to[short] (14.5,16.25);
+\draw (6.5,8.75) to[short] (14.5,8.75);
+\draw (6.5,12.5) to[L ] (11,12.5);
+\draw (11,12.5) to[R] (14.5,12.5);
+\draw (14.5,12.25) to[Tnpn, transistors/scale=1.19] (14.5,16.25);
+\draw (14.5,8.75) to[Tnpn, transistors/scale=1.19] (14.5,12.75);
+\draw (15.5,13.25) to[D] (15.5,15.75);
+\draw (15.5,9.25) to[D] (15.5,11.5);
+\draw (14.5,15.75) to[short] (15.5,15.75);
+\draw (14.5,13.25) to[short] (15.5,13.25);
+\draw (14.5,11.5) to[short] (15.5,11.5);
+\draw (14.5,9.25) to[short] (15.5,9.25);
+\node at (6.5,12.5) [circ] {};
+\node at (14.5,12.5) [circ] {};
+\draw [->, >=Stealth] (19.25,12.5) -- (28.75,12.5);
+\draw [short] (20.25,16.25) -- (20.25,8.75);
+\foreach \x in {0,...,20}{
+  \draw  (20.25+\x*0.36363636363636365,9.5) -- ++(0.18181818181818182,6) -- ++ (0.18181818181818182, -6);
+}
+\begin{scope}[rotate around={1.75:(20.25,12.5)}]
+\end{scope}
+\draw [short] (19,14.5) -- (20.25,14.5);
+\draw [short] (28,15.5) -- (28.75,15.5);
+\draw [<->, >=Stealth] (19.75,14.5) -- (19.75,12.5);
+\draw [<->, >=Stealth] (28.25,15.5) -- (28.25,12.5);
+\draw [->, >=Stealth] (28,17.25) -- (26.25,15.25);
+\draw [ color={rgb,255:red,255; green,0; blue,0}, ->, >=Stealth] (29.25,10.75) -- (27.75,12);
+\draw [->, >=Stealth] (7,9) -- (7,12.25);
+\draw [->, >=Stealth] (7,12.75) -- (7,16.25);
+\draw [->, >=Stealth] (11.75,13.25) -- (9.75,13.25);
+\node [font=\large] at (8.5,14.25) {$V_{DC}/2=250V$};
+\node [font=\large] at (8.5,10) {$V_{DC}/2=250V$};
+\node [font=\normalsize] at (9,12) {$X_L = 16\Omega at 100 Hz$};
+\node [font=\large] at (12.5,11.75) {R=12 $\Omega$};
+\node [font=\large] at (13.5,15.25) {T1};
+\node [font=\large] at (13.5,9.75) {T2};
+\node [font=\large] at (19.25,13.25) {0.8};
+\node [font=\large] at (28.75,13.75) {1};
+\node [font=\large] at (28.5,17.5) {$V_c$};
+\node [font=\large, color={rgb,255:red,255; green,0; blue,0}] at (29.75,10.5) {$V_m$};
+\node [font=\LARGE] at (29.25,12.5) {t};
+\node [font=\large] at (11,13.75) {$i_L$};
+\node [font=\large] at (10.5,7.75) {$(a)$};
+\node [font=\large] at (24.5,7.75) {$(b)$};
+\end{circuitikz}
+\end{center}
+
+\item The voltage $\brak{v_s}$ across and the current $\brak{i_s}$ through a semiconductor switch during a turn-ON transition are shown in figure. The energy dissipated during the turn-ON transition, in mJ, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [short] (11,18) -- (11,8.25);
+\draw [->, >=Stealth] (9.25,10.25) -- (20.75,10.25);
+\draw [->, >=Stealth] (9.25,14.75) -- (20.75,14.75);
+\draw [line width=1.5pt, short] (11,10.25) -- (13,10.25);
+\draw [line width=1.5pt, short] (13,10.25) -- (15,12.75);
+\draw [line width=1.5pt, short] (15,12.75) -- (15,11.5);
+\draw [line width=1.5pt, short] (15,11.5) -- (20.25,11.5);
+\draw [line width=1.5pt, short] (11,17) -- (15,17);
+\draw [line width=1.5pt, short] (15,17) -- (17,14.75);
+\draw [line width=1.5pt, short] (17,14.75) -- (20.25,14.75);
+\draw [dashed] (13,8) -- (13,18.75);
+\draw [dashed] (15,18.75) -- (15,8);
+\draw [dashed] (17,18.75) -- (17,8);
+\draw [->, >=Stealth] (11.5,14.75) -- (11.5,17);
+\draw [->, >=Stealth] (10.75,15.25) -- (10.75,16.5);
+\draw [->, >=Stealth] (10.75,10.75) -- (10.75,12.5);
+\draw [->, >=Stealth] (15.5,11.5) -- (15.5,12.75);
+\draw [->, >=Stealth] (17.5,10.25) -- (17.5,11.5);
+\draw [short] (15.25,12.75) -- (15.75,12.75);
+\draw [<->, >=Stealth] (13,8.5) -- (15,8.5);
+\draw [<->, >=Stealth] (15,8.5) -- (17,8.5);
+\node [font=\large] at (10.25,11.25) {$i_s$};
+\node [font=\large] at (10.25,15.75) {$v_s$};
+\node [font=\large] at (12.25,15.75) {600 V};
+\node [font=\large] at (16,12.25) {50 A};
+\node [font=\large] at (18.25,10.75) {100 A};
+\node [font=\large] at (14,7.75) {T1 = 1$\mu s$};
+\node [font=\large] at (16,7.75) {T2 = 1$\mu s$};
+\node [font=\large] at (21,14.75) {t};
+\node [font=\large] at (21,10.25) {t};
+\end{circuitikz}
+\end{center}
+
+\item A single-phase $400$ V, $50$ Hz transformer has an iron loss of $5000$ W at the rated condition. When operated at $200$ V, $25$ Hz, the iron loss is $2000$ W. When operated at $416$ V, $52$ Hz, the value of the hysteresis loss divided by the eddy current loss is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+
+\item A DC shunt generator delivers $45$ A at a terminal voltage of $220$ V. The armature and the shunt field resistances are $0.01 \Omega$  and $44 \Omega$ respectively. The stray losses are $375$ W. The percentage efficiency of the DC generator is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+
+\item A three-phase, $50$ Hz salient-pole synchronous motor has a per-phase direct-axis reactance $\brak{X_d}$ of $0.8$ pu and a per-phase quadrature-axis reactance $\brak{X_q}$ of $0.6$ pu. Resistance of the machine is negligible. It is drawing full-load current at $0.8$ pf $\brak{\text{leading}}$. When the terminal voltage is $1$ pu, per-phase induced voltage, in pu, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+
+\item A single-phase, $22$ kVA, $2200$ V/ $220$ V, $50$ Hz, distribution transformer is to be connected as an auto-transformer to get an output voltage of $2420$ V. Its maximum kVA rating as an auto-transformer is
+\hfill{\brak{2016}}
+\begin{enumerate}
+\item $0.87$
+\item $0.9$
+\item $0.78$
+\item $0.45$
+\end{enumerate}
+
+\item A single-phase full-bridge voltage source inverter $\brak{\text{VSI}}$ is fed from a $300$ V battery. A pulse of $120^\circ$ duration is used to trigger the appropriate devices in each half-cycle. The rms value of the fundamental component of the output voltage, in volts, is
+\hfill{\brak{2016}}
+\begin{enumerate}
+\item $234$
+\item $245$
+\item $300$
+\item $331$
+\end{enumerate}
+
+\item A single-phase transmission line has two conductors each of $10$ mm radius. These are fixed at a center-to-center distance of $1$ m in a horizontal plane. This is now converted to a three-phase transmission line by introducing a third conductor of the same radius. This conductor is fixed at an equal distance $D$ from the two single-phase conductors. The three-phase line is fully transposed. The positive sequence inductance per phase of the three-phase system is to be $5\%$ more than that of the inductance per conductor of the single-phase system. The distance $D$, in meters, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+
+\item In the circuit shown below, the supply voltage is $10\sin\brak{1000t}$ volts. The peak value of the steady state current through the $1 \Omega$ resistor, in amperes, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (10,16) to[R] (13.5,16);
+\draw (13.5,16) to[R] (13.5,13);
+\draw (13.5,13) to[R] (17.25,13);
+\draw (10,16) to[short] (10,13);
+\draw (10,13) to[short] (10.75,13);
+\draw (10.75,13.5) to[short] (10.75,13);
+\draw (12.5,13.5) to[short] (12.5,13);
+\draw (12.5,13) to[short] (13.75,13);
+\draw (10.75,13) to[short] (10.75,12.25);
+\draw (12.5,13) to[short] (12.5,12.25);
+\draw (13.25,16) to[short] (15,16);
+\draw (15,16) to[short] (15,16.5);
+\draw (16.75,16.5) to[short] (16.75,16);
+\draw (15,16) to[short] (15,15.25);
+\draw (16.75,16) to[short] (16.75,15.25);
+\draw (16.75,16) to[short] (17.25,16);
+\draw (17.25,16) to[short] (17.25,13);
+\draw (10,13.25) to[short] (10,10.75);
+\draw (17.25,13) to[short] (17.25,10.75);
+\draw (10,10.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (17.25,10.75);
+\draw (15,16.5) to[C] (16.75,16.5);
+\draw (10.75,13.5) to[C] (12.5,13.5);
+\draw (10.75,12.25) to[L ] (12.5,12.25);
+\draw (15,15.25) to[L ] (16.75,15.25);
+\node [font=\large] at (11.75,16.5) {4$\Omega$};
+\node [font=\large] at (16.5,17) {2$\mu F$};
+\node [font=\large] at (16,14.75) {500mH};
+\node [font=\large] at (15.25,13.5) {5$\Omega$};
+\node [font=\large] at (14.25,14.25) {1$\Omega$};
+\node [font=\large] at (11.5,14.25) {250$\mu F$};
+\node [font=\large] at (11.5,11.75) {4mH};
+\node [font=\large] at (13.75,10) {10sin(1000t)};
+\end{circuitikz}
+\end{center}
+
+\item A dc voltage with ripple is given by $v\brak{t} = \sbrak{100 + 10\sin\brak{\omega t} - 5\sin\brak{3\omega t}}$ volts. Measurements of this voltage $v\brak{t}$, made by moving-coil and moving-iron voltmeters, show readings of $V_1$ and $V_2$ respectively. The value of $V_2 - V_1$ , in volts, is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+
+\item The circuit below is excited by a sinusoidal source. The value of $R$, in $\ohm$, for which the admittance of the circuit becomes a pure conductance at all frequencies is $\rule{2cm}{0.1pt}.$
+\hfill{\brak{2016}}
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (13.5,13) to[sinusoidal voltage source, sources/symbol/rotate=auto] (18.25,13);
+\draw (13.5,13) to[short] (13.5,15);
+\draw (18.25,15) to[short] (18.25,13);
+\draw (13.5,15) to[short] (14.25,15);
+\draw (18.25,15) to[short] (17.5,15);
+\draw (14.25,15.5) to[short] (14.25,14.5);
+\draw (17.5,15.5) to[short] (17.5,14.5);
+\draw (14.25,15.5) to[C] (16,15.5);
+\draw (14.25,14.5) to[L ] (16,14.5);
+\draw (16,15.5) to[R] (17.5,15.5);
+\draw (16,14.5) to[R] (17.5,14.5);
+\node [font=\large] at (15,16.25) {100$\mu F$};
+\node [font=\large] at (16.75,16) {R};
+\node [font=\large] at (16.75,14) {R};
+\node [font=\large] at (15.25,14) {0.02H};
+\end{circuitikz}
+\end{center}
+
+\item In the circuit shown below, the node voltage $V_A$ is $\rule{2cm}{0.1pt}$ V.
+\hfill{\brak{2016}}
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (11.5,15.25) to[R] (11.5,11.25);
+\draw (11.5,15.25) to[short] (13,15.25);
+\draw (11.5,11.25) to[short] (13,11.25);
+\draw (13,11.25) to[american current source] (13,15.25);
+\draw (13,15.25) to[short] (14.5,15.25);
+\draw (13,11.25) to[short] (14.5,11.25);
+\draw (14.5,15.25) to[R] (14.5,13);
+\draw (14.5,11.25) to[american controlled voltage source] (14.5,13);
+\draw (14.5,11.25) to[short] (16.5,11.25);
+\draw (14.5,15.25) to[R] (16.5,15.25);
+\draw (16.5,15.25) to[R] (16.5,13);
+\draw (16.5,13) to[american voltage source] (16.5,11.25);
+\node at (14.5,15.25) [circ] {};
+\draw [->, >=Stealth] (14.25,15.75) -- (15,15.75);
+\node [font=\large] at (14.5,16.25) {$I_1$};
+\node [font=\large] at (16,15.75) {5$\Omega$};
+\node [font=\large] at (15.75,14.25) {5$\Omega$};
+\node [font=\large] at (13.75,14.25) {5$\Omega$};
+\node [font=\large] at (15.5,12.25) {$10 I_1$};
+\node [font=\large] at (17.5,12) {10 V};
+\node [font=\large] at (12.5,12.75) {5 A};
+\node [font=\large] at (10.75,13.25) {5$\Omega$};
+\end{circuitikz}
+\end{center}
