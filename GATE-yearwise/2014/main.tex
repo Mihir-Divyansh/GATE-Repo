@@ -1,0 +1,216 @@
+\iffalse
+\chapter{2014}
+\author{EE24BTECH11037}
+\section{ee}
+\fi
+
+%\begin{enumerate}
+    \item The undesirable property of an electrical insulating material is 
+    \begin{enumerate}
+        \item high dielectric strength
+        \item high relative permittivity
+        \item high thermal conductivity
+        \item high insulation resistivity
+    \end{enumerate}
+    \item Three-phase to ground fault takes place at locations $F_1$ and $F_2$  in the system shown in the figure\\
+\begin{circuitikz}
+    % Define nodes for points
+    \node[draw, circle] (EA) at (0,0) {$E_A \angle \delta$};
+    \node (F1) at (1.5,0) [label=below:$F_1$] {};
+    \node (A) at (3,0) [label=above:$A$] {};
+    \node (F2) at (4.5,0) [label=below:$F_2$] {};
+    \node (B) at (6,0) [label=above:$B$] {};
+    \node[draw, circle] (EB) at (7.5,0) {$E_B \angle 0$};
+
+    % Draw continuous line between points
+    \draw (EA) -- (EB);
+
+    % Busbars at F1 and F2
+    \draw[thick] (F1) ++(-0.25,0) -- ++(0.5,0);
+    \draw[thick] (F2) ++(-0.25,0) -- ++(0.5,0);
+
+    % Currents at A
+    \draw[->] (1.5,0.3) -- (4.5,0.3) node[midway, above] {$I_{F1}, I_{F2}$};
+
+    % Voltages at A
+    \draw[->] (A) -- ++(0,-1) node[below] {$V_{F1}, V_{F2}$};
+
+\end{circuitikz}\\
+If the fault takes place at location $F_1$, then the voltage and the current at bus A are $V_{F1}$ and $I_{F1}$ respectively. If the fault takes place at location $F_2$, then the voltage and the current at bus A are $V_{F2}$ and $I_{F2}$ respectively. The correct statement about voltages and currents during faults at $F_1$ and $F_2$ is
+    \begin{enumerate}
+        \item $V_{F1}$ leads $I_{F1}$ and $V_{F2}$ leads $I_{F2}$
+        \item $V_{F1}$ leads $I_{F1}$ and $V_{F2}$ lags $I_{F2}$
+        \item $V_{F1}$ lags $I_{F1}$ and $V_{F2}$ leads $I_{F2}$
+        \item $V_{F1}$ lags $I_{F1}$ and $V_{F2}$ lags $I_{F2}$
+    \end{enumerate}
+   \item A 2-bus system and corresponding zero sequence network are shown in the figure.
+    \begin{enumerate}
+        \item $5$
+        \item $10$
+        \item $20$
+        \item $40$
+    \end{enumerate}
+    \item In the formation of Routh-Hurwitz array for a polynomial, all the elements of a row have zero values. This premature termination of the array indicates the presence of 
+    \begin{enumerate}
+    \item only one root at the origin
+    \item imaginary roots
+    \item only positive real roots
+    \item only negative real roots
+    \end{enumerate}
+    \item The root locus of a unity feedback system is shown in the figure\\
+\tikzset{
+    cross/.style={path picture={
+        \draw[thick]
+        (path picture bounding box.south west) -- (path picture bounding box.north east)
+        (path picture bounding box.south east) -- (path picture bounding box.north west);
+    }}
+}
+
+\begin{tikzpicture}
+    % Draw the real axis with arrows on both ends
+    \draw[<->, thick] (-3.5,0) -- (1.5,0) node[anchor=west] {$\sigma$};
+    
+    % Draw the imaginary axis with an arrow at the top
+    \draw[->, thick] (0,-1.5) -- (0,1.5) node[anchor=south] {$j\omega$};
+    
+    % Place the poles
+    \node at (-2,0) [cross, draw=black, minimum size=5pt, thick] {};
+    \node at (-1,0) [cross, draw=black, minimum size=5pt, thick] {};
+    
+    % Labels for poles
+    \node at (-2, -0.3) {$-2$};
+    \node at (-1, -0.3) {$-1$};
+    \node at (-2, 0.3) {$\kappa=0$};
+    \node at (-1, 0.3) {$\kappa=0$};
+\end{tikzpicture}\\
+The closed loop transfer function of the system is
+    \begin{enumerate}
+        \item $\frac{C\brak{s}}{R\brak{S}}=\frac{K}{\brak{s+1}\brak{s+2}}$
+        \item $\frac{C\brak{s}}{R\brak{S}}=\frac{-K}{\brak{s+1}\brak{s+2}+K}$
+        \item $\frac{C\brak{s}}{R\brak{S}}=\frac{K}{\brak{s+1}\brak{s+2}-K}$
+        \item $\frac{C\brak{s}}{R\brak{S}}=\frac{K}{\brak{s+1}\brak{s+2}+K}$
+    \end{enumerate}
+    \item Power consumed by a balanced 3-phase, 3-wire load is measured by the two wattmeter method. The first wattmeter reads twice that of the second. Then the load impedance angle in radian is
+    \begin{enumerate}
+        \item $\pi/12$
+        \item $\pi/8$
+        \item $\pi/6$
+        \item $\pi/3$
+    \end{enumerate}
+    \item In an oscilloscopic screen, linear sweep is applied at the 
+    \begin{enumerate}
+        \item vertical axis 
+        \item horizontal axis
+        \item origin
+        \item both horizontal and vertical axis
+    \end{enumerate}
+    \item A cascade of three identical modulo-5 counters has an overall modulus of 
+    \begin{enumerate}
+        \item $5$
+        \item $25$
+        \item $125$
+        \item $625$
+    \end{enumerate}
+    \item In the Wien Bridge oscillator circuit shown in figure, the bridge is balanced when\\ 
+\begin{tikzpicture}[scale=1.2, every node/.style={transform shape}]
+    \draw (0,0) node[ground] {} to[resistor=$R_2$] (0,2) to[C=$C_2$] (0,4);
+    \draw (0,4) to[resistor=$R_1$] (2,4) to[resistor=$R_3$] (4,4);
+    \draw (4,4) to[resistor=$R_4$] (4,0) to[ground] (4,0);
+    \draw (2,2) node[op amp] (opamp) {};
+    \draw (0,4) -- (opamp.+) node[above left] {$+V_{cc}$};
+    \draw (4,4) -- (opamp.-) node[above right] {$-V_{cc}$};
+    \draw (opamp.out) -- (2,4);
+    \draw (opamp.out) -- (4,4);
+\end{tikzpicture}\\   
+    \begin{enumerate}
+        \item $\displaystyle \frac{R_3}{R_4}=\frac{R_1}{R_2}, \omega=\frac{1}{\sqrt{R_1C_1R_2C_2}}$
+        \item $\displaystyle \frac{R_2}{R_1}=\frac{C_2}{C_1}, \omega=\frac{1}{R_1C_1R_2C_2}$
+        \item $\displaystyle \frac{R_3}{R_4}=\frac{R_1}{R_2}+\frac{C_2}{C_1}, \omega=\frac{1}{\sqrt{R_1C_1R_2C_2}}$
+        \item $\displaystyle \frac{R_3}{R_4}+\frac{R_1}{R_2}=\frac{C_2}{C_1}, \omega=\frac{1}{R_1C_1R_2C_2}$
+    \end{enumerate} 
+    \item The magnitude of the mid-band voltage gain of the circuit shown in figure is(assuming $h_{fe}$ of the transistor to be 100)
+    \begin{enumerate}
+        \item $1$
+        \item $10$
+        \item $20$
+        \item $40$
+    \end{enumerate}
+    \item The figure shows the circuit of a rectifier fed from a $230-V$(rms), $50$-Hz sinusoidal voltage source. If we want to replace the current source with a resistor so that the rms value of the current supplied by the voltage source remains unchanged, the value of the resistance(in ohms) is(Assumed diodes to be ideal)\\
+\begin{circuitikz}
+    % AC Source
+    \draw (0,0) node[ground]{} 
+        to[sV, l_=230 V] ++(0,2) coordinate(AC_top);
+    \node at (-0.5, 1) {50 Hz};  % Additional frequency label
+    
+    % Bridge Rectifier Diodes
+    \draw (AC_top) -- ++(2,0)
+        to[diode] ++(1,1.5) coordinate(D1)
+        -- ++(1,0)
+        to[diode, invert] ++(1,-1.5) coordinate(D2)
+        -- ++(-1,-1.5) coordinate(D3)
+        to[diode] ++(-1,0)
+        -- ++(-1,1.5)
+        to[diode, invert] ++(1,-1.5);
+
+    % Connect AC source to bridge rectifier
+    \draw (0,0) -- (AC_top);
+    
+    % Load Current Source
+    \draw (D1) -- ++(0.5,0) to[isource, l_=10 A] ++(0,-3) -- (D3);
+\end{circuitikz}\\      
+    \begin{enumerate}
+        \item $50$
+        \item $51$
+        \item $52$
+        \item $54$
+    \end{enumerate}
+    \item Figure shows four electronic switches \brak{i}, \brak{ii}, \brak{iii}, \brak{iv}. Which of the switches can block voltages of either polarity(applied between terminals $'a'$ and $'b'$) when the active device is in the OFF state?
+ \begin{minipage}{0.25\textwidth}
+    % Circuit (i)
+    \begin{circuitikz}
+        \draw (0,2) node[anchor=east] {a} to[battery1] (0,0)
+        to[short] (2,0) to[empty diode] (2,2) -- (0,2);
+        \draw (2,2) -- (2,0) node[anchor=north] {b};
+    \end{circuitikz}
+    \centering (i)
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\textwidth}
+    % Circuit (ii)
+    \begin{circuitikz}
+        \draw (0,2) node[anchor=east] {a} to[battery1] (0,0)
+        to[short] (2,0) to[empty diode] (2,2);
+        \draw (2,0) node[anchor=north] {b};
+    \end{circuitikz}
+    \centering (ii)
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\textwidth}
+    % Circuit (iii)
+    \begin{circuitikz}
+        \draw (0,2) node[anchor=east] {a} to[diode] (0,0);
+        \node at (0, -0.5) {b};
+    \end{circuitikz}
+    \centering (iii)
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\textwidth}
+    % Circuit (iv)
+    \begin{circuitikz}
+        \draw (0,2) node[anchor=east] {a} to[diode] (2,2) -- (2,0) to[empty diode] (0,0) -- (0,2);
+        \node at (0, -0.5) {b};
+    \end{circuitikz}
+    \centering (iv)
+\end{minipage}\\    
+    \begin{enumerate}
+        \item $\brak{i}, \brak{ii} and \brak{iii}$
+        \item $\brak{ii}, \brak{iii} and \brak{iv}$
+        \item $\brak{ii} and \brak{iii}$
+        \item $\brak{i} and \brak{iv}$
+    \end{enumerate} 
+    \item Let $g:[0,\infty)\rightarrow[0,\infty)$ be a function defined by $g\brak{x}=x-\sbrak x$ represents the integer part of $x$. (That is, it is the largest integer which is less than or equal to $x$).\\
+    The value of the constant term in the Fourier series is expansion of $g(x)$ is \underline{\hspace{1.5cm}}
+%\end{enumerate}
+
+
+
