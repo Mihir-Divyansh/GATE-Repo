@@ -1,0 +1,264 @@
+\iffalse
+\title{2013-EE-1-13}
+\author{EE24BTECH11010 - BALAJI B}
+\section{ee}
+\chapter{2013}
+\fi
+    \item In the circuit shown below what is the output voltage $\brak{V_{\text{out}}}$ in Volts if a silicon transistor $Q$ and an ideal op-amp are used? \hfill(2013-EE)
+    \begin{figure}[H]
+\centering
+\resizebox{7cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (1.75,11.75) to (1.75,11) node[ground]{};
+\draw (1.75,13.5) to[american voltage source] (1.75,11.5);
+\draw (1.75,13.5) to[short] (3,13.5);
+\draw (3,13.5) to[R] (4.75,13.5);
+\draw (4.75,13.5) to[short] (6,13.5);
+\draw (5,13.5) to[short] (5,15.75);
+\draw (5,15.75) to[short] (8,15.75);
+\draw [short] (6,14) -- (6,12.25);
+\draw [short] (6,14) -- (7.5,13);
+\draw [short] (6,12.25) -- (7.5,13);
+\draw [short] (6,12.75) -- (5,12.75);
+\draw (5,12.75) to (5,12) node[ground]{};
+\draw (6.75,13.5) to[short, -o] (6.75,14.25) ;
+\draw (6.5,12.5) to[short, -o] (6.5,12) ;
+\draw (7.5,13) to[short] (9.25,13);
+\draw (9.25,13) to[short] (9.25,13.75);
+\draw (8,15.75) to[short] (9.25,15.75);
+\draw (9.25,15.75) to[short] (9.25,15);
+\draw [short] (9.25,15) -- (8.75,14.75);
+\draw [short] (8.75,15) -- (8.75,14.25);
+\draw [short] (8.75,14.5) -- (8.25,14.5);
+\draw [short] (8.75,14.25) -- (8.75,14);
+\draw [->, >=Stealth] (8.75,14.25) -- (9.25,13.75);
+\draw (8.25,14.5) to (8.25,14) node[ground]{};
+\node [font=\normalsize] at (1,12.5) {$5V$};
+\node [font=\normalsize] at (6.5,11.5) {$-15V$};
+\node [font=\normalsize] at (6.5,14.75) {$15V$};
+\node [font=\normalsize] at (9.25,14.5) {$Q$};
+\node [font=\normalsize] at (10.25,12.5) {$V_{out}$};
+\node [font=\normalsize] at (6,14.75) {$+$};
+\draw (9.25,13) to[short, -o] (10,13) ;
+\node [font=\normalsize] at (6.25,12.75) {$+$};
+\node [font=\normalsize] at (6.25,13.5) {$-$};
+\node [font=\normalsize] at (3.75,14) {$1k\ohm$};
+\node at (5,13.5) [circ] {};
+\node at (9.25,13) [circ] {};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \begin{enumerate}
+        \begin{multicols}{2}
+            \item $-15$
+            \item $-0.7$
+            \item $+0.7$
+            \item $+15$
+        \end{multicols}
+    \end{enumerate}
+    \item The transfer function $\frac{V_2\brak{s}}{V_1\brak{s}}$ of the circuit shown below is \hfill(2013-EE) 
+    \begin{figure}[H]
+\centering
+\resizebox{6cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (0.25,17.75) to[short, -o] (-1,17.75) ;
+\draw (-0.25,17.75) to[curved capacitor] (1.5,17.75);
+\draw (1.5,17.75) to[short, -o] (4.75,17.75) ;
+\draw (3.25,17.75) to[R] (3.25,15.5);
+\draw (3.25,15.5) to[curved capacitor] (3.25,13.75);
+\draw (3.25,13.75) to[short, -o] (4.5,13.75) ;
+\draw (3.25,13.75) to[short, -o] (-1.25,13.75) ;
+\node [font=\large] at (-1.25,15.75) {$V_1(s)$};
+\node [font=\large] at (4,16.75) {$10k\ohm$};
+\node [font=\large] at (4.5,14.75) {$100\mu F$};
+\node [font=\large] at (0.5,18.5) {$100\mu F$};
+\node [font=\large] at (-1,18) {$+$};
+\node [font=\large] at (4.75,18.25) {$+$};
+\node [font=\large] at (4.5,14) {$-$};
+\node [font=\large] at (-1.25,14.25) {$-$};
+\node [font=\large] at (5,15.75) {$V_2(s)$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \begin{enumerate}
+        \begin{multicols}{2}
+            \item $\frac{0.5s+1}{s+1}$
+            \item $\frac{3s+6}{s+2}$
+            \item $\frac{s+2}{s+1}$
+            \item $\frac{s+1}{s+2}$
+        \end{multicols}
+    \end{enumerate}
+    \item Assuming zero initial condition, the response $y(t)$ of the system given below to a unit step input $u(t)$ is 
+    \begin{figure}[H]
+\centering
+\resizebox{5cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [short] (1.25,18.75) -- (1.25,16.75);
+\draw [short] (1.25,18.75) -- (4.5,18.75);
+\draw [short] (4.5,18.75) -- (4.5,16.75);
+\draw [short] (1.25,16.75) -- (4.5,16.75);
+
+\draw [->, >=Stealth] (4.5,17.75) -- (6.25,17.75);
+\draw [->, >=Stealth] (-0.5,17.75) -- (1.25,17.75);
+\node [font=\Large] at (2.75,17.75) {$\frac{1}{s}$};
+
+\node [font=\large] at (5.5,18.25) {$Y(s)$};
+\node [font=\large] at (0.25,18.25) {$U(s)$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \begin{enumerate}
+        \begin{multicols}{2}
+            \item $u(t)$
+            \item $t u(t)$
+            \item $\frac{t^2}{2} u(t)$ 
+            \item $e^{-t}u(t)$
+        \end{multicols}
+    \end{enumerate}
+    \item The impulse response of the system is $h(t) = t u(t)$. For an input $u(t-1)$, the output is \hfill(2013-EE)
+    \begin{enumerate}
+        \begin{multicols}{4}
+            \item $\frac{t^2}{2}u(t)$
+            \item $\frac{t(t-1)}{2}u(t-1)$
+             \item $\frac{(t-1)^2}{2}u(t-1)$
+              \item $\frac{t^2-1}{2}u(t-1)$
+        \end{multicols}
+    \end{enumerate}
+    \item Which one of the following statements is \textbf{NOT TRUE} for a continuous time casual and stable LTI system? \hfill(2013-EE)
+    \begin{enumerate}
+        \item All the poles of the system must lie on the left side of the $j\omega$ axis
+        \item Zeros of the system can lie anywhere in the $s-$ plane.
+        \item All the poles must lie within $\abs{s} = 1$
+        \item All the roots of the characteristic equation must be located on the left side of the $j\omega$ axis.
+    \end{enumerate}
+    \item Two systems with impulse response $h_1(t)$ and $h_2(t)$ are connected is cascade. Then the overall impulse response of the cascaded system is given by \hfill(2013-EE)
+    \begin{enumerate}
+        \item A product of $h_1(t)$ and $h_2(t)$
+        \item Sum of $h_1(t)$ and $h_{2}(t)$
+        \item Convolution of $h_1(t)$ and $h_2(t)$
+        \item substraction of $h_2(t)$ from $h_1(t)$
+    \end{enumerate}
+    \item A source $v_s(t) = V\cos{100\pi t}$ has an internal impedance of $\brak{4 + j3} \ohm$. If a purely resistive load connected to this source has to extract the maximum power out of the source, its value in $\ohm$ should be \hfill(2013-EE)
+    \begin{enumerate}
+        \begin{multicols}{4}
+            \item 3
+            \item 4
+            \item 5
+            \item 7
+        \end{multicols}
+    \end{enumerate}
+    \item A single-phase load is supplied by a single-phase voltage source. If the current flowing from the load to the source is $10 \angle-150^{\degree}$ $A$ and if the voltage at the load terminals is $100 \angle 60^{\degree}$, then the \hfill(2013-EE)
+    \begin{enumerate}
+        \item load absorbs real power real power and delivers reactive power
+        \item load absorbs real power real power and absorbs reactive power
+        \item load delivers real power real power and delivers reactive power
+        \item load delivers real power real power and absorbs reactive power
+    \end{enumerate}
+    \item A single-phase transformer has no-load loss of $64W$, as obtained from an open-circuit test. When a short-circuit test is performed on it with $90\%$ of the rated currents flowing in its both $LV$ and $HV$ windings, the measured load is $81W$. The transformer has maximum efficiency when operated at \hfill(2013-EE)
+    \begin{enumerate}
+        \begin{multicols}{2}
+            \item $50.0\%$ of the rated current.
+            \item $64.0\%$ of the rated current.
+            \item $80.0\%$ of the rated current.
+            \item $88.8\%$ of the rated current.
+        \end{multicols}
+    \end{enumerate}
+    \item The flux density at a point in space is given by $\textbf{B} = 4x \textbf{a}_\textbf{x} + 2ky\textbf{a}_\textbf{y} + 8\textbf{a}_\textbf{z} Wb/m^2$. The value of constant $k$ must be equal to \hfill(2013-EE) 
+    \begin{enumerate}
+        \begin{multicols}{4}
+            \item $-2$
+            \item $-0.5$
+            \item $+0.5$
+            \item $+2$
+        \end{multicols}
+    \end{enumerate}
+    \item A continuous random variable $X$ has a probability density function $f(x) = e^{-x}, 0 < x < \infty$. Then $P\cbrak{X > 1}$ \hfill(2013-EE)
+    \begin{enumerate}
+        \begin{multicols}{4}
+            \item 0.368
+            \item 0.5
+            \item 0.632
+            \item 1.0
+        \end{multicols}
+    \end{enumerate}
+    \item The curl of the gradient of the scalar field defined by $V = 2x^2y + 3y^2z 
+ 4z^2x$ is \hfill(2013-EE)
+ \begin{enumerate}
+     \item $4xy\textbf{a}_\textbf{x} + 6yz\textbf{a}_\textbf{y} + 8zx \textbf{a}_ \textbf{z}$
+     \item $4\textbf{a}_\textbf{x}+ 6\textbf{a}_\textbf{z}+ 8\textbf{a}_\textbf{z}$
+     \item $\brak{4xy + 4z^2}\textbf{a}_\textbf{x} + \brak{2x^2 + 6yz}\textbf{a}_\textbf{y} + \brak{3y^2 + 8zx}\textbf{a}_\textbf{z}$
+     \item 0
+ \end{enumerate}
+ \item In the feedback network shown below, if the feedback factor $k$ is increased, then the 
+
+ \hfill(2013-EE)
+ \begin{figure}[H]
+\centering
+\resizebox{5cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [short] (-0.5,17.5) -- (-0.5,15.25);
+\draw [short] (-0.5,17.5) -- (3.5,17.5);
+\draw [short] (3.5,17.5) -- (3.5,15.25);
+\draw [short] (3.5,15.25) -- (-0.5,15.25);
+\draw [short] (3.5,16.75) -- (4.75,16.75);
+\draw [short] (3.5,15.75) -- (4.75,15.75);
+\draw [short] (4.75,16.75) -- (4.75,13);
+\draw [short] (4.75,13) -- (3.5,13);
+\draw [short] (4.75,15.75) -- (5.5,15.75);
+\draw [short] (5.5,15.75) -- (5.5,12.25);
+\draw [short] (5.5,12.25) -- (3.5,12.25);
+\draw [short] (3.5,13.5) -- (3.5,11.75);
+\draw [short] (3.5,13.5) -- (-0.5,13.5);
+\draw [short] (-0.5,13.5) -- (-0.5,11.75);
+\draw [short] (-0.5,11.75) -- (3.5,11.75);
+\draw [short] (-0.5,15.75) -- (-1.25,15.75);
+\draw [short] (-1.25,15.75) -- (-1.25,13);
+\draw [short] (-0.5,13) -- (-1.25,13);
+\draw [short] (-0.5,16.75) -- (-0.5,17);
+\draw (-0.5,16.75) to[short, -o] (-3.25,16.75) ;
+\draw [short] (-0.5,12.25) -- (-2.25,12.25);
+\draw [short] (-2.25,12.25) -- (-2.25,15.75);
+\draw (-2.25,15.75) to[short, -o] (-3.25,15.75) ;
+\draw (4.75,16.75) to[short, -o] (6.75,16.75) ;
+\draw (5.5,15.75) to[short, -o] (6.75,15.75) ;
+\node at (4.75,16.75) [circ] {};
+\node at (5.5,15.75) [circ] {};
+\node [font=\large] at (4.25,16.5) {$+$};
+\node [font=\large] at (4.25,16) {$-$};
+\node [font=\large] at (6.5,16.25) {$V_{out}$};
+\node [font=\large] at (3.75,12.75) {$+$};
+\node [font=\Large] at (3.75,12.5) {$-$};
+\node [font=\Large] at (1.5,12.75) {$k$};
+\node [font=\Large] at (1.5,16.5) {$A_0$};
+\node [font=\Large] at (-1.25,16.25) {$v_1$};
+\node [font=\Large] at (-0.75,16.5) {$+$};
+\node [font=\Large] at (-0.75,16) {$-$};
+\node [font=\Large] at (-2.5,16.25) {$v_{in}$};
+\node [font=\Large] at (-3.5,16.5) {$+$};
+\node [font=\Large] at (-3.5,15.75) {$-$};
+\node [font=\normalsize] at (-1.5,12.75) {$v_f = kv_{out}$};
+\node [font=\large] at (-0.75,12.75) {$+$};
+\node [font=\large] at (-0.75,12.5) {$-$};
+\end{circuitikz}
+}%
+\end{figure}
+
+ \begin{enumerate}
+     \item input impedance increases and output impedance decrease  
+     \item input impedance increases and output impedance also increase 
+     \item input impedance decrease  and output impedance also decrease  
+     \item input impedance decreases and output impedance increases
+ \end{enumerate}
+

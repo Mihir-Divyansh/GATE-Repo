@@ -1,0 +1,411 @@
+\iffalse
+\title{2015-EE-40-52}
+\author{EE24BTECH11010 - BALAJI B}
+\section{ee}
+\chapter{2015}
+\fi
+    \item An unbalanced $DC$
+ Wheatstone bridge is shown in the figure. At what value of $p$
+ will the magnitude of $V_0$
+ be maximum? \hfill(2015-EE)
+ \begin{figure}[!ht]
+\centering
+\resizebox{4cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (-1.5,29) to[R] (-5,25.5);
+\draw (-5,25.5) to[R] (-1.5,22);
+\draw (-1.5,22) to[R] (2,25.5);
+\draw (-1.5,29) to[R] (2,25.5);
+\draw (-1.5,29) to[short, -o] (-1.5,26) ;
+\draw (-1.5,22) to[short, -o] (-1.5,24.75) ;
+\node at (-1.5,29) [circ] {};
+\node at (-1.5,22) [circ] {};
+\node at (2,25.5) [circ] {};
+\node at (-5,25.5) [circ] {};
+\node at (-1.5,26) [circ] {};
+\node at (-1.5,24.75) [circ] {};
+\draw (-5,25.5) to[short] (-5,20.5);
+\draw (2,25.5) to[short] (2,20.5);
+\draw (-5,20.5) to[battery ] (2,20.5);
+\node [font=\large] at (-3.75,27.75) {$pR$};
+\node [font=\large] at (-4,23.25) {$pR$};
+\node [font=\large] at (0.75,23.25) {$R$};
+\node [font=\large] at (-1.5,19.75) {$E$};
+\node [font=\large] at (1.5,27.75) {$R(1+x)$};
+\draw [->, >=Stealth] (0.25,26.5) -- (0.25,28.5);
+\node [font=\large] at (-1.5,25.5) {$V_o$};
+\node [font=\large] at (-2,26) {$+$};
+\node [font=\LARGE] at (-2,24.5) {$-$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ \begin{enumerate}
+     \begin{multicols}{4}
+         \item $\sqrt{\brak{1+x}}$
+         \item $\brak{1+x}$
+         \item $\frac{1}{\sqrt{\brak{1+x}}}$
+         \item $\sqrt{\brak{1-x}}$
+     \end{multicols}
+ \end{enumerate}
+ \item The circuit shown is meant to supply a resistive load $R_L$
+ from two separate $DC$
+ voltage sources. The switches $S_1$
+ and $S_2$
+ are controlled so that only one of them is ON at any instant. $S_1$
+ is turned on for $0.2ms$
+ and $S_2$
+ is turned on for $0.3ms$
+ in a $0.5ms$
+ switching cycle time period. Assuming continuous conduction of the inductor current and negligible ripple on the capacitor voltage, the output voltage $V_o$
+ (in Volt) across $R_L$
+ is \rule{2cm}{0.4pt}. \hfill(2015-EE)
+ \begin{figure}[H]
+\centering
+\resizebox{8cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (-5.75,24.25) to[american voltage source] (-5.75,19.25);
+\draw (-3.75,22.25) to[american voltage source] (-3.75,19.25);
+\draw (-3.75,22.25) to[short] (-1.25,22.25);
+\draw (-5.75,19.25) to[short] (5,19.25);
+\draw (-5.75,24.25) to[short] (-3.25,24.25);
+\draw (-3.25,24.25) to[short] (-2.75,23.75);
+\draw (-3,23.75) to[short] (-2,23.75);
+\draw (-2.75,23.5) to[short] (-2.25,23.5);
+\draw (-2.5,23.5) to[short] (-2.5,23);
+\draw [->, >=Stealth] (-2.25,23.75) -- (-2,24.25);
+\draw (-2,24.25) to[D] (2,24.25);
+\draw (2,24.25) to[short] (2,22.25);
+\draw (-1.25,22.25) to[short] (-0.75,21.75);
+\draw (-1,21.75) to[short] (0,21.75);
+\draw (-0.75,21.5) to[short] (-0.25,21.5);
+\draw [->, >=Stealth] (-0.25,21.75) -- (0.25,22.25);
+\draw (0.25,22.25) to[D] (2,22.25);
+\draw (2,23.25) to[L,l={ \large L} ] (5,23.25);
+\draw (5,19.25) to[C,l={ \large C}] (5,23.25);
+\draw (5,23.25) to[short] (6.25,23.25);
+\draw (5,19.25) to[short] (6.25,19.25);
+\draw (6.25,23.25) to[R,l={ \large $R_L$}] (6.25,19.25);
+\node [font=\large] at (-2.5,24.25) {$S1$};
+\node [font=\large] at (-0.5,22.25) {$S2$};
+\node [font=\large] at (-3,20.75) {$5V$};
+\node [font=\large] at (-6.5,21.75) {$10V$};
+\node [font=\large] at (6,22) {$+$};
+\node [font=\LARGE] at (6,20.5) {$-$};
+\node [font=\large] at (5.75,21.25) {$V_o$};
+\draw (-0.5,21.5) to[short] (-0.5,21);
+\node at (2,23.25) [circ] {};
+\node at (5,23.25) [circ] {};
+\node at (5,19.25) [circ] {};
+\node at (-3.75,19.25) [circ] {};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ \item A self commutating switch $SW$ 
+ operated at duty cycle $\delta$
+ is used to control the load voltage as shown in the figure
+ \begin{figure}[H]
+\centering
+\resizebox{8cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ line width=0.7pt](2,12.25) to[short] (2,11.5);
+\draw [ line width=0.7pt](1.75,12.25) to[short] (2.25,12.25);
+\draw [ line width=0.7pt](1.5,12.5) to[short] (2.5,12.5);
+\draw [ line width=0.7pt](2,12.5) to[short] (2,13.5);
+\draw [line width=0.7pt](2,13.5) to[L ] (5,13.5);
+\draw [ line width=0.7pt](5,13.5) to[D] (6.75,13.5);
+\draw [ line width=0.7pt](6.75,13.5) to[short] (8.25,13.5);
+\draw [ line width=0.7pt](8.25,13.5) to[R] (8.25,11.5);
+\draw [ line width=0.7pt](2,11.5) to[short] (8.25,11.5);
+\draw [line width=0.7pt](7,13.5) to[curved capacitor] (7,11.5);
+\draw [line width=0.7pt](4.75,13.5) to[closing switch] (4.75,11.5);
+\node [font=\large] at (1.25,12.25) {$V_{dc}$};
+\node [font=\large] at (3.5,13) {$L$};
+\node [font=\large] at (5.75,14) {$D$};
+\node [font=\large] at (6.3,12.5) {$C$};
+\node [font=\large] at (5.45,12.5) {$SW$};
+\node [font=\normalsize] at (4.5,12.5) {$\delta$};
+\draw [line width=0.7pt, ->, >=Stealth] (7.5,11.75) -- (7.5,13);
+\node [font=\normalsize] at (7.75,12.5) {$v_c$};
+\node [font=\normalsize] at (8.75,12.5) {$R_L$};
+\node at (4.75,13.5) [circ] {};
+\node at (7,13.5) [circ] {};
+\node at (4.75,11.5) [circ] {};
+\node at (7,11.5) [circ] {};
+\draw [line width=0.7pt, ->, >=Stealth] (4,14.25) -- (3,14.25);
+\node [font=\large] at (3.5,14.5) {$v_L$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ Under steady state operating conditions, the average voltage across the indicator and the capacitor respectively, are \hfill(2015-EE)
+ \begin{enumerate}
+     \begin{multicols}{2}
+         \item $V_L = 0$ and $V_C = \frac{1}{1-\delta} V_{dc}$
+          \item $V_L = \frac{\delta}{2}V_{dc}$ and $V_C = \frac{1}{1-\delta} V_{dc}$
+           \item $V_L = 0$ and $V_C = \frac{\delta}{1-\delta} V_{dc}$
+            \item $V_L = \frac{\delta}{2} V_{dc}$ and $V_C = \frac{\delta}{1-\delta} V_{dc}$
+     \end{multicols}
+ \end{enumerate}
+ \item The single-phase full-bridge voltage source inverter $\brak{VSI}$
+ shown in figure, has an output frequency of $50Hz$
+. It uses unipolar pulse width modulation with switching frequency of $50kHz$
+ and modulation index of $0.7$
+ For $V_{in} = 100V$, $L = 9.55mH$, $C = 63.66\mu F$
+ and $R = 5 \ohm$
+ the amplitude of the fundamental component in the voltage $V_o$ (in Volt) under steady-state is \rule{2cm}{0.4pt} \hfill(2015-EE)
+ \begin{figure}[!ht]
+\centering
+\resizebox{7cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ line width=0.7pt](-3,15.75) to[american voltage source] (-3,13);
+\draw [ line width=0.7pt](-3,15.75) to[short] (-1.5,15.75);
+\draw [ line width=0.7pt](-3,13) to[short] (-1.5,13);
+\draw [ line width=0.7pt](-1.5,16.5) to[short] (-1.5,12.25);
+\draw [ line width=0.7pt](-1.5,16.5) to[short] (2.25,16.5);
+\draw [ line width=0.7pt](2.25,16.5) to[short] (2.25,12.25);
+\draw [ line width=0.7pt](-1.5,12.25) to[short] (2.25,12.25);
+\draw [ line width=0.7pt](2.25,13.25) to[short] (5.25,13.25);
+\draw [line width=0.7pt](5.25,13.25) to[C] (5.25,15.75);
+\draw [line width=0.7pt](2.25,15.75) to[L ] (5.25,15.75);
+\draw [ line width=0.7pt](5.25,15.75) to[short] (6.75,15.75);
+\draw [ line width=0.7pt](5.25,13.25) to[short] (6.75,13.25);
+\draw [ line width=0.7pt](6.75,15.75) to[R] (6.75,13.25);
+\node [font=\large] at (-3.75,14.25) {$V_{in}$};
+\node [font=\large] at (0.5,14.5) {Full-Bridge};
+\node [font=\large] at (0.25,13.75) {VSI};
+\node [font=\large] at (2.5,14.5) {$V_R$};
+\node [font=\large] at (2.5,16) {$+$};
+\node [font=\LARGE] at (2.5,13) {$-$};
+\node [font=\large] at (4.5,14.5) {$C$};
+\node [font=\large] at (6.25,14.5) {$R$};
+\node [font=\large] at (7.25,14.5) {$V_o$};
+\node [font=\large] at (7,15.5) {$+$};
+\node [font=\LARGE] at (7,13.25) {$-$};
+\node [font=\large] at (3.75,16.5) {$L$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ \item A 3-phase 50 Hz square wave (6-step) $VSI$ feeds a 3-phase, 4 pole induction motor. The $VSI$ line voltage has a dominant $5^{th}$ harmonic component. If the operating slip of the motor with respect to fundamental component voltage is 0.04, the slip of the motor with respect to $5^{th}$ harmonic component of voltage is \rule{1cm}{0.4pt} 
+ 
+ \hfill(2015-EE)
+ \item A parallel plate capacitor is partially filled with glass of dielectric constant 4.0 as shown below. The dielectric strengths of air and glass are $30 kV/cm$ and $300 kV/cm$, respectively. The maximum voltage (in kilovolts), which can be applied across the capacitor without any breakdown, is \rule{2cm}{0.4pt} \hfill(2015-EE)
+ \begin{figure}[H]
+\centering
+\resizebox{7cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=0.7pt, short] (1.5,13) -- (5,13);
+\draw [line width=0.7pt, short] (1.5,10.75) -- (5,10.75);
+\draw [line width=0.7pt, <->, >=Stealth] (1.25,13) -- (1.25,10.75);
+\draw [line width=0.7pt, <->, >=Stealth] (5.25,13) -- (5.25,12);
+\draw [line width=0.7pt, dashed] (1.5,11.75) -- (5,11.75);
+\draw [line width=0.7pt, dashed] (1.5,11.5) -- (5,11.5);
+\draw [line width=0.7pt, dashed] (1.5,11.25) -- (5,11.25);
+\draw [line width=0.7pt, dashed] (1.5,11) -- (5,11);
+\draw [line width=0.7pt, dashed] (1.5,10.75) -- (3,10.75);
+\draw [line width=0.7pt, dashed] (1.5,12) -- (5,12);
+\node [font=\normalsize] at (0.75,12) {$10mm$};
+\node [font=\normalsize] at (5.75,12.5) {$5mm$};
+\node [font=\normalsize] at (2.75,12.5) {Air, };
+\node [font=\normalsize] at (3.25,12.5) {$\epsilon_r$};
+\node [font=\normalsize] at (3.75,12.5) {$ = 1.0$};
+\node [font=\normalsize] at (2.5,11.5) {\textbf{Glass,}};
+\node [font=\normalsize] at (3.25,11.5) {$\epsilon_r$};
+\node [font=\normalsize] at (3.75,11.5) {\textbf{= 4.0}};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ \item The figure shows a digital circuit constructed using negative edge triggered $J - K$
+ flip flops. Assume a starting state of $Q_2Q_1Q_0 = 000$
+ This state $Q_2Q_1Q_0 = 000$
+ will repeat after \rule{1.5cm}{0.4pt} number of cycles of the clock $CLK$.
+ \hfill (2015-EE)
+ \begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+\draw [line width=2pt, short] (1,24.25) -- (1,16.5);
+\draw [line width=2pt, short] (1,24.25) -- (7.25,24.25);
+\draw [line width=2pt, short] (7,24.25) -- (7.5,24.25);
+\draw [line width=2pt, short] (7.5,24.25) -- (7.5,16.75);
+\draw [line width=2pt, short] (1,16.5) -- (7.5,16.5);
+\draw [line width=2pt, short] (7.5,16.75) -- (7.5,16.5);
+\draw [line width=2pt, short] (12.5,24.25) -- (12.5,16.5);
+\draw [line width=2pt, short] (12.5,24.25) -- (18.5,24.25);
+\draw [line width=2pt, short] (18.5,24.25) -- (19,24.25);
+\draw [line width=2pt, short] (19,24.25) -- (19,16.5);
+\draw [line width=2pt, short] (12.5,16.5) -- (19,16.5);
+\draw [line width=2pt, short] (23.75,24.25) -- (23.75,16.5);
+\draw [line width=2pt, short] (23.75,16.5) -- (30.25,16.5);
+\draw [line width=2pt, short] (30.25,16.5) -- (30.25,24.25);
+\draw [line width=2pt, short] (23.75,24.25) -- (30.25,24.25);
+\draw [line width=2pt, short] (7.5,23) -- (8.75,23);
+\draw [line width=2pt, short] (8.75,23) -- (8.75,15);
+\draw [line width=2pt, short] (8.75,15) -- (21.75,15);
+\draw [line width=2pt, short] (21.75,15) -- (21.75,19.75);
+\draw [line width=2pt, short] (21.75,19.75) -- (23.75,19.75);
+\draw [line width=2pt, short] (19,22.75) -- (23.75,22.75);
+\draw [line width=2pt, short] (12.5,23) -- (11.25,23);
+\draw [line width=2pt, short] (11.25,23) -- (11.25,26);
+\draw [line width=2pt, short] (11.25,26) -- (32.75,26);
+\draw [line width=2pt, short] (32.75,26) -- (32.75,17.25);
+\draw [line width=2pt, short] (32.75,17.25) -- (30.25,17.25);
+\draw [line width=2pt, short] (30.25,22.75) -- (31.75,22.75);
+\draw [line width=2pt, short] (8.75,19.75) -- (12.5,19.75);
+\draw [line width=2pt, short] (-1,23.25) -- (1,23.25);
+\draw [line width=2pt, short] (-0.75,20.25) -- (1,20.25);
+\draw [line width=2pt, short] (-0.75,20.25) -- (-1,20.25);
+\draw [line width=2pt, short] (1,18) -- (-1,18);
+\draw [line width=2pt, short] (12.25,17.5) -- (10.75,17.5);
+\draw [line width=2pt, short] (12.25,17.5) -- (12.5,17.5);
+\draw [line width=2pt, short] (23.75,17.25) -- (22.5,17.25);
+\node at (8.75,19.75) [circ] {};
+\node at (8.75,19.75) [circ] {};
+\node [font=\Huge] at (2.25,20.25) {Clock};
+\node [font=\Huge] at (2,23) {$J_0$};
+\node [font=\Huge] at (2,18) {$K_0$};
+\node [font=\Huge] at (6.25,23) {$Q_0$};
+\node [font=\Huge] at (6,17.75) {$Q_0$};
+\node [font=\Huge] at (13.75,23) {$J_1$};
+\node [font=\Huge] at (13.75,17.5) {$K_1$};
+\node [font=\Huge] at (13.75,19.75) {Clock};
+\node [font=\Huge] at (18,22.5) {$Q_1$};
+\node [font=\Huge] at (18,17.75) {$Q_1$};
+\node [font=\Huge] at (25.25,22.75) {$J_2$};
+\node [font=\Huge] at (24.75,17.5) {$K_2$};
+\node [font=\Huge] at (25,19.75) {Clock};
+\node [font=\Huge] at (29,22.75) {$Q_2$};
+\node [font=\Huge] at (29.5,17.5) {$Q_2$};
+\draw [line width=2pt, short] (5.5,18.25) -- (6.5,18.25);
+\draw [line width=2pt, short] (17.25,18.5) -- (18.5,18.5);
+\draw [line width=2pt, short] (28.75,18) -- (29.75,18);
+\node [font=\Huge] at (-2,23.25) {1};
+\node [font=\Huge] at (-2,20.25) {CLK};
+\node [font=\Huge] at (-1.75,18) {1};
+\node [font=\Huge] at (11.25,18.25) {1};
+\node [font=\Huge] at (23,18) {1};
+\node at (8.75,19.75) [circ] {};
+\node at (8.75,19.75) [circ] {};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+ \item $f\brak{A,B,C,D} = \Pi M \brak{0,1,3,4,5,7,9,11,12,13,14,15}$ is a maxterm representation of the Boolean function $f\brak{A,B,C,D}$ where $A$ is the MSB and $D$ is the LSB. The equivalent minimized representation of this function is \hfill(2015-EE)
+ \begin{enumerate}
+     \item $\brak{A + \Bar{C} + D}\brak{\Bar{A} + B + D}$
+     \item $A\Bar{C}D + \Bar{A} + B + D$
+     \item $\Bar{A}CD + A \Bar{B}CD + A\Bar{B}\Bar{C}\Bar{D}$
+     \item $\brak{B + \Bar{C} + D}\brak{A + \Bar{B} + \Bar{C} + D} \brak{\Bar{A} + B + C + D}$
+ \end{enumerate}
+ \item Consider a discrete time signal given by 
+ \begin{center}
+     $x\sbrak{n} = \brak{-0.25}^n u\sbrak{n} + \brak{0.5}^n u \sbrak{-n-1}$
+ \end{center}
+ The region of convergence of its Z-transform would be \hfill (2015-EE)
+ \begin{enumerate}
+     \item the region inside the circle of radius 0.5 and centered at origin 
+     \item the region outside the circle of radius 0.25 and centered at origin 
+     \item the annular region between the two circles, both centered at origin and having radii 0.25 and 0.5
+     \item the entire Z plane
+ \end{enumerate}
+ \item The op-amp shown in the figure has a finite gain $A= 1000$
+ and an infinite input resistance. A step voltage $V_i = 1mV$
+ is applied at the input at time $t = 0$
+ as shown. Assuming that the operational amplifier is not saturated, the time constant (in millisecond) of the output voltage $V_o$
+ is \hfill(2015-EE)
+ \begin{figure}[H]
+\centering
+\resizebox{7cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=0.7pt](1,11.25) to[short, -o] (7,11.25) ;
+\draw [ line width=0.7pt](3,11.25) to[short] (3,12.75);
+\draw [ line width=0.7pt](3,12.75) to[short] (3.5,12.75);
+\draw [ line width=0.7pt](1,13.5) to[american voltage source] (1,11.25);
+\draw [ line width=0.7pt](1,13.5) to[R] (2.75,13.5);
+\draw [ line width=0.7pt](2.75,13.5) to[short] (3.5,13.5);
+\draw [ line width=0.7pt](3,13.5) to[short] (3,14.5);
+\draw [line width=0.7pt](3,14.5) to[C] (6,14.5);
+\draw [ line width=0.7pt](6,14.5) to[short] (6,13);
+\draw [ line width=0.7pt](5,13) to[short] (6.75,13);
+\draw [ line width=0.7pt](6.75,13) to[short, -o] (7,13) ;
+\draw [ line width=0.7pt](3.5,13.75) to[short] (3.5,12.25);
+\draw [line width=0.7pt, short] (3.5,12.25) -- (5,13);
+\draw [line width=0.7pt, short] (3.5,13.75) -- (5,13);
+\node at (6,13) [circ] {};
+\node at (3,13.5) [circ] {};
+\node at (3,11.25) [circ] {};
+\draw [line width=0.7pt](3,11.25) to (3,11) node[ground]{};
+\draw [line width=0.7pt, short] (0.25,12.5) -- (0,12.5);
+\draw [line width=0.7pt, short] (0,12.5) -- (0,11.75);
+\draw [line width=0.7pt, short] (0,11.75) -- (-0.25,11.75);
+\node [font=\normalsize] at (1.75,14) {$R$};
+\node [font=\normalsize] at (2,13) {$1k\ohm$};
+\node [font=\normalsize] at (0.5,12.75) {$V_i$};
+\node [font=\normalsize] at (4.5,15.25) {$C$};
+\node [font=\normalsize] at (7,12) {$v_o$};
+\node [font=\small] at (4.15,13) {A = 1000};
+\node [font=\large] at (7,12.75) {+};
+\node [font=\large] at (3.75,13.25) {+};
+\node [font=\small] at (-0.3,12.5) {$1mV$};
+\node [font=\small] at (0,11.5) {t = 0 s};
+\node [font=\Large] at (3.75,12.75) {-};
+\node [font=\Large] at (7,11.5) {-};
+\node [font=\normalsize] at (4.5,13.7) {$1\mu F$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+ \item An $8$-bit, unipolar Successive Approximation Register type $ADC$
+ is used to convert $3.5V$
+ to digital equivalent output. The reference voltage is $+5V$
+ The output of the $ADC$
+ at the end of $3^{rd}$ clock pulse after the start of conversion, is \hfill(2015-EE)
+ \begin{enumerate}
+     \begin{multicols}{2}
+         \item 1010 0000
+         \item 1000 0000
+         \item 0000 0001
+         \item 0000 0011
+     \end{multicols}
+ \end{enumerate}
+ \item Consider the economic dispatch problem for a power plant having two generating units. The fuel costs in $Rs/MWh$ along with the generating limits for the two units are given below: \\
+ \begin{center}
+     $C_1\brak{P_1} = 0.01P_1^2 + 30P_1 + 10$ ; $100MW \leq P_1 \leq 150MW$ \\
+     $C_2\brak{P_2} = 0.05P_2^2 + 10P_2 + 10$ ; $100MW \leq P_2 \leq 180MW$      
+ \end{center} 
+ 
+ The incremental costs (in $Rs/MWh$) of the power plant when it supplies $200MW$ is 
+
+ \hfill(2015-EE)
+ \item Determine the correctness or otherwise of the following Assertion $\sbrak{\text{a}}$ and the Reason $\sbrak{r}$ \\ \\
+ Assertion: Fast decoupled load flow method gives approximate load flow solution because it uses several assumptions. \\ \\
+ Reason: Accuracy depends on the power mismatch vector tolerance. \hfill(2015-EE)
+ \begin{enumerate}
+     \item Both $\sbrak{\text{a}}$ and $\sbrak{\text{r}}$ are true and $\sbrak{\text{r}}$ is the correct reason for $\sbrak{\text{a}}$.
+     \item Both $\sbrak{\text{a}}$ and $\sbrak{\text{r}}$ are true but $\sbrak{\text{r}}$ is not correct reason for $\sbrak{\text{a}}$.
+     \item Both $\sbrak{\text{a}}$ and $\sbrak{\text{r}}$ are false
+     \item $\sbrak{\text{a}}$ is false and $\sbrak{\text{r}}$ is true
+ \end{enumerate}
