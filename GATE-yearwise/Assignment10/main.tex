@@ -1,0 +1,252 @@
+\iffalse
+    \title{Assignment}
+    \author{EE24BTECH11063}
+    \section{ce}
+    \chapter{2012}
+  \fi
+
+    \item A small project has 12 activities - N, P, Q, R, S, T, U, V, W, X, Y, and Z. The relationship among these activities and the duration of these activities are given in the Table.
+
+  
+
+\begin{table}[!ht]    
+  \centering
+  \begin{tabular}{|c|c|c|}
+\hline
+\textbf{Activity} & \textbf{Duration (in weeks)} & \textbf{Depends upon} \\
+\hline
+N & 2 & - \\
+P & 5 & N \\
+Q & 3 & N \\
+R & 4 & P \\
+S & 5 & Q \\
+T & 8 & R \\
+U & 7 & R, S \\
+V & 2 & U \\
+W & 3 & U \\
+X & 5 & T, V \\
+Y & 1 & W \\
+Z & 3 & X, Y \\
+\hline
+\end{tabular}
+\end{table}
+
+\noindent The total float of the activity "V"  (in weeks, in integer) is \underline{\hspace{3cm}}.
+\bigskip
+\item 
+The soil profile at a construction site is shown in the figure $\ref{fig:1}$(not to scale). Ground water table (GWT) is at 5 m below the ground level at present. An old well data shows that the ground water table was as low as 10 m below the ground level in the past. Take unit weight of water, $\gamma_w = 9.81 \text{ kN/m}^3$.
+	\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (5.25,8.25) to[short] (5.25,8.25);
+\draw (4.75,10) to[short] (10,10);
+\draw (4.75,7.25) to[short] (10.25,7.25);
+\draw (4.75,6) to[short] (10.25,6);
+\draw [dashed] (4.75,9) -- (10,9);
+\draw [<->, >=Stealth] (7.25,7.25) -- (7.25,6);
+\draw [<->, >=Stealth] (7.25,10) -- (7.25,7.25);
+\node [font=\normalsize] at (8.5,10.5) {Ground level};
+\node [font=\normalsize] at (5.25,9.75) {Sand};
+\node [font=\normalsize] at (5.75,9.25) {$\gamma=17.5 kN/m^3$};
+\node [font=\normalsize] at (5.75,8.25) {$\gamma=18.5 kN/m^3$};
+\node [font=\normalsize] at (5.75,8.25) {$\gamma=18.5 kN/m^3$};
+\node [font=\normalsize] at (6,6.25) {$\gamma=17 kN/m^3$};
+\node [font=\normalsize] at (5.25,7) {$Clay$};
+\node [font=\normalsize] at (7.75,8.25) {$15 m$};
+\node [font=\normalsize] at (7.75,6.5) {$8 m$};
+\draw [<->, >=Stealth] (9,9) -- (9,10)node[pos=0.5,right, fill=white]{5 m};
+\draw (8.75,9.5) to (8.75,9.25) node[ground]{};
+\draw [->, >=Stealth] (8.75,9) -- (8.75,9.5);
+\end{circuitikz}
+
+			\caption{}
+			\label{fig:1}
+	\end{figure}
+
+
+The overconsolidation ratio (OCR) (round off to two decimal places) at the mid-point of the clay layer is \underline{\hspace{2cm}}.
+\bigskip
+
+\item A retaining wall of height 10 m with clay backfill is shown in the figure$\ref{fig:2}$ (not to scale). Weight of the retaining wall is 5000 kN per m acting at 3.3 m from the toe of the retaining wall. The interface friction angle between the base of the retaining wall and the base soil is $20^\circ$. The depth of clay in front of the retaining wall is 2.0 m. The properties of the clay backfill and the clay placed in front of the retaining wall are the same. Assume that the tension crack is filled with water. Use Rankine's earth pressure theory. Take unit weight of water, $\gamma_w = 9.81$ kN/m$^3$.
+
+The factor of safety (round off to two decimal places) against sliding failure of the retaining wall after ignoring the passive earth pressure will be \underline{\hspace{2cm}}.
+\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [ fill={rgb,255:red,204; green,204; blue,204} ] (7,10.5) -- (6,10.5) -- (6.5,6.75) -- (7.5,6.75) -- cycle;
+\draw [ fill={rgb,255:red,218; green,216; blue,216} ] (6,10.5) rectangle (6.75,6.75);
+\draw [ color={rgb,255:red,214; green,209; blue,209}, short] (6.75,6.75) -- (6.75,10.5);
+\draw (2.75,10.5) to[short] (6,10.5);
+\draw (2.75,6.75) to[short] (6,6.75);
+\draw (7.25,7.5) to[short] (9.25,7.5);
+\draw (7.5,6.75) to[short] (9.25,6.75);
+\draw [<->, >=Stealth] (8,6.75) -- (8,7.5)node[pos=0.5,right, fill=white]{2.0 m Clay};
+\draw [<->, >=Stealth] (5.25,6.75) -- (5.25,10.5)node[pos=0.5,left, fill=white]{10m};
+\draw [->, >=Stealth] (6.75,7.25) -- (6.75,5.25)node[pos=0.9,below, fill=white]{5000 kN};
+\node [font=\small] at (5.25,6.25) {Base soil};
+\node [font=\normalsize] at (3.5,9.5) {$Clay$};
+\node [font=\normalsize] at (3.5,9) {$\gamma=17.2 kN/m^3$};
+\node [font=\normalsize] at (3.25,7.75) {$c= 30 kN/m^2$};
+\node [font=\normalsize] at (3.5,8.25) {$\varphi=0\circ$};
+\draw (7.75,6.5) to[short] (7.75,5.5);
+\draw [<->, >=Stealth] (6.75,6) .. controls (7.25,6) and (7.25,6) .. (7.75,6)node[pos=0.5,above, fill=white]{3.3 m};
+\end{circuitikz}
+			\caption{}
+			\label{fig:2}
+	\end{figure}
+\bigskip
+\item A combined trapezoidal footing of length $L$ supports two identical square columns $P_1$ and $P_2$ of size $0.5 \, \text{m} \times 0.5 \, \text{m}$. The columns $P_1$ and $P_2$ carry loads of 2000 kN and 1500 kN, respectively.
+
+If the stress beneath the footing is uniform, the length of the combined footing $L$ (in m, round off to two decimal places) is \underline{\hspace{2cm}}.
+\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4,9.25) to[short] (4,9.25);
+\draw (4.25,6.5) to[short] (4.25,11.5);
+\draw (11.25,10) to[short] (11.25,8.25);
+\draw [short] (4.25,11.5) -- (11.25,10);
+\draw [short] (4.25,6.5) -- (11.25,8.25);
+\draw [dashed] (4,9) -- (11.75,9);
+\draw (11.75,10) to[short] (12.75,10);
+\draw (11.75,8.25) to[short] (12.75,8.25);
+\draw [<->, >=Stealth] (12.25,8.25) -- (12.25,10)node[pos=0.5,right, fill=white]{1.5 m};
+\draw (4.25,11.5) to[short] (4.25,12.25);
+\draw (11.25,12.5) to[short] (11.25,10.25);
+\draw [<->, >=Stealth] (4.25,12) -- (11.25,12)node[pos=0.5,above, fill=white]{L};
+\draw (3.5,11.5) to[short] (4.25,11.5);
+\draw (3.5,6.5) to[short] (4.25,6.5);
+\draw [<->, >=Stealth] (3.75,6.5) -- (3.75,11.5)node[pos=0.5,left, fill=white]{5 m};
+\draw [ fill={rgb,255:red,81; green,77; blue,77} ] (4.25,9.5) rectangle (5,8.75);
+\draw [ fill={rgb,255:red,69; green,64; blue,64} ] (10,9.5) rectangle (10.75,8.75);
+\draw [dashed] (4.5,5.75) -- (4.5,9);
+\draw [dashed] (10.25,9.25) -- (10.25,4.75);
+\draw [<->, >=Stealth] (4.5,6) -- (10.25,6)node[pos=0.5,above, fill=white]{5 m};
+\node [font=\normalsize] at (5,8.5) {$P_1$};
+\node [font=\normalsize] at (9.75,8.5) {$P_2$};
+\end{circuitikz}
+			\caption{}
+			\label{fig:3}
+	\end{figure}
+\bigskip
+\item
+An unsupported slope of height 15 m is shown in the figure$\ref{fig:4}$ (not to scale), in which the slope face makes an angle of $50^\circ$ with the horizontal. The slope material comprises purely cohesive soil having undrained cohesion of $75 \, \text{kPa}$. A trial slip circle $KLM$, with a radius of $25 \, \text{m}$, passes through the crest and toe of the slope and it subtends an angle of $60^\circ$ at its center $O$. The weight of the active soil mass $W$ (bounded by $KLMN$) is $2500 \, \text{kN/m}$, which is acting at a horizontal distance of 10 m from the toe of the slope. Consider the water table to be present at a very large depth from the ground surface.
+
+Considering the trial slip circle $KLM$, the factor of safety against the failure of slope under undrained condition (round off to two decimal places) is \underline{\hspace{2cm}}.
+\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (3.5,5.5) -- (12.75,5.5);
+\draw [dashed] (4.75,5.5) -- (4.75,10.25);
+\draw [line width=1.1pt, short] (3.5,5.5) -- (4.75,5.5);
+\draw [line width=1.1pt, short] (4.75,5.5) -- (8,8.25);
+\draw [line width=1.1pt, short] (8,8.25) -- (12.5,8.25);
+\draw [dashed] (4.75,10) -- (4.75,11.25);
+\draw [dashed] (4.75,11.25) -- (10.5,8.25);
+\draw [short] (4.5,5.5) -- (4.5,5.75);
+\draw [short] (4.5,5.75) -- (4.75,5.75);
+\draw [short] (12.5,8.25) -- (13,8.25);
+\draw [short] (12.75,5.5) -- (13,5.5);
+\draw [<->, >=Stealth] (12.75,8.25) -- (12.75,5.5);
+\draw [short] (4.75,5.5) .. controls (7.75,5.75) and (9,7) .. (10.5,8.25);
+\draw [short] (4.75,10.5) .. controls (5,10.75) and (5.25,10.75) .. (5.25,11);
+\draw [short] (5.75,5.5) .. controls (5.75,6) and (5.75,6) .. (5.25,6);
+\draw [->, >=Stealth] (8.25,7.25) -- (8.25,6);
+\draw [short] (4.75,4.5) -- (4.75,5);
+\draw [short] (8,4.5) -- (8,5);
+\draw [<->, >=Stealth] (4.75,4.75) -- (8,4.75);
+\node [font=\normalsize] at (5.25,10.25) {$60^\circ$};
+\node [font=\normalsize] at (6,6) {$50^\circ$};
+\node [font=\normalsize] at (7.5,10.25) {25 m};
+\node [font=\normalsize] at (4.75,5.25) {K};
+\node [font=\normalsize] at (8,8.5) {N};
+\node [font=\normalsize] at (10.5,8.5) {M};
+\node [font=\normalsize] at (9.5,7) {L};
+\node [font=\normalsize] at (6,5) {10 m};
+\node [font=\normalsize] at (13.25,7) {15 m};
+\node [font=\normalsize] at (8.75,6) {W};
+\end{circuitikz}
+			\caption{}
+			\label{fig:4}
+	\end{figure}
+\bigskip
+
+\item 
+An unlined canal under regime conditions along with a silt factor of 1 has a width of flow $71.25 \, \text{m}$. Assuming the unlined canal as a wide channel, the corresponding average depth of flow (in m, round off to two decimal places) in the canal will be \underline{\hspace{2cm}}.
+\bigskip
+\item
+A cylinder (2.0 m diameter, 3.0 m long and 25 kN weight) is acted upon by water on one side and oil (specific gravity = 0.8) on other side. 
+
+The absolute ratio of the net magnitude of vertical forces to the net magnitude of horizontal forces (round off to two decimal places) is \underline{\hspace{2cm}}.
+\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (8.5,6.25) rectangle (8.5,6.25);
+\draw [ fill={rgb,255:red,194; green,189; blue,189} ] (3.25,6.25) rectangle (14,5.75);
+\draw [ line width=1.2pt ] (8.5,8.25) circle (2cm);
+\draw (10.5,8) to[short] (14.25,8);
+\draw (8.5,13.25) to[short] (8.5,10.25);
+\draw (2.75,12.5) to[short] (8.5,12.5);
+\draw [dashed] (4.75,10.25) -- (8.5,10.25);
+\draw [<->, >=Stealth] (5.75,12.5) -- (5.75,10.25)node[pos=0.5, fill=white]{1m };
+\draw [<->, >=Stealth] (5.75,10.25) -- (5.75,6.25)node[pos=0.5, fill=white]{2 m};
+\draw [<->, >=Stealth] (11.25,8) -- (11.25,6.25)node[pos=0.5, fill=white]{1 m};
+\node [font=\large] at (3.75,8.75) {Water};
+\node [font=\small] at (13,7) {Oil of sp gr 0.8};
+\node [font=\small] at (8.25,9.75) {R};
+\node [font=\small] at (10,8) {P};
+\node [font=\small] at (8.5,6.5) {Q};
+\end{circuitikz}
+			\caption{}
+			\label{fig:5}
+	\end{figure}
+\bigskip
+
+\item 
+A tube-well of 20 cm diameter fully penetrates a horizontal, homogeneous and isotropic confined aquifer of infinite horizontal extent. The aquifer is of 30 m uniform thickness. A steady pumping at the rate of 40 litres/s from the well for a long time results in a steady drawdown of 4 m at the well face. The subsurface flow to the well due to pumping is steady, horizontal and Darcian and the radius of influence of the well is 245 m. The hydraulic conductivity of the aquifer (in m/day, round off to integer) is \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item 
+A baghouse filter has to treat $12 \, \text{m}^3/\text{s}$ of waste gas continuously. The baghouse is to be divided into 5 sections of equal cloth area such that one section can be shut down for cleaning and/or repairing, while the other 4 sections continue to operate. An air-to-cloth ratio of $6.0 \, \text{m}^3/\text{min}-\text{m}^2$ cloth will provide sufficient treatment to the gas. The individual bags are of 32 cm in diameter and 5 m in length. The total number of bags (in integer) required in the baghouse is \underline{\hspace{2cm}}.
+
+\item 
+A secondary clarifier handles a total flow of $9600\;m^3/d$ from the aeration tank of a conventional activated-sludge treatment system. The concentration of solids in the flow from the aeration tank is 3000 mg/L. The clarifier is required to thicken the solids to 12000 mg/L, and hence it is to be designed for a solid flux of 3.2 $\frac{kg}{m^2.h}$. The surface area of the designed clarifier for thickening (in $m^2$, in integer) is  \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item 
+Spot speeds of vehicles observed at a point on a highway are $40, 55, 60, 65$ and $80 \, \text{km/h}$. The space-mean speed (in km/h, round off to two decimal places) of the observed vehicles is \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item 
+The longitudinal section of a runway provides the following data:
+
+\begin{table}[!ht]    
+  \centering
+  \begin{tabular}{|c|c|}
+\hline
+\textbf{End-to-end runway (m)} & \textbf{Gradient (\%)} \\
+\hline
+0 to 300 & +1.2 \\
+300 to 600 & -0.7 \\
+600 to 1100 & +0.6 \\
+1100 to 1400 & -0.8 \\
+1400 to 1700 & -1.0 \\
+\hline
+\end{tabular}
+\end{table}
+
+The effective gradient of the runway (in \%, round off to two decimal places) is \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item 
+Traversing is carried out for a closed traverse PQRS. The internal angles at vertices $P, Q, R,$ and $S$ are measured as $92^\circ, 68^\circ, 123^\circ,$ and $77^\circ$, respectively. If fore bearing of line $PQ$ is $27^\circ$, fore bearing of line $RS$ (in degrees, in integer) is \underline{\hspace{2cm}}.
+
+
