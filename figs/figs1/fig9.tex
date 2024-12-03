@@ -1,0 +1,29 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (1.25,16) to[R] (1.25,14);
+\draw (1.25,16) to[short] (2,16);
+\draw (1.25,14) to[short] (2,14);
+\draw (1.75,16) to[normal open switch] (1.75,14);
+\draw (2,16) to[normal open switch] (3.25,16);
+\draw (3.25,16) to[R] (4.75,16);
+\draw (4.75,16) to[C] (4.75,14);
+\draw (2,14) to[short] (4.75,14);
+\draw (2.25,16) to[L ] (2.25,14);
+\draw [->, >=Stealth] (2.75,14.5) -- (2.75,15.5);
+\node [font=\small] at (2.5,14.25) {L};
+\node [font=\small] at (3.25,15) {10 emps};
+\node [font=\small] at (0.75,15.5) {$R_1 10 \ohm$};
+\node [font=\small] at (1.55,14.5) {$SW_1$};
+\node [font=\small] at (2.5,16.25) {$SW_2$};
+\node [font=\small] at (4,16.75) {$R_2 10 \ohm$};
+\node [font=\small] at (4.25,14.75) {C};
+\node [font=\small] at (5.5,14.75) {10 V};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
