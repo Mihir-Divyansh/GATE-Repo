@@ -1,0 +1,433 @@
+\iffalse
+    \title{Assignment}
+    \author{EE24BTECH11033}
+    \section{ee}
+    \chapter{2020}
+  \fi
+  
+  %\begin{enumerate}
+ \item The figure below shows the per-phase Open Circuit Characteristics (measured in $V$) and Short Circuit Characteristics (measured in A) of a 14 kVA, 400 $V$, 50 $Hz$, 4-pole, 3-phase, delta connected alternator, driven at 1500 $rpm$. The field current, $I_f$ is measured in $A$. Readings taken are marked as respective $(x, y)$ coordinates in the figure. Ratio of the unsaturated and saturated synchronous impedances \hfill(EE-2020)
+  \brak{Z_{s(\text{unsat})}/{Z_{s(\text{sat})}}} of the alternator is closest to:
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+        \tikzstyle{every node}=[font=\large]
+        
+        % Draw axes
+        \draw [->, >=Stealth] (4.75,6.5) -- (4.75,13.5);
+        \draw [->, >=Stealth] (4.75,6.5) -- (12.75,6.5);
+        \draw [->, >=Stealth] (12,6.25) -- (12,13.5);
+        
+        % Draw short paths and points
+        \draw [short] (4.75,6.5) -- (8.25,8);
+        \draw [short] (4.75,6.5) -- (6.25,11.5);
+        \draw [short] (6.25,11.5) .. controls (6.75,12.25) and (7.25,12.25) .. (8,12.5);
+        \draw [short] (8,12.5) -- (9.75,12.75);
+        
+        % Add nodes and labels
+        \node [font=\normalsize] at (5.25,13.5) {$V_{OC}$};
+        \node [font=\normalsize] at (12.25,13) {$I_{SC}$};
+        \node [font=\normalsize] at (12.5,6.25) {$I_{f}$};
+        \node [font=\normalsize] at (7.25,7.25) {SCC};
+        \node [font=\Huge] at (8.25,8) {\textbf{.}};
+        \node [font=\large] at (9,7.75) {\textbf{(4,20)}};
+        
+        % Additional points and coordinates
+        \node [font=\large] at (6,8.25) {(1,110)};
+        \node [font=\large] at (6.5,9.75) {(2,210)};
+        \node [font=\Huge] at (5.25,8.25) {\textbf{.}};
+        \node [font=\Huge] at (5.75,10) {\textbf{.}};
+        
+        % Labels for OCC
+        \node [font=\large] at (7,12.75) {\textbf{OCC}};
+        \node [font=\Huge] at (9.75,12.75) {\textbf{.}};
+        \node [font=\large] at (9.75,12.25) {(8,400)};
+        
+    \end{circuitikz}
+    }%
+    
+    
+\end{figure}
+
+  \begin{enumerate}
+ 
+\item 2.100
+\item 2.025
+\item 2.000
+\item 1.000
+ 
+    
+  \end{enumerate}
+  \item Let $a_x$ and $a_y$ be unit vectors along $x$ and $y$ directions, respectively. A vector function is given by
+\[
+\mathbf{F} = a_x y - a_y x
+\]
+
+The line integral of the above function
+\[
+\int_C \mathbf{F} \cdot d\mathbf{l}
+\]
+along the curve $C$, which follows the parabola $y = x^2$ as shown below is  (rounded off to 2 decimal places).\hfill(EE-2020)
+
+
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+        \tikzstyle{every node}=[font=\LARGE]
+        
+        % Draw axes
+        \draw [->, >=Stealth] (7.75,7) -- (7.75,12.75); % y-axis
+        \draw [->, >=Stealth] (3.25,7) -- (13.25,7); % x-axis
+        
+        % Draw dashed lines
+        \draw [dashed] (6.25,8.25) -- (6.25,7);
+        \draw [dashed] (6.25,8.25) -- (7.75,8.25);
+        \draw [dashed] (7.75,12.25) -- (12.25,12.25);
+        \draw [dashed] (12.25,12.25) -- (12.25,7);
+        
+        % Draw main curve and arrow
+        \draw [short] (6.25,8.25) .. controls (7.75,6.75) and (7.75,6.5) .. (9.25,8.25);
+        \draw [short] (9.25,8.25) -- (12.25,12.25);
+        \draw [->, >=Stealth] (10.25,9.5) -- (10.5,9.75);
+        
+        % Labels for points and axes
+        \node [font=\LARGE] at (8,8.25) {\textbf{1}};
+        \node [font=\LARGE] at (6.25,6.5) {\textbf{-1}};
+        \node [font=\LARGE] at (12.25,6.5) {\textbf{2}};
+        \node [font=\LARGE] at (7.5,12.25) {\textbf{4}};
+        
+        % Labels for x and y axes
+        \node [font=\LARGE] at (13.25,6.75) {$x$};
+        \node [font=\LARGE] at (7.5,13) {$y$};
+        
+        % Label for point C
+        \node [font=\LARGE] at (10.5,9.25) {\textbf{C}};
+        
+    \end{circuitikz}
+    }%
+    
+    
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\item A resistor and a capacitor are connected in series to a 10 $V$ dc supply through a switch. The switch is closed at $t = 0$, and the capacitor voltage is found to cross 0 $V$ at $t = 0.4\tau$, where $\tau$ is the circuit time constant. The absolute value of percentage change required in the initial capacitor voltage if the zero crossing has to happen at $t = 0.2\tau$ is \underline{\hspace{2cm}} (rounded off to 2 decimal places).\hfill(EE-2020)
+\item A cylindrical rotor synchronous generator with constant real power output and constant terminal voltage is supplying 100 $A$ current to a $0.9$ lagging power factor load. An ideal reactor is now connected in parallel with the load, as a result of which the total lagging reactive power requirement of the load is twice the previous value while the real power remains unchanged. The armature current is now \underline{\hspace{2cm}} A (rounded off to 2 decimal places). \hfill(EE-2020)
+\item Bus 1 with voltage magnitude $V_1 = 1.1 pu$ is sending reactive power $Q_{12}$ towards bus 2 with voltage magnitude $V_2 = 1 pu$ through a lossless transmission line of reactance $X$. Keeping the voltage at bus 2 fixed at $1 pu$, magnitude of voltage at bus 1 is changed, so that the reactive power $Q_{12}$ sent from bus 1 is increased by $20\%$. Real power flow through the line under both the conditions is zero. The new value of the voltage magnitude, $V_1$, in pu (rounded off to 2 decimal places), at bus 1 is \hfill(EE-2020)
+
+
+
+
+
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.5  \textwidth}{!}{%
+    \begin{circuitikz}
+        \tikzstyle{every node}=[font=\large]
+        
+        % Draw vertical lines for buses
+        \draw [short] (4.75,9.5) -- (4.75,7.5); % Bus 1 line
+        \draw [short] (13.25,9.5) -- (13.25,7.75); % Bus 2 line
+        
+        % Draw horizontal line connecting buses
+        \draw [short] (4.75,8.75) -- (13.25,8.75);
+        
+        % Draw arrow indicating direction of Q_{12}
+        \draw [->, >=Stealth] (6,8) -- (7.75,8);
+        
+        % Labels for buses, voltages, and line flow
+        \node [font=\LARGE] at (4.25,9.5) {\textbf{$V_1$}};
+        \node [font=\LARGE] at (13.75,9.5) {\textbf{$V_2$}};
+        \node [font=\large] at (13.25,7.25) {\textbf{Bus 2}};
+        \node [font=\large] at (4.75,7) {\textbf{Bus 1}};
+        \node [font=\large] at (6.75,7.75) {\textbf{$Q_{12}$}};
+        
+    \end{circuitikz}
+    }%
+    
+    
+\end{figure}
+
+
+
+
+
+
+
+\item Windings 'A', 'B' and 'C' have 20 turns each and are wound on the same iron core , along with winding 'X' which has 2 turns.The figure shows the sense (clockwise/anti-clockwise) of each of the windings only and does not reflect the excat number of turns. If windings 'A', 'B' and 'C' are supplied with balanced 3-phase voltages at 50 Hz and there is no core saturation, the no-load RMS voltage (in V, rounded off to 2 decimal places) across winding 'X' is \hfill(EE-2020)
+
+
+
+
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=2pt, short] (7,11.5) -- (7,4);
+\draw [line width=2pt, short] (7,11.5) -- (16,11.5);
+\draw [line width=2pt, short] (7,4) -- (16,4);
+\draw [line width=2pt, short] (16,11.5) -- (16,4);
+\draw [line width=2pt, short] (7.75,10.75) -- (7.75,4.75);
+\draw [line width=2pt, short] (7.75,4.75) -- (15.25,4.75);
+\draw [line width=2pt, short] (15.25,4.75) -- (15.25,10.75);
+\draw [line width=2pt, short] (7.75,10.75) -- (15.25,10.75);
+\draw [ line width=0.8pt](17.25,9.25) to[short] (16.5,9.25);
+\draw [ line width=0.8pt](16.5,9.25) to[short] (16,9.75);
+\draw [ line width=0.8pt](16,9.75) to[short] (15,9.75);
+\draw [ line width=0.8pt](15,9.75) to[short] (14.5,9.25);
+\draw [ line width=0.8pt](14.5,9.25) to[short] (15,8.75);
+\draw [line width=0.8pt, short] (15,8.75) -- (15.25,8.75);
+\draw [line width=0.8pt, short] (16,8.75) -- (16.25,8.75);
+\draw [line width=0.8pt, short] (16.25,8.75) -- (16.5,8.5);
+\draw [line width=0.8pt, short] (16.5,8.5) -- (16.25,8.25);
+\draw [line width=0.8pt, short] (16.25,8.25) -- (16,8.25);
+\draw [line width=0.8pt, short] (16,8.25) -- (15,8.25);
+\draw [line width=0.8pt, short] (15,8.25) -- (14.75,8);
+\draw [line width=0.8pt, short] (14.75,8) -- (15,7.75);
+\draw [line width=0.8pt, short] (15,7.75) -- (16.25,7.75);
+\draw [line width=0.8pt, short] (16.25,7.75) -- (16.5,7.75);
+\draw [line width=0.8pt, short] (16.5,7.75) -- (16.75,8);
+\draw [line width=0.8pt, short] (16.75,8) -- (17.5,8);
+\draw [line width=0.9pt, short] (9.25,3.25) -- (9.25,5.25);
+\draw [line width=0.9pt, short] (9.25,5.25) -- (9.5,5.5);
+\draw [line width=0.9pt, short] (9.5,5.5) -- (9.75,5.25);
+\draw [line width=0.9pt, short] (9.75,5.25) -- (9.75,4.75);
+\draw [line width=0.9pt, short] (9.75,4) -- (9.75,3.75);
+\draw [line width=0.9pt, short] (9.75,3.75) -- (10,3.5);
+\draw [line width=0.9pt, short] (10,3.5) -- (10.25,3.75);
+\draw [line width=0.9pt, short] (10.25,3.75) -- (10.25,5.25);
+\draw [line width=0.9pt, short] (10.25,5.25) -- (10.5,5.5);
+\draw [line width=0.9pt, short] (10.5,5.5) -- (10.75,5.25);
+\draw [line width=0.9pt, short] (10.75,5.25) -- (10.75,4.75);
+\draw [line width=0.9pt, short] (10.75,4) -- (10.75,3.25);
+\draw [line width=0.9pt, short] (9.25,3.25) -- (9,3);
+\draw [line width=0.9pt, short] (9,3) -- (8.25,3);
+\draw [line width=0.9pt, short] (10.75,3.25) -- (10.25,2.5);
+\draw [line width=0.9pt, short] (10.25,2.5) -- (8,2.5);
+\draw [line width=0.9pt, short] (6,7.5) -- (6.5,7.25);
+\draw [line width=0.9pt, short] (6.5,7.25) -- (8.25,7.25);
+\draw [line width=0.9pt, short] (8.25,7.25) -- (8.5,7);
+\draw [line width=0.9pt, short] (8.5,7) -- (8.25,6.75);
+\draw [line width=0.9pt, short] (8.25,6.75) -- (7.75,6.75);
+\draw [line width=0.9pt, short] (7,6.75) -- (6.5,6.75);
+\draw [line width=0.9pt, short] (6.5,6.75) -- (6.25,6.5);
+\draw [line width=0.9pt, short] (6.25,6.5) -- (6.5,6.25);
+\draw [line width=0.9pt, short] (6.5,6.25) -- (8.25,6.25);
+\draw [line width=0.9pt, short] (8.25,6.25) -- (8.5,5.75);
+\draw [line width=0.9pt, short] (8.5,5.75) -- (8.25,5.5);
+\draw [line width=0.9pt, short] (8.25,5.5) -- (7.75,5.5);
+\draw [line width=0.9pt, short] (7,5.5) -- (6.25,5.5);
+\draw [line width=0.9pt, short] (6.25,5.5) -- (5.75,5.75);
+\draw [line width=0.9pt, short] (5.75,5.75) -- (5,5.75);
+\draw [line width=0.9pt, short] (6,7.5) -- (5.25,7.5);
+\draw [line width=0.9pt, short] (5.75,10) -- (6.25,10);
+\draw [line width=0.9pt, short] (6.25,10) -- (6.5,9.75);
+\draw [line width=0.9pt, short] (6.5,9.75) -- (7,9.75);
+\draw [line width=0.9pt, short] (7.75,9.75) -- (8,9.75);
+\draw [line width=0.9pt, short] (8,9.75) -- (8.25,9.5);
+\draw [line width=0.9pt, short] (8.25,9.5) -- (8,9.25);
+\draw [line width=0.9pt, short] (8,9.25) -- (6.5,9.25);
+\draw [line width=0.9pt, short] (6.5,9.25) -- (6.25,9);
+\draw [line width=0.9pt, short] (6.25,9) -- (6.5,8.75);
+\draw [line width=0.9pt, short] (6.5,8.75) -- (7,8.75);
+\draw [line width=0.9pt, short] (7.75,8.75) -- (8,8.75);
+\draw [line width=0.9pt, short] (8,8.75) -- (8.25,8.5);
+\draw [line width=0.9pt, short] (8.25,8.5) -- (8,8.25);
+\draw [line width=0.9pt, short] (8,8.25) -- (6.5,8.25);
+\draw [line width=0.9pt, short] (6.5,8.25) -- (5.75,8.75);
+\draw [line width=0.9pt, short] (5.75,8.75) -- (5,8.75);
+\draw [line width=0.9pt, short] (5.75,10) -- (5,10);
+\draw [line width=0.9pt, short] (5.25,7.5) -- (3.5,7.5);
+\draw [line width=0.9pt, short] (8.25,3) -- (5.75,3);
+\draw [line width=0.9pt, short] (5.75,3) -- (5.75,4.75);
+\draw [line width=0.9pt, short] (5.75,4.75) -- (3.5,4.75);
+\draw [line width=0.9pt, short] (8,2.5) -- (1.75,2.5);
+\draw [line width=0.9pt, short] (1.75,2.5) -- (1.75,10);
+\draw [line width=0.9pt, short] (1.75,10) -- (3.5,10);
+\draw [short] (5,8.75) .. controls (4.75,7.5) and (4.75,7.5) .. (5,6.5);
+\draw [short] (5,2.75) -- (5,2.5);
+\draw [short] (5,6.5) .. controls (4.5,4.5) and (4.5,4.5) .. (5,2.75);
+\draw (5,10) to[battery ] (3.5,10);
+\draw (3.5,7.5) to[battery ] (1.75,7.5);
+\draw (3.5,4.75) to[battery ] (1.75,4.75);
+\node [font=\large] at (4.25,10.75) {$230V,0^{\circ}$};
+\node [font=\large] at (3,8.25) {$230V,-120^{\circ}$};
+\node [font=\large] at (3,5.5) {$230V,120^{\circ}$};
+\node [font=\large] at (8,10.25) {\textbf{A}};
+\node [font=\large] at (8.25,7.5) {\textbf{B}};
+\node [font=\large] at (11,5.25) {\textbf{C}};
+\node [font=\large] at (17.25,8.5) {\textbf{X}};
+\draw (5,5.75) to[short] (7,5.75);
+\draw [short] (5,5.75) -- (4.75,5.75);
+\end{circuitikz}
+}%
+
+
+\end{figure}
+
+
+
+
+
+
+
+\item A cylindrical rotor synchronous generator has steady state synchronous reactance of 0.7 $pu$ and subtransient reactance of $0.2 \, \text{pu}$. It is operating at \brak{1 + j0} $pu$ terminal voltage with an internal emf of \brak{1 + j0.7} $pu$. Following a three-phase solid short circuit fault at the terminal of the generator, the magnitude of the subtransient internal emf (rounded off to 2 decimal places) is \underline{\hspace{2cm}} pu. \hfill(EE-2020)
+
+\item In the dc-dc converter circuit shown, switch $Q$ is switched at a frequency of 10 $kHz$ with a duty ratio of $0.6$. All components of the circuit are ideal, and the initial current in the inductor is zero. Energy stored in the inductor in $mJ$ (rounded off to 2 decimal places) at the end of $10$ complete switching cycles is \hfill(EE-2020)
+
+
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (8,11.75) to[L ] (8,9.5);
+\draw (8,11.75) to[short] (9,11.75);
+\draw (10.75,11.75) to[D] (9,11.75);
+\draw (10.75,11.75) to[short] (10.75,11);
+\draw (10.75,10.5) to[battery ] (10.75,11);
+\draw (10.75,10.5) to[short] (10.75,9.75);
+\draw (8,9.5) to[short] (10.75,9.5);
+\draw (10.75,9.5) to[short] (10.75,10);
+\draw (8,9.5) to[short] (8,9);
+\draw (8,9) to[short] (7.5,9);
+\draw (7.5,9.25) to[short] (7.5,8.75);
+\draw (7.25,9.25) to[short] (7.25,7.5);
+\draw (7.5,8.5) to[short] (7.5,8);
+\draw (7.5,7.75) to[short] (7.5,7.25);
+\draw (7.25,7.75) to[short] (7.25,7.25);
+\draw (7.25,8.25) to[short] (6.75,8.25);
+\draw (7.5,7.5) to[short] (8,7.5);
+\draw (8,7.5) to[short] (8,6.5);
+\draw (8,7.5) to[short] (8,8.25);
+\draw [->, >=Stealth] (8,8.25) -- (7.5,8.25);
+\draw (8,6.5) to[short] (5.5,6.5);
+\draw (5.5,6.5) to[short] (5.5,9);
+\draw (5.5,9.75) to[battery ] (5.5,9);
+\draw (5.5,9.75) to[short] (5.5,11.75);
+\draw (5.5,11.75) to[short] (8.25,11.75);
+\node [font=\large] at (4.5,9.25) {\textbf{50V}};
+\node [font=\large] at (8.25,8.25) {\textbf{Q}};
+\node [font=\large] at (9,10.75) {\textbf{10 mH}};
+\node [font=\large] at (10,12.25) {\textbf{D}};
+\node [font=\large] at (11.75,10.75) {\textbf{50V}};
+\end{circuitikz}
+}%
+
+
+\end{figure}
+
+
+
+\item A single-phase, full-bridge, fully controlled thyristor rectifier feeds a load comprising a $10 \, \Omega$ resistance in series with a very large inductance. The rectifier is fed from an ideal $230 \, \text{V}$, $50 \, \text{Hz}$ sinusoidal source through cables which have negligible internal resistance and a total inductance of $2.28 \, \text{mH}$. If the thyristors are triggered at an angle $\alpha = 45^\circ$, the commutation overlap angle in degree (rounded off to 2 decimal places) is \hfill(EE-2020)
+\item A non-ideal Si-based pn junction diode is tested by sweeping the bias applied across its terminals from $-5 \, \text{V}$ to $+5 \, \text{V}$. The effective thermal voltage, $V_T$, for the diode is measured to be $(29 \pm 2) \, \text{mV}$. The resolution of the voltage source in the measurement range is $1 \, \text{mV}$. The percentage uncertainty (rounded off to 2 decimal places) in the measured current at a bias voltage of $0.02 \, \text{V}$ is \hfill(EE-2020)
+
+\item The temperature of the coolant oil bath for a transformer is monitored using the circuit shown. It contains a thermistor with a temperature-dependent resistance, $R_{\text{thermistor}} = 2 \left(1 + \alpha T\right) \,\text{k}\Omega$, where $T$ is the temperature in $^\circ\text{C}$. The temperature coefficient, $\alpha$, is $- \left(4 \pm 0.25\right) \%/^\circ\text{C}$. 
+
+Circuit parameters: $R_1 = 1\,\text{k}\Omega$, $R_2 = 1.3\,\text{k}\Omega$, $R_3 = 2.6\,\text{k}\Omega$. The error in the output signal (in $V$, rounded off to 2 decimal places) at $150^\circ\text{C}$ is \_. \hfill(EE-2020)
+\newpage
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.35\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (5.75,10.25) to (5.75,10) node[ground]{};
+\draw (5.75,11) to[battery] (5.75,10.25);
+\draw (5.75,11) to[short] (5.75,11.5);
+\draw (5.75,11.5) to[short] (7,11.5);
+\draw (7,11.5) to[R] (8.25,11.5);
+\draw (8.25,11.5) to[R] (8.25,9);
+\draw (8.25,9) to (8.25,8.75) node[ground]{};
+\draw (8.25,11.5) to[short] (9.75,11.5);
+\draw (9.75,11.75) to[short] (9.75,10);
+\draw [short] (9.75,11.75) -- (11.5,10.75);
+\draw [short] (9.75,10) -- (11.5,10.75);
+\draw [short] (9.75,10.25) -- (9.25,10.25);
+\draw [short] (9.25,10.25) -- (9.25,9);
+\draw (9.25,9) to[R] (10.75,9);
+\draw (9.25,9) to[R] (9.25,7.25);
+\draw (11.5,10.75) to[short, -o] (12.5,10.75);
+\draw (12,10.75) to[short] (12,9);
+\draw (10.75,9) to[short] (12,9);
+\draw (9.25,6.75) to (9.25,6.25) node[ground]{};
+\draw (9.25,7.25) to[battery] (9.25,6.75);
+\node [font=\large] at (6.5,10.75) {\textbf{3V}};
+\node [font=\large] at (7.5,12.25) {\textbf{$R_{\text{thermistor}}$}};
+\node [font=\large] at (7.75,10) {\textbf{$R_1$}};
+\node [font=\large] at (9.75,8) {\textbf{$R_2$}};
+\node [font=\large] at (10.25,9.75) {\textbf{$R_3$}};
+\node [font=\large] at (10,11.25) {\textbf{+}};
+\node [font=\large] at (10,10.5) {\textbf{-}};
+\node [font=\large] at (13,10.75) {\textbf{$V_{\text{out}}$}};
+\node [font=\large] at (10,7) {\textbf{0.1V}};
+\end{circuitikz}
+}%
+
+
+\end{figure}
+
+
+
+
+
+\item An 8085 microprocessor accesses two memory locations (2001H) and (2002H),
+that contain 8-bit numbers 98H and B1H, respectively. The following program is
+executed:\hfill(EE-2020) \\
+LXI H, 2001H \\
+MVI A, 21H \\
+INX H \\
+ADD M \\
+INX H \\
+MOV M, A \\
+HLT\\
+
+
+At the end of this program, the memory location 2003H contains the number in
+decimal (base 10) form \_.
+\item A conducting square loop of side length 1 $m$ is placed at a distance of 1 $m$ from a long straight wire carrying current $I=2 A$ as shown below. The mutual inductance, in nH(rounded off to 2 decimal places), between the conducting loop and the long wire is \_. \hfill(EE-2020)
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (6,4) -- (6,12);
+\draw (8,9.25) to[short] (8,6.5);
+\draw (8,9.25) to[short] (10.5,9.25);
+\draw (10.5,9.25) to[short] (10.5,6.5);
+\draw (8,6.5) to[short] (10.5,6.5);
+\draw [<->, >=Stealth] (6,7.75) -- (8,7.75);
+\draw [<->, >=Stealth] (8,6.25) -- (10.5,6.25);
+\draw [<->, >=Stealth] (10.75,9.25) -- (10.75,6.5);
+\draw [->, >=Stealth] (6.25,10.5) -- (6.25,11.25);
+\draw [short] (8,6.5) -- (8,6);
+\draw [short] (10.5,6.5) -- (10.5,6);
+\draw [short] (10.5,6.5) -- (11,6.5);
+\draw [short] (10.5,9.25) -- (11,9.25);
+\node [font=\large] at (6.75,10.75) {\textbf{I=2A}};
+\node [font=\normalsize] at (7,7.5) {\textbf{d=1m}};
+\node [font=\normalsize] at (9,5.75) {\textbf{a=1m}};
+\node [font=\normalsize] at (11.5,8) {\textbf{a=1m}};
+\node [font=\normalsize] at (6.5,12) {\textbf{Z}};
+\end{circuitikz}
+}%
+
+
+\end{figure}
+
+
+
+
