@@ -1,0 +1,178 @@
+ \iffalse
+    \title{Assignment}
+    \author{EE24BTECH11035}
+    \section{ce}
+    \chapter{2017}
+  \fi
+\item The wastewater from a city, containing a high concentration of biodegradable organics, is being steadily discharged into a flowing river at a location $S$. If the rate of aeration of the river water is lower than the rate of degradation of the organics, then the dissolved oxygen of the river water
+    \begin{enumerate}
+        \item is lowest at the location $S$.
+        \item is lowest at a point upstream of the location $S$.
+        \item remains constant all along the length of the river.
+        \item is lowest at a point downstream of the location $S$.
+    \end{enumerate}
+
+\item Which one of the following is \textbf{NOT} present in the acid rain?
+    \begin{enumerate}
+        \item HNO$_3$
+        \item H$_2$SO$_4$
+        \item H$_2$CO$_3$
+        \item CH$_3$COOH
+    \end{enumerate}
+
+\item A super-elevation $e$ is provided on a circular horizontal curve such that a vehicle can be stopped on the curve without sliding. Assuming a design speed $v$ and maximum coefficient of side friction $f_{max}$, which one of the following criteria should be satisfied?
+    \begin{enumerate}
+        \item $e \leq f_{max}$
+        \item $e > f_{max}$
+        \item no limit on $e$ can be set
+        \item $e = \frac{1 - (f_{max})^2}{f_{max}}$
+    \end{enumerate}
+
+\item A runway is being constructed in a new airport as per the International Civil Aviation Organization (ICAO) recommendations. The elevation and the airport reference temperature of this airport are 535 m above the mean sea level and 22.65$^\circ$C, respectively. Consider the effective gradient of runway as 1\%. The length of runway required for a design-aircraft under the standard conditions is 2000 m. Within the framework of applying sequential corrections as per the ICAO recommendations, the length of runway corrected for the temperature is
+    \begin{enumerate}
+        \item 2223 m
+        \item 2250 m
+        \item 2500 m
+        \item 2750 m
+    \end{enumerate}
+
+\item The accuracy of an Electronic Distance Measuring Instrument (EDMI) is specified as $\pm (a \, \text{mm} + b \, \text{ppm})$. Which one of the following statements is correct?
+    \begin{enumerate}
+        \item Both $a$ and $b$ remain constant, irrespective of the distance being measured.
+        \item $a$ remains constant and $b$ varies in proportion to the distance being measured.
+        \item $a$ varies in proportion to the distance being measured and $b$ remains constant.
+        \item Both $a$ and $b$ vary in proportion to the distance being measured.
+    \end{enumerate}
+% Question 1
+
+% Question 4
+\item The number of spectral bands in the Enhanced Thematic Mapper sensor on the remote sensing satellite Landsat-7 is:
+
+\begin{enumerate}[label=(\Alph*)]
+    \item 64
+    \item 10
+    \item 8
+    \item 15
+\end{enumerate}
+
+
+
+% Question 5
+\item Consider the following partial differential equation:
+\[
+3 \frac{\partial^2 \phi}{\partial x^2} + B \frac{\partial^2 \phi}{\partial x \partial y} + 3 \frac{\partial^2 \phi}{\partial y^2} + 4 \phi = 0
+\]
+For this equation to be classified as parabolic, the value of \( B^2 \) must be \underline{\hspace{2cm}}
+
+
+% Question 6
+\item 
+\begin{equation}
+   \lim_{x \to 0} \left( \frac{\tan x}{x^2 - x} \right)
+\end{equation}
+
+is equal to \underline{\hspace{2cm}}
+
+\item A 3 m thick clay layer is subjected to an initial uniform pore pressure of 145 kPa as shown in the figure.
+% File: soil_layers_figure.tex
+\begin{figure}[!ht]
+    \centering
+    \resizebox{0.6\textwidth}{!}{
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+    
+    % Horizontal lines representing different soil layers
+    \draw [line width=0.7pt] (7.5,14.25) -- (12.75,14.25);  % Top line
+    \draw [line width=0.7pt] (7.25,12) -- (13,12);          % Middle line (sand/clay boundary)
+    
+    % Vertical measurement line with arrow
+    \draw [line width=0.7pt, <->, >=Stealth] (7.75,14.25) -- (7.75,12);
+    
+    % Arrows on the right side representing pressure
+    \draw [line width=0.7pt] (17,14.25) -- (17,13);  % Vertical line for arrows
+    \foreach \y in {14.25, 14, 13.75, 13.5, 13.25, 13} {
+        \draw [->, >=Stealth] (15, \y) -- (17, \y);
+    }
+    \draw [line width=0.7pt] (15,14.25) -- (15,13);
+    
+    % Labels for different layers
+    \node [font=\large] at (10,15) {\textbf{Sand}};
+    \node [font=\large] at (9.5,13.25) {\textbf{Clay}};
+    \node [font=\normalsize] at (9.5,11.25) {\textbf{Impermeable stratum}};
+    
+    % Additional text annotations
+    \node [font=\normalsize] at (15.75,14.5) {$u_0=145\text{ kPa}$};
+    \node [font=\small] at (9,12.75) {$C_v=3.0 \, \text{mm}^2/\text{min}$};
+    \node [font=\small] at (9.25,12.25) {$T_v(90)=0.85$};
+    
+    % Dotted lines representing boundaries or separation
+    \foreach \y in {14.75, 15, 15.25} {
+        \node [font=\Huge] at (10.25, \y) {\textbf{. . . . . . . . . . . . . . .}};
+    }
+
+    \end{circuitikz}
+    }
+    \caption{Diagram of soil layers with pressure and parameters.}
+    \label{fig:soil_layers}
+\end{figure}
+
+For the given ground conditions, the time (in days, rounded to the nearest integer) required for 90\% consolidation would be \underline{\hspace{2cm}}
+
+\item A triangular pipe network is shown in the figure.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (8.75,16) -- (6,13);
+\draw [short] (8.75,16) -- (11.5,13);
+\draw [short] (6,13) -- (11.5,13);
+\draw [->, >=Stealth] (8.75,16) -- (9.75,16.75);
+\draw [->, >=Stealth] (11.5,13) -- (12.5,13.75);
+\draw [->, >=Stealth] (5.25,12.75) -- (6,13);
+\node [font=\normalsize] at (10.25,17.25) {Q=70};
+\node [font=\normalsize] at (12.75,14) {Q=30};
+\node [font=\normalsize] at (4.75,12.75) {Q=100};
+\node [font=\normalsize] at (6.75,15) {r=1};
+\node [font=\normalsize] at (10.25,14.75) {r=2};
+\node [font=\normalsize] at (6,12.75) {A};
+\node [font=\normalsize] at (8.75,16.25) {B};
+\node [font=\normalsize] at (11.75,12.75) {C};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+
+
+\item The ordinates of a 2-hour unit hydrograph for a catchment are given as
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Time (h) & Ordinate (m\(^3\)/s) \\
+\hline
+0 & 0 \\
+1 & 5 \\
+2 & 12 \\
+3 & 25 \\
+4 & 41 \\
+\hline
+\end{tabular}
+\end{center}
+
+The ordinate (in m\(^3\)/s) of a 4-hour unit hydrograph for this catchment at the time of 3 h would be \underline{\hspace{2cm}}
+
+
+
+\item Vehicles arriving at an intersection from one of the approach roads follow the Poisson distribution. The mean rate of arrival is 900 vehicles per hour. If a gap is defined as the time difference between two successive vehicle arrivals (with vehicles assumed to be points), the probability (up to four decimal places) that the gap is greater than 8 seconds is \underline{\hspace{2cm}}
+
+\item For the function \( f(x) = a + bx \), \( 0 \leq x \leq 1 \), to be a valid probability density function, which one of the following statements is correct?
+    \begin{enumerate}
+        \item \( a = 1, b = 4 \)
+        \item \( a = 0.5, b = 1 \)
+        \item \( a = 0, b = 1 \)
+        \item \( a = 1, b = -1 \)
+    \end{enumerate}
+
